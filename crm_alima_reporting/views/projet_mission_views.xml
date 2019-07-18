@@ -1,0 +1,90 @@
+<odoo>
+    <!-- liste mission alima -->
+    <record id="crm_alima_reporting_mission_tree" model="ir.ui.view">
+        <field name="name">crm.alima.reporting.mission.tree</field>
+        <field name="model">crm.alima.reporting.mission</field>
+        <field name="arch" type="xml">
+            <tree string="Liste des missions de ALIMA">
+                    <field name="code_mission" string="Code missione"/>
+                    <field name="name" string="Intitulé mission"/>
+                    <field name="country_id" string="Pays"/>
+            </tree>
+        </field>
+    </record>
+    <!--formulaire de creation de mission alima-->
+    <record id="crm_alima_reporting_mission_form" model="ir.ui.view">
+        <field name="name">crm.alima.reporting.mission.form</field>
+        <field name="model">crm.alima.reporting.mission</field>
+        <field name="arch" type="xml">
+            <form string="MISSION ALIMA">
+                <sheet>
+                    <group >
+                        <field name="code_mission"  string="Code mission"/>
+                        <field name="name"  string="Intitulé mission"/>
+                        <field name="country_id"  string="Pays"/>
+                        <field name="context_pays" string="Contexte du pays"/>
+                        <field name="budget" string="budget"/>
+                        <field name="rh" string="rh"/>
+                    </group>
+                    <notebook>
+                        <page name="projets" string="liste des projets">
+                            <field name="projets" string="">
+                                <form>
+                                    <group>
+                                        <field name="code_projet"/>
+                                        <field name="name" />
+                                        <field name="debut"/>
+                                        <field name="fin"/>
+                                        <field name="localite"/>
+                                    </group>
+                                </form>
+                                    <tree >
+                                        <field name="code_projet"/>
+                                        <field name="name" />
+                                        <field name="debut"/>
+                                        <field name="fin"/>
+                                        <field name="localite"/>
+                                    </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- liste projet alima -->
+    <record id="crm_alima_reporting_projet_tree" model="ir.ui.view">
+        <field name="name">crm.alima.reporting.projet.tree</field>
+        <field name="model">crm.alima.reporting.projet</field>
+        <field name="arch" type="xml">
+            <tree string="Liste des projets de ALIMA">
+                    <field name="code_projet" string="Code projet"/>
+                    <field name="name" string="Description projet"/>
+                    <field name="debut" string="Date de début"/>
+                    <field name="fin" string="Date de fin"/>
+                    <field name="localite" string="Localité"/>
+                    <field name="mission_id" string="Mission"/>
+            </tree>
+        </field>
+    </record>
+    <!--formulaire de creation de projet alima-->
+    <record id="crm_alima_reporting_projet_form" model="ir.ui.view">
+        <field name="name">crm.alima.reporting.projet.form</field>
+        <field name="model">crm.alima.reporting.projet</field>
+        <field name="arch" type="xml">
+            <form string="PROJET ALIMA">
+                <sheet>
+                    <group >
+                        <field name="code_projet" string="Code projet"/>
+                        <field name="name" string="Description projet"/>
+                        <field name="debut" string="Date de début"/>
+                        <field name="fin" string="Date de fin"/>
+                        <field name="localite" string="Localité"/>
+                        <field name="mission_id" string="Mission"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<odoo>
+    <!-- Extend form -->
+    <record id="crm_reporting_view_partners_form_crm1" model="ir.ui.view">
+      <field name="name">crm_reporting_view_partners_form_crm1</field>
+      <field name="model">res.partner</field>
+      <field name="inherit_id" ref="crm.view_partners_form_crm1"/>
+      <field name="name">Bailleur</field>
+      <field name="arch" type="xml">
+          <field name="opportunity_count" position="replace">
+              <field string="Contrats" name="opportunity_count" widget="statinfo"/>
+       </field>
+        <xpath expr="//field[@name='category_id']" position="after">
+            <field name="login" groups="crm_alima_reporting.crm_alima_group_login_pwd"/>
+            <field name="pwd" groups="crm_alima_reporting.crm_alima_group_login_pwd"/>
+            <field name="annexes_rapport_intermediaire"/>
+            <field name="annexes_rapport_final"/>
+        </xpath>
+        <xpath expr="//form/sheet/notebook[1]/page[1]" position="after">
+            <page name="domaine_intervention" string="domaine intervention">
+                <field name="domaine_intervention"/>
+            </page>
+            <page name="condition_financement" string="condition de financement">
+                <field name="condition_financement"/>
+            </page>
+            <page name="historique" string="historique">
+                <field name="historique"/>
+            </page>
+            <page name="liens" string="Autres liens">
+                <field name="liens" string="">
+                    <form>
+                        <group>
+                            <field name="name"/>
+                            <field name="desccription" />
+                            <field name="lien" widget="url"/>
+                        </group>
+                    </form>
+                        <tree >
+                             <field name="name"/>
+                             <field name="desccription" />
+                             <field name="lien"/>
+                        </tree>
+                </field>
+            </page>
+        </xpath>
+      </field>
+    </record>
+</odoo>

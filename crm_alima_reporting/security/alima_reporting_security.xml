@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+       <record id="alima_reporting_agents" model="res.groups">
+            <field name="name">Agent reporting</field>
+            <field name="comment">the user will have an access to the sales configuration as well as statistic reports.</field>
+            <field name="category_id" ref="base.module_category_sales_management"/>
+            <field name="implied_ids" eval="[(4, ref('sales_team.group_sale_salesman'))]"/>
+            <field name="users" eval="[(4, ref('base.user_root'))]"/>
+        </record>
+
+        <record id="module_category_crm_reporting" model="ir.module.category">
+            <field name="name">CRM REPORTING</field>
+            <field name="sequence">200</field>
+        </record>
+        <record id="crm_alima_group_login_pwd" model="res.groups">
+            <field name="name">Login Pwd</field>
+            <field name="category_id" ref="module_category_crm_reporting"/>
+        </record>
+</odoo>
+
+

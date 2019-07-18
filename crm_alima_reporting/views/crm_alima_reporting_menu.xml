@@ -1,0 +1,36 @@
+<odoo>
+    <!-- Action rapport -->
+    <act_window id="action_crm_alima_reporting_rapport"
+    name="Rapport"
+    res_model="crm.alima.reporting.rapport"
+    view_mode="tree,form"/>
+
+    <!-- Action suivi versement -->
+    <act_window id="action_crm_alima_reporting_suiviversement"
+    name="Suivi versement"
+    res_model="crm.alima.reporting.suiviversement"
+    view_mode="tree,form"/>
+
+    <!-- Action MR -->
+    <act_window id="action_crm_alima_reporting_mr"
+    name="MR"
+    res_model="crm.alima.reporting.mr"
+    view_mode="tree,form"/>
+
+    <!-- Action Mission -->
+    <act_window id="action_crm_alima_reporting_mission"
+    name="Mission"
+    res_model="crm.alima.reporting.mission"
+    view_mode="tree,form"/>
+    <!-- Action project -->
+    <act_window id="action_crm_alima_reporting_projet"
+    name="Projet"
+    res_model="crm.alima.reporting.projet"
+    view_mode="tree,form"/>
+
+    <menuitem id="menu_crm_alima_reporting_rapport" name="Rapport" parent="crm.crm_menu_pipeline" action="action_crm_alima_reporting_rapport"/>
+    <menuitem id="menu_crm_alima_reporting_suiviversement" name="Suivi versement" parent="crm.crm_menu_pipeline" action="action_crm_alima_reporting_suiviversement"/>
+    <menuitem id="menu_crm_alima_reporting_mr" name="MR" parent="crm.crm_menu_pipeline" action="action_crm_alima_reporting_mr"/>
+    <menuitem id="menu_crm_alima_reporting_mission" name="Mission" parent="crm.crm_menu_config" action="action_crm_alima_reporting_mission"/>
+    <menuitem id="menu_crm_alima_reporting_projet" name="Projet" parent="crm.crm_menu_config" action="action_crm_alima_reporting_projet"/>
+</odoo>

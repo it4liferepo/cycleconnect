@@ -1,0 +1,570 @@
+<odoo>
+    <!-- Extend form -->
+    <record id="crm_reporting_form_view_oppor_inherited" model="ir.ui.view">
+      <field name="name">crm_reporting_form_view_oppor_inherited</field>
+      <field name="model">crm.lead</field>
+      <field name="inherit_id" ref="crm.crm_case_form_view_oppor"/>
+      <field name="arch" type="xml">
+      <xpath expr="//form/sheet/div[1]" position="replace">
+            <div class="oe_button_box" name="button_box">
+                <button name="toggle_active" type="object" class="oe_stat_button" icon="fa-archive"
+                                    attrs="{'invisible': [('active', '=', True), ('probability', '&lt;', 100)]}">
+                                <field name="active" widget="boolean_button" options='{"terminology": "archive"}'/>
+            </button>
+            <button name="action_get_attachment_tree_view" class="oe_stat_button" icon="fa-book" type="object">
+                <div class="o_stat_info">
+                    <field name="attachment_number" widget="statinfo" string="Documents"/>
+                </div>
+            </button>
+            </div>
+        </xpath>
+      <label for="name" position="replace">
+          <label string="Titre" for="name"  class="oe_edit_only"/>
+      </label>
+      <label for="planned_revenue" position="replace">
+          <label string="Montant total" for="planned_revenue" />
+      </label>
+      <field name="name" position="after">
+        <br/>
+        <label for="titre_complet" class="oe_edit_only"/>
+        <h4>
+            <field name="titre_complet" placeholder="Titre complet"  />
+        </h4>
+      </field>
+      <field name="planned_revenue" position="replace">
+          <field name="planned_revenue" widget='monetary' options="{'currency_field': 'devise'}"/>
+      </field>
+      <field name="partner_id" position="replace">
+          <field string="Bailleur" name="partner_id" />
+      </field>
+      <field name="phone" position="after">
+          <field name="code_contrat" widget="code" string="Code"/>
+          <field name="projet" widget="many2many_tags" options="{'no_create_edit': True}"/>
+          <field name="pays" widget="many2many_tags" options="{'no_create_edit': True}"/>
+          <field name="cofinancement"/>
+          <field name="visibilite_terrain"/>
+          <field name="commentaire_visibilite_terrain" />
+          <field name="audit"/>
+          <field name="commentaire_audit" />
+          <field name="recherche_etude"/>
+          <field name="devise"/>
+      </field>
+      <field name="user_id" position="replace">
+          <field string="Agent reporting" name="user_id" />
+        </field>
+      <field name="team_id" position="replace">
+          <field string="Desk" name="team_id" />
+        </field>
+      <field name="priority" position="replace">
+          <field name="priority" invisible="1"/>
+      </field>
+      <!--field name="next_activity_id" position="replace">
+          <field name="next_activity_id" invisible="1"/>
+      </field-->
+      <!--field name="date_action" position="replace">
+          <field name="date_action" invisible="1"/>
+      </field-->
+      <field name="email_from" position="replace">
+          <field name="email_from" invisible="1"/>
+      </field>
+      <field name="phone" position="replace">
+          <field name="phone" invisible="1"/>
+      </field>
+      <!--label for="next_activity_id" position="replace">
+          <label string="test" for="next_activity_id" invisible="1"/>
+      </label-->
+      <field name="date_deadline" position="replace">
+            <field name="date_debut"/>
+            <field name="date_fin"/>
+            <field name="duree_mois"/>
+            <field name="date_signature"/>
+            <field name="ref_convention"/>
+            <field name="signataire_alima"/>
+            <field name="personne_contact_bailleur"/>
+      </field>
+       <xpath expr="//field[@name='probability']/parent::div/parent::div/parent::h2" position="after">
+            <br/>
+            <h2 class="o_row">
+                <div>
+                    <label for="montant_bailleur" />
+                    <div class="o_row">
+                        <field name="company_currency" invisible="1"/>
+                        <field name="montant_bailleur" widget='monetary' options="{'currency_field': 'devise'}"/>
+                        <span class="oe_grey"> à </span>
+                    </div>
+                </div>
+                <div>
+                    <label for="pourcentage_montant_bailleur" />
+                    <div class="o_row">
+                        <field name="pourcentage_montant_bailleur"/>
+                        <span>%%</span>
+                    </div>
+                </div>
+            </h2>
+            <br/>
+            <h2 class="o_row">
+                <div>
+                    <label for="montant_cofinancement" />
+                    <div class="o_row">
+                        <field name="company_currency" invisible="1"/>
+                        <field name="montant_cofinancement" widget='monetary' options="{'currency_field': 'devise'}"/>
+                        <span class="oe_grey"> à </span>
+                    </div>
+                </div>
+                <div>
+                    <label for="pourcentage_cofinancement_acquis" />
+                    <div class="o_row">
+                        <field name="pourcentage_cofinancement_acquis"/>
+                        <span>%%</span>
+                    </div>
+                </div>
+            </h2>
+            <br/>
+            <h2 class="o_row">
+                <div>
+                    <label for="couts_directs"/><br/>
+                    <div class="o_row">
+                        <field name="company_currency" invisible="1"/>
+                        <field name="couts_directs" widget='monetary' options="{'currency_field': 'devise'}"/>
+                    </div>
+                </div>
+            </h2>
+            <br/>
+            <h2 class="o_row">
+                <div>
+                    <label for="couts_indirects" />
+                    <div class="o_row">
+                        <field name="company_currency" invisible="1"/>
+                        <field name="couts_indirects" widget='monetary' options="{'currency_field': 'devise'}"/>
+                        <span class="oe_grey"> à </span>
+                    </div>
+                </div>
+                 <div>
+                    <label for="pour_couts_indirects" />
+                    <div class="o_row">
+                        <field name="pour_couts_indirects"/>
+                        <span>%%</span>
+                    </div>
+                </div>
+            </h2>
+           <br/>
+        </xpath>
+        <xpath expr="//form/sheet/group[1]" position="after">
+            <group>
+                <group>
+                    <field name="porteur"/>
+                    <field name="partenairelocal"/>
+                    <field name="ongportee"/>
+                </group>
+                <group>
+                    <field name="nomporteur" attrs="{'invisible': [('porteur', '=', False)]}"/>
+                    <field name="partporteur" attrs="{'invisible': [('porteur', '=', False)]}"/>
+                    <field name="porteur_mou_signe" attrs="{'invisible': [('porteur', '=', False)]}"/>
+                    <field name="com_port_mou_signe" attrs="{'invisible': [('porteur', '=', False)]}"/>
+                    <field name="nompartenairelocal" attrs="{'invisible': [('partenairelocal', '=', False)]}"/>
+                    <field name="partenaire_mou_signe" attrs="{'invisible': [('partenairelocal', '=', False)]}"/>
+                    <field name="com_part_mou_signe" attrs="{'invisible': [('partenairelocal', '=', False)]}"/>
+                    <field name="nomongportee" attrs="{'invisible': [('ongportee', '=', False)]}"/>
+                    <field name="partongportee" attrs="{'invisible': [('ongportee', '=', False)]}"/>
+                    <field name="ongport_mou_signe" attrs="{'invisible': [('ongportee', '=', False)]}"/>
+                    <field name="com_ongport_mou_signe" attrs="{'invisible': [('ongportee', '=', False)]}"/>
+                </group>
+            </group>
+        </xpath>
+        <xpath expr="//form/sheet/notebook[1]/page[2]" position="after">
+            <page name="suiviversement" string="Suivi versement"  mode="tree,kanban">
+                <field name="suiviversement" string="">
+                    <form>
+                        <group>
+                            <field name="name"/>
+                            <field name="pourcentage_contribution" />
+                            <field name="date_prevue"/>
+                            <field name="date_demande"/>
+                            <field name="date_versement"/>
+                            <field name="versement"/>
+                            <field name="commentaire"/>
+                            <field name="liendocument" widget="url"/>
+                        </group>
+                    </form>
+                    <tree >
+                        <field name="name"/>
+                        <field name="pourcentage_contribution" />
+                        <field name="date_prevue"/>
+                        <field name="date_demande"/>
+                        <field name="date_versement"/>
+                        <field name="versement" widget='monetary'/>
+                    </tree>
+                </field>
+                <group class="oe_subtotal_footer oe_right" colspan="2" name="montant_suivi_total">
+                        <field name="montant_total_versement" widget='monetary' options="{'currency_field': 'devise'}"/>
+                </group>
+            </page>
+            <page name="rapport" string="Rapports">
+                <field name="rapport" string="">
+                    <form>
+                        <group>
+                            <field name="type_rapport" />
+                            <field name="name"/>
+                            <field name="langue" />
+                            <field name="date_debut"/>
+                            <field name="date_fin"/>
+                            <field name="arendre"/>
+                            <field name="date_interne"/>
+                            <field name="rendu"/>
+                            <field name="date_depot"/>
+                            <field name="commentaire"/>
+                            <field name="etat"/>
+                            <field name="liendocument" widget="url"/>
+                        </group>
+                    </form>
+                    <tree >
+                        <field name="type_rapport" />
+                        <field name="name"/>
+                        <field name="langue" />
+                        <field name="date_debut"/>
+                        <field name="date_fin"/>
+                        <field name="arendre"/>
+                        <field name="date_interne"/>
+                        <field name="rendu"/>
+                        <field name="date_depot"/>
+                    </tree>
+                </field>
+            </page>
+            <page name="mr" string="MR">
+                <field name="mr" string="">
+                <form>
+                    <group>
+                        <field name="name"/>
+                        <field name="datefin"/>
+                        <field name="duree"/>
+                        <field name="statut"/>
+                        <field name="budget_additionnel"/>
+                        <field name="montant_budget"/>
+                        <field name="commentaire"/>
+                        <field name="liendocument" widget="url"/>
+                    </group>
+                </form>
+                <tree >
+                    <field name="name"/>
+                    <field name="datefin"/>
+                    <field name="duree"/>
+                    <field name="statut"/>
+                    <field name="budget_additionnel"/>
+                    <field name="montant_budget"/>
+                    <field name="commentaire"/>
+                </tree>
+            </field>
+            </page>
+            <page name="finance" string="Finance">
+                <group>
+                    <field name="depensestotales" widget='monetary' options="{'currency_field': 'devise'}"/>
+                    <field name="depenseautorisees" widget='monetary' options="{'currency_field': 'devise'}"/>
+                    <field name="reliquat" widget='monetary' options="{'currency_field': 'devise'}"/>
+                    <field name="date_reliquat" />
+                </group>
+            </page>
+            <page name="docscomplem" string="Documents complémentaires">
+                <field name="Infosmission" string="">
+                <form>
+                    <group>
+                        <field name="name"/>
+                        <field name="emetteur"/>
+                        <field name="date"/>
+                        <field name="lien" widget="url"/>
+                        <field name="commentaire"/>
+                    </group>
+                </form>
+                <tree >
+                    <field name="name"/>
+                        <field name="emetteur"/>
+                        <field name="date"/>
+                        <field name="commentaire"/>
+                </tree>
+            </field>
+            </page>
+        </xpath>
+      </field>
+    </record>
+    <!--liste lead/contrat-->
+    <record id="crm_reporting_case_tree_view_oppor_inherit" model="ir.ui.view">
+      <field name="name">crm_reporting_case_tree_view_oppor_inherit</field>
+      <field name="model">crm.lead</field>
+      <field name="inherit_id" ref="crm.crm_case_tree_view_oppor"/>
+      <field name="arch" type="xml">
+        <field name="name" position="replace">
+            <field name="name" string="Contrat"/>
+        </field>
+        <field name="country_id" position="replace"/>
+        <field name="partner_id" position="replace">
+            <field name="partner_id" string="Bailleur"/>
+        </field>
+        <field name="activity_date_deadline" position="replace">
+        <field name="activity_date_deadline" invisible="1"/>
+        </field>
+        <field name="activity_summary" position="replace"/>
+        <field name="planned_revenue" position="replace">
+            <field name="planned_revenue" string="Montant total"/>
+      </field>
+      <field name="probability" position="replace">
+              <field name="montant_bailleur" string="Montant bailleur"/>
+              <field name="devise" string="Devise"/>
+      </field>
+          <field name="team_id" position="replace">
+              <field name="team_id" string="Desk"/>
+          </field>
+          <field name="user_id" position="replace">
+              <field name="user_id" string="Agent reporting"/>
+          </field>
+      </field>
+    </record>
+
+    <!-- Resume and Letters -->
+    <record id="ir_attachment_view_search_inherit_crm_alima_reporting" model="ir.ui.view">
+        <field name="name">ir.attachment.search.inherit.crm.alima.reporting</field>
+        <field name="model">ir.attachment</field>
+        <field name="mode">primary</field>
+        <field name="inherit_id" ref="base.view_attachment_search"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='create_date']" position="after">
+                <field name="index_content" string="Content"/>
+            </xpath>
+            <xpath expr="//filter[@name='my_documents_filter']" position="attributes">
+                <attribute name='invisible'>1</attribute>
+            </xpath>
+            <xpath expr="//filter[@name='url_filter']" position="attributes">
+                <attribute name='invisible'>1</attribute>
+            </xpath>
+            <xpath expr="//filter[@name='binary_filter']" position="attributes">
+                <attribute name='invisible'>1</attribute>
+            </xpath>
+        </field>
+    </record>
+    <!-- Extend search -->
+    <record id="view_crm_case_opportunities_filter_inherited" model="ir.ui.view">
+      <field name="name">crm.lead.search.opportunity.inherited</field>
+      <field name="model">crm.lead</field>
+      <field name="inherit_id" ref="crm.view_crm_case_opportunities_filter"/>
+      <field name="arch" type="xml">
+        <!--field name="next_activity_id" position="replace"/-->
+        <!--field name="title_action" position="replace"/-->
+        <field name="lost_reason" position="replace">
+            <field name="pays" string="Pays"/>
+            <field name="code_contrat" string="Code contrat"/>
+            <field name="devise" string="Devise"/>
+        </field>
+      <!--filter name="this_week" position="replace"/-->
+       <!--filter name="overdue" position="replace"/-->
+       <!--filter name="overdue_opp" position="replace"/-->
+      <filter name="assigned_to_me" position="replace">
+          <filter string="Mes contrats" name="assigned_to_me"
+                            domain="[('user_id', '=', uid)]"
+                            help="Contrats that are assigned to me"/>
+      </filter>
+       <filter  name="activities_today" position="replace">
+           <filter name="filtre_par_pays_none" string="Contrats sans pays"
+                      domain="[('pays','=', False)]" />
+           <filter name="filtre_par_pays_burkina" string="Contrats burkina"
+                      domain="[('pays','ilike','Burkina')]" />
+           <filter name="filtre_par_pays_mali" string="Contrats Mali"
+                      domain="[('pays','ilike','Mali')]" />
+           <filter name="filtre_par_pays_niger" string="Contrats Niger"
+                      domain="[('pays','=','Niger')]" />
+           <filter name="filtre_par_pays_nigeria" string="Contrats Nigeria"
+                      domain="[('pays','ilike','Nigeria')]" />
+           <filter name="filtre_par_pays_guinee" string="Contrats Guinée"
+                      domain="[('pays','ilike','Guinée')]" />
+            <filter name="filtre_par_pays_cameroun" string="Contrats Cameroun"
+                      domain="[('pays','ilike','Cameroun')]" />
+           <filter name="filtre_par_pays_rdc" string="Contrats RDC"
+                      domain="[('pays','ilike','République démocratique du congo')]" />
+            <filter name="filtre_par_pays_ssoudan" string="Contrats Sud Soudan"
+                      domain="[('pays','ilike','Sud Soudan')]" />
+            <filter name="filtre_par_pays_rca" string="Contrats RCA"
+                      domain="[('pays','ilike','République Centre-Africaine')]" />
+           <filter name="filtre_par_pays_tchad" string="Contrats Tchad"
+                      domain="[('pays','ilike','Tchad')]" />
+           <filter name="filtre_par_pays_mauritanie" string="Contrats Mauritanie"
+                      domain="[('pays','ilike','Mauritanie')]" />
+
+       </filter>
+      <filter name="message_needaction" position="replace">
+          <filter name="filtre_par_cofinancement" string="Cofinancement"
+                      domain="[('cofinancement','ilike','OUI')]" />
+          <filter name="filtre_par_devise_none" string="Contrats sans devise"
+                      domain="[('devise','=', False)]" />
+
+      </filter>
+      
+      </field>
+    </record>
+    <!-- Extend form simplified-->
+    <record id="crm_reporting_create_opportunity_simplified_inherited" model="ir.ui.view">
+      <field name="name">crm_reporting_create_opportunity_simplified_inherited</field>
+      <field name="model">crm.lead</field>
+      <field name="inherit_id" ref="crm.view_create_opportunity_simplified"/>
+      <field name="arch" type="xml">
+          <field name="name" position="replace">
+          <field name="name" string="Titre" placeholder="Titre"/>
+          </field>
+          <field name="partner_id" position="replace">
+              <field name="partner_id" string="Bailleur"/>
+          </field>
+          <field name="priority" position="replace">
+              <field name="priority" invisible="1"/>
+          </field>
+          <label for="planned_revenue" position="replace">
+              <label string="Montant total" for="planned_revenue"/>
+          </label>
+      </field>
+    </record>
+    <!-- Modify menu item -->
+    <record id="sales_team.menu_base_partner" model="ir.ui.menu">
+        <field name="name">CRM Reporting</field>
+    </record>
+     <record id="crm.menu_crm_opportunities" model="ir.ui.menu">
+        <field name="name">Mes contrats</field>
+    </record>
+    <record id="sales_team.menu_sales" model="ir.ui.menu">
+        <field name="name">Contrats</field>
+    </record>
+    <record id="sales_team.menu_partner_form" model="ir.ui.menu">
+        <field name="name">Bailleurs</field>
+    </record>
+    <!-- liste rapport alima -->
+    <record id="crm_alima_reporting_rapport_tree" model="ir.ui.view">
+        <field name="name">crm.alima.reporting.rapport.tree</field>
+        <field name="model">crm.alima.reporting.rapport</field>
+        <field name="arch" type="xml">
+            <tree string="Liste des rapports de ALIMA">
+                    <field name="code_contrat"/>
+                    <field name="lead" string ="titre"/>
+                    <field name="bailleur"/>
+                    <field name="type_rapport" />
+                    <field name="name"/>
+                    <field name="langue" />
+                    <field name="date_debut"/>
+                    <field name="date_fin"/>
+                    <field name="arendre"/>
+                    <field name="date_interne"/>
+                    <field name="rendu"/>
+                    <field name="date_depot"/>
+
+
+            </tree>
+        </field>
+    </record>
+    <!--formulaire de creation d'un rapport-->
+    <record id="crm_alima_reporting_rapport_form" model="ir.ui.view">
+        <field name="name">crm.alima.reporting.rapport.form</field>
+        <field name="model">crm.alima.reporting.rapport</field>
+        <field name="arch" type="xml">
+            <form string="RAPPORT ALIMA">
+
+                <sheet>
+                    <group >
+                        <field name="lead" />
+                        <field name="type_rapport" />
+                        <field name="name"/>
+                        <field name="langue" />
+                        <field name="date_debut"/>
+                        <field name="date_fin"/>
+                        <field name="arendre"/>
+                        <field name="date_interne"/>
+                        <field name="rendu"/>
+                        <field name="date_depot"/>
+                        <field name="commentaire"/>
+                        <field name="etat"/>
+                        <field name="liendocument" widget="url"/>
+                        <field name="agent_mails" />
+                        <field name="financier_mail" />
+                        <field name="manager_mail" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+     <!-- liste mr alima -->
+    <record id="crm_alima_reporting_mr_tree" model="ir.ui.view">
+        <field name="name">crm.alima.reporting.mr.tree</field>
+        <field name="model">crm.alima.reporting.mr</field>
+        <field name="arch" type="xml">
+            <tree string="Liste des mr">
+                    <field name="name" />
+                    <field name="duree"/>
+                    <field name="datedebut" />
+                    <field name="datefin"/>
+                    <field name="commentaire"/>
+                    <field name="statut"/>
+                    <field name="budget_additionnel"/>
+                    <field name="montant_budget"/>
+                    <field name="lead"/>
+                    <field name="liendocument" />
+            </tree>
+        </field>
+    </record>
+    <!--formulaire de creation d'un mr-->
+    <record id="crm_alima_reporting_mr_form" model="ir.ui.view">
+        <field name="name">crm.alima.reporting.mr.form</field>
+        <field name="model">crm.alima.reporting.mr</field>
+        <field name="arch" type="xml">
+            <form string="MR">
+                <sheet>
+                    <group >
+                        <field name="name" />
+                        <field name="duree"/>
+                        <field name="datedebut" />
+                        <field name="datefin"/>
+                        <field name="commentaire"/>
+                        <field name="statut"/>
+                        <field name="budget_additionnel"/>
+                        <field name="montant_budget"/>
+                        <field name="lead"/>
+                        <field name="liendocument" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- liste mr alima -->
+    <record id="crm_alima_reporting_suiviversement_tree" model="ir.ui.view">
+        <field name="name">crm.alima.reporting.suiviversement.tree</field>
+        <field name="model">crm.alima.reporting.suiviversement</field>
+        <field name="arch" type="xml">
+            <tree string="Liste des mr">
+                <field name="name" />
+                <field name="pourcentage_contribution"/>
+                <field name="type" />
+                <field name="date_prevue"/>
+                <field name="date_demande"/>
+                <field name="date_versement"/>
+                <field name="versement"/>
+                <field name="commentaire"/>
+                <field name="lead"/>
+                <field name="liendocument" />
+            </tree>
+        </field>
+    </record>
+    <!--formulaire de creation d'un mr-->
+    <record id="crm_alima_reporting_suiviversement_form" model="ir.ui.view">
+        <field name="name">crm.alima.reporting.suiviversement.form</field>
+        <field name="model">crm.alima.reporting.suiviversement</field>
+        <field name="arch" type="xml">
+            <form string="MR">
+                <sheet>
+                    <group >
+                        <field name="name" />
+                        <field name="pourcentage_contribution"/>
+                        <field name="type" />
+                        <field name="date_prevue"/>
+                        <field name="date_demande"/>
+                        <field name="date_versement"/>
+                        <field name="versement"/>
+                        <field name="commentaire"/>
+                        <field name="lead"/>
+                        <field name="liendocument" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

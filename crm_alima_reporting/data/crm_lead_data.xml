@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<odoo>
+    <data noupdate="1">
+        <record id="email_template_opportunity_reminder_mail_alima" model="mail.template">
+            <field name="name">Contrat: Rappel</field>
+            <field name="model_id" ref="crm.model_crm_lead"/>
+            <field name="auto_delete" eval="True"/>
+            <field name="email_from">admin@example.com</field>
+            <field name="email_to">devit2@alima.ngo</field><!-- <field name="email_to">${(object.user_id != False and object.user_id.email)|safe}</field> -->
+            <field name="email_cc">mouhawele@gmail.com</field>
+            <field name="subject">Reminder: Lead ${object.name} from ${object.partner_id != False and object.partner_id.name or object.contact_name}</field>
+            <field name="body_html"><![CDATA[
+<p>Hello ${object.user_id and object.user_id.name or ''},</p>
+% set access_action = object.with_context(force_website=True).get_access_action()
+% set is_online = access_action and access_action['type'] == 'ir.actions.act_url'
+% set access_name = 'Contrat'
+% set access_url = is_online and access_action['url'] or None
+% set difference_day = '2 jour' if object.differerence_day == 2 else '7 jours' if object.differerence_day == 7 else '15 jours' if object.differerence_day == 15 else '30 jours' if object.differerence_day == 30 else '' 
+<p>bonjour, </p><br/>
+<p>vous avez un rapport à rendre au bailleur dans ${difference_day}.</p><br/>
+<p>Le contrat  <strong>${object.name}</strong>  va expirer le <strong>${object.date_fin}</strong> </p>
+%if object.description:
+<p>Here is the description about the opportunity : </p><p><i>${object.description}</i>
+%endif
+<center>
+        <a href="${object.url_redirection}" style="background-color: #1abc9c; padding: 20px; text-decoration: none; color: #fff; border-radius: 5px; font-size: 16px;" class="o_default_snippet_text">${access_name}</a>
+        <br/><br/>
+    </center>
+</p><p>Thank you!</p>
+]]></field>
+        </record>
+
+<record id="email_template_opportunity_reminder_rapport_alima" model="mail.template">
+        <field name="name">Rapport: Rappel</field>
+        <field name="model_id" ref="crm_alima_reporting.model_crm_alima_reporting_rapport"/>
+        <field name="auto_delete" eval="True"/>
+        <field name="email_from">admin@example.com</field>
+        <field name="email_to">${object.mails_to_send|safe}</field>
+        <field name="subject">Rappel: rapport ${object.lead.code_contrat} + ${object.type_rapport} + ${object.lead.pays.name} + ${object.lead.partner_id.name}</field>
+       <!-- <field name="subject">Rappel: Contrat </field> -->
+            <field name="body_html"><![CDATA[
+    % set access_action = object.with_context(force_website=True).get_access_action()
+    % set is_online = access_action and access_action['type'] == 'ir.actions.act_url'
+    % set access_name = 'Rapport'
+    % set access_url = is_online and access_action['url'] or None
+    % set difference_day = '2 jour' if object.differerence_day == 2 else '7 jours' if object.differerence_day == 7 else '15 jours' if object.differerence_day == 15 else '30 jours' if object.differerence_day == 30 else '2 jours pour le dépot du rapport' if object.differerence_day == -2 else '7 jours pour le dépot du rapport' if object.differerence_day == -7 else 'plus de 7 jours pour le dépot du rapport' if object.differerence_day < -7 else '' 
+    % set rapport_or_retard = 'rapport à rendre au bailleur dans' if object.differerence_day >= 0 else 'retard de'
+    <p>Bonjour</p>
+    <p>vous avez un ${rapport_or_retard} ${difference_day}.</p><br/>
+    <center>
+        <a href="${object.url_redirection}" style="background-color: #1abc9c; padding: 20px; text-decoration: none; color: #fff; border-radius: 5px; font-size: 16px;" class="o_default_snippet_text">${access_name}</a>
+        <br/><br/>
+    </center>
+    <p>Merci</p>
+]]></field>
+</record>
+
+
+<record id="email_template_opportunity_reminder_rapport_alima_financier" model="mail.template">
+        <field name="name">Rapport: Rappel</field>
+        <field name="model_id" ref="crm_alima_reporting.model_crm_alima_reporting_rapport"/>
+        <field name="auto_delete" eval="True"/>
+        <field name="email_from">admin@example.com</field>
+        <field name="email_to">${object.financier_mail}</field>
+       <!--  <field name="subject">Rappel: Contrat ${object.name} from ${object.lead.partner_id != False and object.lead.partner_id.name or object.lead.contact_name}</field> -->
+       <field name="subject">Rappel: rapport ${object.lead.code_contrat} + ${object.type_rapport} + ${object.lead.pays.name} + ${object.lead.partner_id.name}</field>
+            <field name="body_html"><![CDATA[
+    % set access_action = object.with_context(force_website=True).get_access_action()
+    % set is_online = access_action and access_action['type'] == 'ir.actions.act_url'
+    % set access_name = 'Rapport'
+    % set access_url = is_online and access_action['url'] or None
+    % set difference_day = '2 jour' if object.differerence_day == 2 else '7 jours' if object.differerence_day == 7 else '2 jours pour le dépot du rapport' if object.differerence_day == -2 else '7 jours pour le dépot du rapport' if object.differerence_day == -7 else 'plus de 7 jours pour le dépot du rapport' if object.differerence_day < -7 else '' 
+    % set rapport_or_retard = 'rapport à rendre au bailleur dans' if object.differerence_day >= 0 else 'retard de'
+    
+    <p>Bonjour</p>
+    <p>vous avez un ${rapport_or_retard} ${difference_day}.</p><br/>
+    <center>
+        <a href="${object.url_redirection}" style="background-color: #1abc9c; padding: 20px; text-decoration: none; color: #fff; border-radius: 5px; font-size: 16px;" class="o_default_snippet_text">${access_name}</a>
+        <br/><br/>
+    </center>
+   <p>Merci</p>
+]]></field>
+</record>
+
+    </data>
+</odoo>
