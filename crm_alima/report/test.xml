@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="report_saleorder_document_test">
+    <t t-call="web.external_layout">
+        
+        <div class="page">
+            <div class="oe_structure"/>
+                <span>TESTTTTTTTTTTTTTTTTTTTTTTTTTTTTT</span>
+        </div>
+    </t>
+</template>
+
+
+<template id="report_saleorder_test">
+    <t t-call="web.html_container">
+        <t t-foreach="docs" t-as="doc">
+            <t t-call="crm_solthis.report_saleorder_document_test" />
+        </t>
+    </t>
+</template>
+
+
+
+</odoo>

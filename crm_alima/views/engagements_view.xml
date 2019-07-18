@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="crm_alima_engagements_tree" model="ir.ui.view">
+        <field name="name">crm.alima.engagements.tree</field>
+        <field name="model">crm.alima.engagements</field>
+        <field name="arch" type="xml">
+            <tree string="liste des Engagements" colors="red:statut_engagement=='inactif';" >
+                    <field name="donateur" />
+                    <field name="code_media"  string='Campagne'/>
+                    <field name="code_media_origine"  string="Campagne d'origine"/>
+                    <field name="periodicite" />
+                    <field name="statut_engagement" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="crm_alima_engagements_form" model="ir.ui.view">
+        <field name="name">crm.alima.engagements.form</field>
+        <field name="model">crm.alima.engagements</field>
+        <field name="arch" type="xml">
+            <form string="Formulaire Engagements">
+                <sheet>
+                    <group>
+                        <field name="donateur" />
+                        <field name="code_media"  string='Campagne'/>
+                        <field name="code_media_origine" string="Campagne d'origine" />
+                        <field name="periodicite" />
+                        <field name="statut_engagement" />
+                        <field name="date_accord_mandat" />
+                        <field name="date_engagement_mandat" />
+                        <field name="date_fin_mandat" />
+                        <field name="date_fin_engagement" />
+                        <field name="motif_fin_engagement" />
+                        <field name="code_media_engagement_modifie" string='Campagne engagement modifie'/>
+                        <field name="montant" />
+                        <field name="date_premier_prelevement" />
+                        <field name="date_dernier_prelevement" />
+                        <field name="montant_supplementaire_prochain_prelevement" />
+                        <field name="date_prochain_prelevement" />
+                        <field name="nom_banque" />
+                        <field name="numero_iban" />
+                        <field name="code_bic" />
+                        <field name="code_identifiant_debiteur" />
+                        <field name="reference_unique_mandat" />
+                        <field name="identifiant_cb" />
+                        <field name="date_expiration_cb" />
+                        <field name="remarques" />
+                        <field name="id_matricule" />
+                        <field name="motif_modification" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="crm_alima_engagements_search_view">
+        <field name="name">crm.alima.engagements.search</field>
+        <field name="model">crm.alima.engagements</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="id"/>
+                <field name="donateur" string="Code"/>
+                <field name="lastname" string="Nom Donateur"/>
+                <field name="firstname" string="Prénom Donateur"/>
+            </search>
+        </field>
+    </record>
+
+</odoo>  
+    
+     
+     
+         
+     
+     
+     
+       
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+    

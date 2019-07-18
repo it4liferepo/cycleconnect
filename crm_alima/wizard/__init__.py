@@ -1,0 +1,1 @@
+from . import crm_alima_recu_fiscal_regulier

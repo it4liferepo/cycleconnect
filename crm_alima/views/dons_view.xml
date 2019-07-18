@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="crm_alima_don_tree" model="ir.ui.view">
+        <field name="name">crm.alima.don.tree</field>
+        <field name="model">crm.alima.don</field>
+        <field name="arch" type="xml">
+            <tree string="DON SOLTHIS">
+                    <field name="id" string="Numero du don"/>
+                    <field name="donateur" string="donateur"/>
+                    <field name="codeMedia" string='Campagne'/>
+                    <field name="date" string="Date de creation" />
+                    <field name="montantEur" string="Montant en Euro"/>
+                    <field name="forme_don" string="Forme du don" />
+                    <field name="nature_don" string="Nature du don"/>
+                    <field name="mode_versement" string="Mode de versement" />
+                    <field name="montantLettre" string="Montant en Lettre" />
+            </tree>
+        </field>
+    </record>
+    <record id="crm_alima_don_form" model="ir.ui.view">
+        <field name="name">crm.alima.don.form</field>
+        <field name="model">crm.alima.don</field>
+        <field name="arch" type="xml">
+            <form string="Liste Dons">
+                <header>
+                    <button 
+                        string="Envoyer le recu fiscal"
+                        name="action_send_rf" 
+                        type="object"
+                        class="oe_highlight"
+                        attrs="{'invisible':[('send_rf','=',False)]}"
+                    />
+                    <button 
+                        string="Imprimer le recu fiscal"
+                        name="action_print_rf" 
+                        type="object"
+                        class="oe_highlight"
+                        attrs="{'invisible':[('send_rf','=',False)]}"
+                    />
+                </header>
+                <sheet>
+                     <div class="oe_title" name="title">
+                         <h1>
+                            <field name="donateur"  string="Donateur" placeholder="Donateur"/>
+                        </h1>
+                    </div>
+                        <group >
+                            <group string="Paiement" col="2" colspan="2">
+                                <field name="types_dons" string="Types de Dons"/>
+                                <field name="codeMedia" string='Campagne' attrs="{'invisible': [('types_dons', '!=', 'campagne')]}"/>
+                                <field name="adhesion"  string="Adhesion"/>
+                                <field name="date"  string="Date du don"/>
+                                <field name="forme_don"  string="Forme du don"/>
+                                <field name="nature_don"  string="Nature du don"/>
+                                <field name="liberalite"  string="Libéralité"/>
+                                <field name="mode_versement"  string="Mode de versement"/>
+                                <field name="moyen_paiment"  string="Moyen de paiement"/>
+                                <field name="type_don" string='Type de don'/>
+                                <field name="entitee_receptrice" />
+                                <field name="send_rf" />
+                                <field name="commentaire"  string="Commentaire"/>
+                                <field name="date_recep"  string="date de réception du chèque" attrs="{'invisible': [('moyen_paiment', '!=', 'Cheque')]}"/>
+                                <field name="date_signature"  string="date de signature du chèque" attrs="{'invisible': [('moyen_paiment', '!=', 'Cheque')]}"/>
+                                <field name="date_remise"  string="date de remise du chèque" attrs="{'invisible': [('moyen_paiment', '!=', 'Cheque')]}"/>
+                                <field name="date_encais"  string="date d'encaisement du chèque" attrs="{'invisible': [('moyen_paiment', '!=', 'Cheque')]}"/>
+                                <field name="montantEur"  string="Montant don en Euro"/>
+                                <field name="montantLettre"  string="Montant en toutes lettres en euro"/>
+                                <field name="devis_origine"  string="Devise d'origine"/>
+                                <field name="taux_change"  string="Taux de change à la date du don"/>
+                                <field name="montant_dans_devise"  string="Montant dans la devise d'origine"/>
+                                <field name="nom_banque"  string="Nom banque"/>
+                                <field name="numCheque"  string="N° chèque" attrs="{'invisible': [('moyen_paiment', '!=', 'Cheque')]}"/>
+                                <field name="remise_globale"  string="remise globale"/>
+                                <field name="montant_remise_globale"  string="montant de la remise globale"/>
+                                <field name="plateforme_paiement"  string="Plateforme de paiement"/>
+                                <!-- <field name="id_intersa"  string="ID Intersa"/> -->
+                                <!-- <field name="url_intersa"  string="Url Intersa" widget="url"/> -->
+                            </group>
+                            <group string="Reçu fiscal" col="2" colspan="1">
+                                <field name="parametreRF"  string="Paramètre RF"/>
+                                <field name="NumRecuFiscal"  string="N° Reçu fiscal" />
+                                <field name="dateEdition"  string="Date édition" />
+                                <field name="dateEnvoi"  string="Date envoi RF" />
+                                <field name="commentaire_autre"  string="autres commentaire"/>
+                                <field name="article" />
+                                <field name="numeraire_mode_versement" />
+                                <field name="datetime_import" invisible="1"/>
+                                <field name="hello_asso" />
+                            </group>
+                        </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="crm_alima_view_filter_don" model="ir.ui.view">
+        <field name="model">crm.alima.don</field>
+            <field name="arch" type="xml">
+            <search>
+                <field name="id"/>
+                <field name="codeMedia" string='Campagne'/>
+                <field name="date" string="date du don"/>
+                <field name="donateur" string="code donateur"/>
+                <field name="datetime_import" string="Date d'import"/>
+                <separator/>
+                <filter name="group_forme_don" string="forme du don"
+                    context="{'group_by': 'forme_don'}"/>
+                <filter name="group_nature_don" string="nature du don"
+                    context="{'group_by': 'nature_don'}"/>
+                <filter name="group_liberalite" string="liberalite du don"
+                    context="{'group_by': 'liberalite'}"/>
+                <filter name="group_mode_versement" string="mode de versement du don"
+                    context="{'group_by': 'mode_versement'}"/>
+                <filter name="group_plateforme_paiement" string="plateforme paiement de versement du don"
+                    context="{'group_by': 'plateforme_paiement'}"/>
+                <filter name="group_donateur" string="donateur"
+                    context="{'group_by': 'donateur'}"/>
+                <filter name="group_moyen_paiment" string="moyen de paiment"
+                    context="{'group_by': 'moyen_paiment'}"/>
+            </search>
+        </field>
+    </record>
+    <record id="crm_alima_don_graph_mode" model="ir.ui.view">
+    <field name="model">crm.alima.don</field>
+    <field name="arch" type="xml">
+    <graph type="bar">
+    <field name="mode_versement" />
+    <field name="montantEur" type="measure" />
+    </graph>
+    </field>
+</record>
+</odoo>

@@ -1,0 +1,4110 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* crm_alima
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-08 14:39+0000\n"
+"PO-Revision-Date: 2019-07-08 14:42+0000\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2.3\n"
+"Last-Translator: \n"
+"Language: en\n"
+
+#. module: crm_alima
+#: model:mail.template,body_html:crm_alima.email_template_edi_recu_fiscal_ponctuel
+msgid ""
+"\n"
+"\n"
+"<p style=\"margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida "
+"Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">Bonjour Aliou, je "
+"vous envoie ton recu fiscal du mois et vous en souhaite une bonne réception."
+"</p>\n"
+msgstr ""
+
+#. module: crm_alima
+#: code:addons/crm_alima/models/crm_alima_import_don_credit_coop.py:241
+#: code:addons/crm_alima/models/crm_alima_import_donateur_credit_coop.py:410
+#: code:addons/crm_alima/models/crm_alima_import_engagement.py:155
+#: code:addons/crm_alima/models/crm_alima_import_rejet_prelevement.py:132
+#, python-format
+msgid "(re)charger le fichier d'import"
+msgstr "(re)load the import file"
+
+#. module: crm_alima
+#: selection:crm.alima.engagement.template,periodicite:0
+#: selection:crm.alima.engagements,periodicite:0
+msgid "1 mois"
+msgstr "1 Month"
+
+#. module: crm_alima
+#: selection:crm.alima.engagement.template,periodicite:0
+#: selection:crm.alima.engagements,periodicite:0
+msgid "12 mois"
+msgstr "12 Months"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "1er don : code media"
+msgstr "1st donation: media cde"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "1er don : date"
+msgstr "1st donation: date"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "1er don : montant"
+msgstr "1st donation: amount"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "1er don hors PA : code media"
+msgstr "1st donation excluding AD: media code"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "1er don hors PA : date"
+msgstr "1st donation excluding AD: date"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "1st donation excluding AD : amount"
+msgstr ""
+
+#. module: crm_alima
+#: selection:crm.alima.engagement.template,periodicite:0
+#: selection:crm.alima.engagements,periodicite:0
+msgid "2 mois"
+msgstr "2 months"
+
+#. module: crm_alima
+#: selection:crm.alima.engagement.template,periodicite:0
+#: selection:crm.alima.engagements,periodicite:0
+msgid "3 mois"
+msgstr "3 months"
+
+#. module: crm_alima
+#: selection:crm.alima.engagement.template,periodicite:0
+#: selection:crm.alima.engagements,periodicite:0
+msgid "4 mois"
+msgstr "4 months"
+
+#. module: crm_alima
+#: selection:crm.alima.engagement.template,periodicite:0
+#: selection:crm.alima.engagements,periodicite:0
+msgid "6 mois"
+msgstr "6 months"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalponctuel_document
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalregulier_document
+msgid ""
+"<br/>\n"
+"                        <span>Dr Richard Kojan</span><br/>\n"
+"                        <span>Président</span>"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalponctuel_document
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalregulier_document
+msgid ""
+"<span class=\"col-xs-7 titre\" style=\"margin-top:50px;font-weight:bold;text-"
+"align:center;font-size:25px;color:#235C9C;\">VOTRE RECU FISCAL</span>"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalponctuel_document
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalregulier_document
+msgid ""
+"<span style=\"color:#ccc;\">Association ALIMA</span><br/>\n"
+"                    <span style=\"color:#ccc;\">47 avenue Pasteur 93100 "
+"Montreuil</span><br/>\n"
+"                    <span style=\"color:#ccc;\">01 80 89 99 39 – </span>\n"
+"                    <span style=\"color:#235C9C;border-bottom:1px solid;"
+"\">www.alimaong.org</span>"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalponctuel_document
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalregulier_document
+msgid ""
+"<span style=\"margin:0px !important; font-weight:bold;text-align:center;font-"
+"size:25px;color:#235C9C;\">Reçu FISCAL</span>"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalponctuel_document
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalregulier_document
+msgid ""
+"<span style=\"margin:0px !important;\">\n"
+"                           ALIMA reconnaît avoir reçu au titre des dons et "
+"versements ouvrant droit à la réduction d’impôts :\n"
+"                       </span>"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalponctuel_document
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalregulier_document
+msgid ""
+"<span style=\"margin:0px !important;\"><strong>Bénéficiaire des versements</"
+"strong></span>"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalponctuel_document
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalregulier_document
+msgid "<span style=\"margin:0px !important;\"><strong>Donateur</strong></span>"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalponctuel_document
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalregulier_document
+msgid ""
+"<span style=\"margin:0px !important;\">ALIMA certifie sur l’honneur que les "
+"dons et versements qu’elle reçoit ouvrent droit à la réduction d’impôts "
+"prévue aux articles 200 et 238 bis du CGI.</span>"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalponctuel_document
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalregulier_document
+msgid "<span style=\"margin:0px !important;\">N° d’ordre : ALICOYYXXXXX</span>"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalponctuel_document
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalregulier_document
+msgid ""
+"<span style=\"margin:0px !important;font-weight:bold;text-align:center !"
+"important;font-size:25px;color:#235C9C;\">\n"
+"                                    ALIMA\n"
+"                                </span>"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalponctuel_document
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalregulier_document
+msgid ""
+"<span>\n"
+"                                <strong>Adresse :</strong> 47 avenue Pasteur "
+"93100 MONTREUIL\n"
+"                            </span><br/>\n"
+"                            <span>\n"
+"                                <strong>Objet :</strong> Aide alimentaire ou "
+"soins médicaux à des personnes en difficulté\n"
+"                            </span><br/>\n"
+"                            <span>\n"
+"                                <strong>Statut :</strong> Association "
+"humanitaire de loi 1901 à but non lucratif (1ère publication au J.O. du 13 "
+"juin 2009)\n"
+"                            </span><br/>"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalponctuel_document
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalregulier_document
+msgid "<span>Montreuil, le</span>"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalponctuel_document
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalregulier_document
+msgid "<span>le</span>"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalponctuel_document
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalregulier_document
+msgid ""
+"<strong style=\"margin:0px !important;\">\n"
+"                        <span>Date et signature</span>\n"
+"                    </strong><br/>"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalponctuel_document
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalregulier_document
+msgid "<strong>Date de paiement : </strong>"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalregulier_document
+msgid ""
+"<strong>En 2017, aidez-nous encore plus en demandant à un de vos proches de "
+"soutenir l’action d’ALIMA !</strong> Nous lançons cette initiative simple : "
+"nos soutiens nous aident à recruter de nouveaux soutiens. Si chaque donateur "
+"ALIMA recrute deux nouveaux donateurs, alors nous allons rapidement "
+"progresser et à moindre frais. Avec 8€ par mois par exemple, vous "
+"accompagnez une femme enceinte et son enfant jusqu’à l’âge de 2 ans pour lui "
+"permettre de se développer vacciné et en bonne santé."
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalponctuel_document
+msgid "<strong>Forme du don : </strong>"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalponctuel_document
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalregulier_document
+msgid "<strong>La somme de :</strong>"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalponctuel_document
+msgid "<strong>Moyen de paiement :</strong>"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalponctuel_document
+msgid "<strong>Nature du don :</strong>"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalponctuel_document
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalregulier_document
+msgid "<strong>Somme en toutes lettres : </strong>"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalregulier_document
+msgid ""
+"<strong>Votre soutien dans la durée est le moyen le plus efficace de nous "
+"accompagner.</strong> Le soutien régulier permet des actions qui exigent du "
+"temps pour améliorer durablement la vie des populations vulnérables. C’est "
+"l’assurance d’intervenir dès le déclenchement d’une crise sans attendre les "
+"premiers dons. Ce sont aussi de significatives économies réalisées sur les "
+"frais de collecte et de gestion au profit de nos programmes humanitaires."
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_don_credit_coop_a_corriger
+msgid "A corriger"
+msgstr "To correct"
+
+#. module: crm_alima
+#: selection:crm.alima.update.don,state:0
+msgid "A importer"
+msgstr "To import"
+
+#. module: crm_alima
+#: selection:crm.alima.don,moyen_paiment:0
+#: selection:crm.alima.don.template,moyen_paiment:0
+#: selection:crm.alima.rejet.prelevement,moyen_paiment:0
+msgid "Abandon de Créance"
+msgstr "Debt waiver"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,title:0
+#: selection:crm.alima.donateur.template,title:0
+msgid "Abbe"
+msgstr "Abbe"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_score_lai_ability
+msgid "Ability"
+msgstr ""
+
+#. module: crm_alima
+#: selection:crm.alima.don,forme_don:0
+#: selection:crm.alima.don.template,forme_don:0
+#: selection:crm.alima.rejet.prelevement,forme_don:0
+msgid "Acte authentique"
+msgstr "Authentic act"
+
+#. module: crm_alima
+#: selection:crm.alima.don,forme_don:0
+#: selection:crm.alima.don.template,forme_don:0
+#: selection:crm.alima.rejet.prelevement,forme_don:0
+msgid "Acte sous Seing privé"
+msgstr "Private deed"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,recence:0 selection:crm.alima.donateur,statut:0
+#: selection:crm.alima.donateur.template,statut:0
+#: selection:crm.alima.engagement.template,statut_engagement:0
+#: selection:crm.alima.engagements,statut_engagement:0
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_view_filter_donateur
+msgid "Actif"
+msgstr "Active"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_adhesion
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_adhesion
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_adhesion
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "Adhesion"
+msgstr "membership"
+
+#. module: crm_alima
+#: selection:crm.alima.contacts,type_contact:0
+msgid "Administratif"
+msgstr "Administrative"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Administration"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Adresse 1"
+msgstr "Adress 1"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_codebis
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_codebis
+msgid "Adresse 1 - Code bis"
+msgstr "code bis"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_codepostale
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_codepostale
+msgid "Adresse 1 - Code postal"
+msgstr "Postal code"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_complementadresse
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_complementadresse
+msgid "Adresse 1 - Complément adresse"
+msgstr "additional address"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_hammeau
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_hammeau
+msgid "Adresse 1 - Hammeau Lieu-dit"
+msgstr "Hamlet Location"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_complementnom
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_complementnom
+msgid "Adresse 1 - Libellé de la voie"
+msgstr "Adress 2 - wording of the track"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_voie
+msgid "Adresse 1 - N° de voie"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_country_id
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_country_id
+msgid "Adresse 1 - Pays"
+msgstr "Country"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_ville
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_ville
+msgid "Adresse 1 - Ville"
+msgstr "city"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Adresse 2"
+msgstr "Adress 2"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_codebis2
+msgid "Adresse 2 - Code bis"
+msgstr "code bis"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_codepostale2
+msgid "Adresse 2 - Code postal"
+msgstr "Postal code"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_complementadresse2
+msgid "Adresse 2 - Complément adresse"
+msgstr "additional address"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_hammeau2
+msgid "Adresse 2 - Hammeau Lieu-dit"
+msgstr "Adress 2 - Hamlet Location"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_complementnom2
+msgid "Adresse 2 - Libellé de la voie"
+msgstr "Adress 2 - wording of the track"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_voie2
+msgid "Adresse 2 - N° de voie"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_country_id2
+msgid "Adresse 2 - Pays"
+msgstr "Country"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_ville2
+msgid "Adresse 2 - Ville"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Adresse et Coordonnées"
+msgstr "Address and Contact Information"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Adresse postale"
+msgstr "Postal address"
+
+#. module: crm_alima
+#: selection:crm.alima.don,plateforme_paiement:0
+#: selection:crm.alima.don.template,plateforme_paiement:0
+#: selection:crm.alima.rejet.prelevement,plateforme_paiement:0
+msgid "Alvarum"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_deux_search
+#: model:ir.ui.view,arch_db:crm_alima.report_deux_search_un
+#: model:ir.ui.view,arch_db:crm_alima.report_trois_search
+msgid "Anciens donateurs"
+msgstr "Former donors"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_code_media_annees
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_un_annee
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_annee
+msgid "Annee"
+msgstr "Year"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_cinq_anneedon
+msgid "Annee don"
+msgstr "Donation year"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_deux_anneedon
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_trois_anneedon
+msgid "Annee du don"
+msgstr "Donation year"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_quatre_annee_anneepremierdon
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_trois_anneepremierdon
+msgid "Annee premier don"
+msgstr "Year of first donation"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,rf:0 selection:crm.alima.donateur.template,rf:0
+msgid "Annuel"
+msgstr "Annual"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_donateur_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_engagement_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_rejet_prelevement_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_update_don_form
+msgid "Annuler"
+msgstr "Cancel"
+
+#. module: crm_alima
+#: selection:crm.alima.import.don.credit.coop,state:0
+#: selection:crm.alima.import.donateur.credit.coop,state:0
+#: selection:crm.alima.import.engagement,state:0
+#: selection:crm.alima.import.rejet.prelevement,state:0
+msgid "Annulé"
+msgstr "Canceled"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,type_de_personne:0
+#: selection:crm.alima.donateur.template,type_de_personne:0
+#: model:ir.ui.view,arch_db:crm_alima.report_deux_search
+#: model:ir.ui.view,arch_db:crm_alima.report_deux_search_un
+msgid "Anonyme"
+msgstr "Anonymous"
+
+#. module: crm_alima
+#: selection:crm.alima.don,liberalite:0
+#: selection:crm.alima.don.template,liberalite:0
+#: selection:crm.alima.rejet.prelevement,liberalite:0
+msgid "Assurance-vie"
+msgstr "Life insurance"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_attachment_ids
+msgid "Attachments"
+msgstr ""
+
+#. module: crm_alima
+#: selection:crm.alima.don,devis_origine:0
+#: selection:crm.alima.don.template,devis_origine:0
+#: selection:crm.alima.donateur,traitement_adresse:0
+#: selection:crm.alima.rejet.prelevement,devis_origine:0
+msgid "Autre"
+msgstr "Other"
+
+#. module: crm_alima
+#: selection:crm.alima.don,moyen_paiment:0
+#: selection:crm.alima.don.template,moyen_paiment:0
+#: selection:crm.alima.rejet.prelevement,moyen_paiment:0
+msgid "Autre(s)"
+msgstr "Other(s)"
+
+#. module: crm_alima
+#: selection:crm.alima.don,forme_don:0 selection:crm.alima.don,nature_don:0
+#: selection:crm.alima.don,plateforme_paiement:0
+#: selection:crm.alima.don.template,forme_don:0
+#: selection:crm.alima.don.template,nature_don:0
+#: selection:crm.alima.don.template,plateforme_paiement:0
+#: selection:crm.alima.engagement.template,motif_fin_engagement:0
+#: selection:crm.alima.engagements,motif_fin_engagement:0
+#: selection:crm.alima.rejet.prelevement,forme_don:0
+#: selection:crm.alima.rejet.prelevement,nature_don:0
+#: selection:crm.alima.rejet.prelevement,plateforme_paiement:0
+msgid "Autres"
+msgstr "Others"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_deux_search
+msgid "Avec prelevement"
+msgstr "With debit"
+
+#. module: crm_alima
+#: selection:crm.alima.import.don.credit.coop,state:0
+#: selection:crm.alima.import.donateur.credit.coop,state:0
+#: selection:crm.alima.import.engagement,state:0
+#: selection:crm.alima.import.rejet.prelevement,state:0
+msgid "Brouillon"
+msgstr "Draft"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,sexe:0
+#: selection:crm.alima.donateur.template,sexe:0
+msgid "C F"
+msgstr ""
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,sexe:0
+#: selection:crm.alima.donateur.template,sexe:0
+msgid "C M"
+msgstr ""
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,sexe:0
+#: selection:crm.alima.donateur.template,sexe:0
+msgid "C mixte"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_option_CNIL
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_option_CNIL
+msgid "CNIL"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_don_credit_coop_id
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_donateur_credit_coop_id
+msgid "CREDIT COOP"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model,name:crm_alima.model_crm_alima_reports
+#: model:ir.model,name:crm_alima.model_crm_alima_tableau_bord
+#: model:ir.ui.menu,name:crm_alima.crm_alima_menu
+msgid "CRM ALIMA"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_code_media_canal
+msgid "Canal"
+msgstr "Channel"
+
+#. module: crm_alima
+#: selection:crm.alima.don,moyen_paiment:0
+#: selection:crm.alima.don.template,moyen_paiment:0
+#: selection:crm.alima.rejet.prelevement,moyen_paiment:0
+msgid "Carte bancaire"
+msgstr "Bank card"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Catégories particulières"
+msgstr "Special categories"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalponctuel_document
+msgid ""
+"Chaque jour, ALIMA soigne plus de 1 500 patients, dont 80% sont des enfants "
+"de moins de 5 ans et des femmes enceintes et allaitantes. Face à une "
+"augmentation des besoins, nous continuons à tout faire pour y répondre en "
+"ouvrant de nouveaux projets."
+msgstr ""
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,traitement_adresse:0
+msgid "Charade-Estocade"
+msgstr ""
+
+#. module: crm_alima
+#: selection:crm.alima.don,moyen_paiment:0
+#: selection:crm.alima.don.template,moyen_paiment:0
+#: selection:crm.alima.rejet.prelevement,moyen_paiment:0
+msgid "Chèque"
+msgstr "Check"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_cinq
+#: model:ir.ui.view,arch_db:crm_alima.report_six
+msgid "Cinq"
+msgstr "Five"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_title
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_title
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_donateur_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_view_filter_donateur
+msgid "Civilité"
+msgstr "Civility"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_donateur_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_engagement_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_rejet_prelevement_form
+msgid "Clear Line"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_engagements_search_view
+msgid "Code"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_code_bic
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_code_bic
+msgid "Code BIC"
+msgstr "BIC code"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_tree
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "Code Media"
+msgstr "Media code"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Code bis"
+msgstr "code bis"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_code_identifiant_debiteur
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_code_identifiant_debiteur
+msgid "Code identifiant débiteur"
+msgstr "Debtor identification code"
+
+#. module: crm_alima
+#: model:ir.actions.act_window,name:crm_alima.action_crm_alima_code_media
+#: model:ir.model,name:crm_alima.model_crm_alima_code_media
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_code_media_name
+#: model:ir.ui.menu,name:crm_alima.crm_alima_code_media
+msgid "Code media"
+msgstr "Media code"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_code_media_engagement
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_template_code_media_engagement
+msgid "Code media engagement"
+msgstr "Commitment media code"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Code postal"
+msgstr "Postal code"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_kanban
+msgid "Code:"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.module.category,name:crm_alima.module_category_dons
+msgid "Collecte Dons"
+msgstr "Donations Collection"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_commentaire
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_commentaire_autre
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_commentaire
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_commentaire_autre
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_commentaire
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_commentaire_autre
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "Commentaire"
+msgstr "Comment"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_score_lai_commentaires_LAI
+msgid "Commentaires LAI"
+msgstr "LAI Comments"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_comm_preference_contrat
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_comm_preference_contrat
+msgid "Commentaires préférences de contact"
+msgstr "Contact preferences comments"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_com_sollicit
+msgid "Commentaires solliciteur"
+msgstr "Comments solicitor"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Complément adresse"
+msgstr "additional address"
+
+#. module: crm_alima
+#: code:addons/crm_alima/models/crm_alima_don.py:196
+#, python-format
+msgid "Compose Email"
+msgstr ""
+
+#. module: crm_alima
+#: selection:crm.alima.don,moyen_paiment:0
+#: selection:crm.alima.don.template,moyen_paiment:0
+#: selection:crm.alima.rejet.prelevement,moyen_paiment:0
+msgid "Compte bancaire"
+msgstr "Bank account"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_donateur_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_engagement_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_rejet_prelevement_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_update_don_form
+msgid "Confirmer"
+msgstr "Confirm"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_connexion
+msgid "Connexion"
+msgstr "Connection"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,freq_communication:0
+msgid "Consolidé"
+msgstr "Consolidated"
+
+#. module: crm_alima
+#: model:ir.model,name:crm_alima.model_crm_alima_contacts
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_contacts
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_contacts
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Contacts"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.ir_attachment_view_search_inherit_crm_alima
+msgid "Content"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_contacts_contenu
+msgid "Contenu"
+msgstr "Content"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Coordonnées"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+msgid "Correction"
+msgstr ""
+
+#. module: crm_alima
+#: selection:crm.alima.contacts,canal:0
+msgid "Courrier"
+msgstr "Mail"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_courrier
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_courrier
+msgid "Courrier (préférence de réception par an)"
+msgstr "Mail (reception preference per year)"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_code_media_create_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_contacts_create_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_create_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_create_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_create_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_create_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_create_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_create_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_don_credit_coop_create_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_donateur_credit_coop_create_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_engagement_create_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_rejet_prelevement_create_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_recu_fiscal_regulier_template_create_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_create_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_template_create_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_score_lai_create_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_update_don_create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_code_media_create_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_contacts_create_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_create_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_create_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_create_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_create_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_create_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_create_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_don_credit_coop_create_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_donateur_credit_coop_create_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_engagement_create_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_rejet_prelevement_create_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_recu_fiscal_regulier_template_create_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_create_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_template_create_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_score_lai_create_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_update_don_create_date
+msgid "Created on"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_view_filter_donateur
+msgid "Créateur"
+msgstr "Creator"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Crée le"
+msgstr "Created on"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Crée par"
+msgstr "Created by"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_quatre_annee_nombre_cum
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_quatre_mois_nombre_cum
+#: model:ir.model.fields,help:crm_alima.field_crm_alima_dashboard_quatre_annee_nombre_cum
+#: model:ir.model.fields,help:crm_alima.field_crm_alima_dashboard_quatre_mois_nombre_cum
+msgid "Cumul des nouveaux donateurs"
+msgstr "New donor cumul"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalregulier_document
+msgid ""
+"C’est grâce à votre soutien que nous avons pu apporter une aide médicale en "
+"urgence sur plusieurs grandes crises humanitaires au cours de l’année 2016, "
+"notamment au Nord Nigéria où ALIMA a pris en charge 8 000 enfants malnutris, "
+"effectué plus de 35 000 consultations et vacciné 27 000 enfants contre la "
+"rougeole. Malheureusement, l’urgence perdure et nous restons mobilisés afin "
+"de venir en aide aux populations les plus à risque de mortalité."
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalponctuel_document
+msgid ""
+"C’est pourquoi au nom de l'ensemble de l’équipe d’ALIMA, je tiens à vous "
+"remercier chaleureusement pour votre générosité. C’est grâce à votre soutien "
+"que nos équipes médicales et logistiques sont en mesure de mener des actions "
+"de soins auprès des populations les plus vulnérables."
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_tree
+msgid "DON ALIMA"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_contacts_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_un_datedon
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_score_lai_date_debut
+msgid "Date"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_recu_fiscal_regulier_template_date_from
+msgid "Date Debut"
+msgstr "Start date"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_recu_fiscal_regulier_template_date_to
+msgid "Date Fin"
+msgstr "End date"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_datetime_import
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_datetime_import
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_datetime_import
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_datetime_import
+msgid "Date Import"
+msgstr "Import date"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_mois_annees
+msgid "Date Naissance(Mois et Annees)"
+msgstr "Birth Date (Months and Years)"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_date_accord_mandat
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_date_accord_mandat
+msgid "Date d'accord du mandat"
+msgstr "Mandate agreement date"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_date_encais
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_date_encais
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_date_encais
+msgid "Date d'encaissement du chèque"
+msgstr "Check cashing date"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_date_engagement_mandat
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_date_engagement_mandat
+msgid "Date d'engagement du mandat"
+msgstr "Mandate engagement date"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_date_expiration_cb
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_date_expiration_cb
+msgid "Date d'expiration CB"
+msgstr "CB expiry date"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_view_filter_don
+msgid "Date d'import"
+msgstr "Date of import"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_tree
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+msgid "Date de creation"
+msgstr "Creation date"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_date_fin_mandat
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_date_fin_mandat
+msgid "Date de fin du mandat"
+msgstr "End date of the mandate"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_dateNaissance
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_dateNaissance
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_donateur_credit_coop_form
+msgid "Date de naissance"
+msgstr "Birth date"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_date_remise
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_date_remise
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_date_remise
+msgid "Date de remise du chèque"
+msgstr "Check delivery date"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_date_recep
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_date_recep
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_date_recep
+msgid "Date de récéption du chèque"
+msgstr "Check receipt date"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_date_signature
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_date_signature
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_date_signature
+msgid "Date de signature du chèque"
+msgstr "date of signature of the check"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_contacts_date_traitement
+msgid "Date de traitement"
+msgstr "Processing date"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_Date_traitement_adresse
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Date de traitement adresse"
+msgstr "Address processing date"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_dateDernierDon
+msgid "Date dernier don"
+msgstr "Date of last donation"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_dateDernierDonHPA
+msgid "Date dernier don HPA"
+msgstr "Last HPA donation date"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_date_dernier_prelevement
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_date_dernier_prelevement
+msgid "Date dernier prélèvement"
+msgstr "Date of last debit"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_cinq_datedon
+msgid "Date don"
+msgstr "Donation date"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_deux_datedon
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_trois_datedon
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_date
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "Date du don"
+msgstr "Donation date"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_dateEnvoi
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_dateEnvoi
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_dateEnvoi
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "Date envoi RF"
+msgstr "RF sending date"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_date_fin_engagement
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_date_fin_engagement
+msgid "Date fin engagement"
+msgstr "Commitment end date"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_date_from
+msgid "Date from"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_don_credit_coop_datetime
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_donateur_credit_coop_datetime
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_engagement_datetime
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_rejet_prelevement_datetime
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_update_don_datetime
+msgid "Date import"
+msgstr "Import date"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_deux_datepremierdon
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_datePremierDon
+msgid "Date premier don"
+msgstr "First donation date"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_datePremierDonHPA
+msgid "Date premier don HPA"
+msgstr "HPA first donation date"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_date_premier_prelevement
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_date_premier_prelevement
+msgid "Date premier prélèvement"
+msgstr "Date of First debit"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_date_prochain_prelevement
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_date_prochain_prelevement
+msgid "Date prochain prélèvement"
+msgstr "Date of Next debit"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_date_rejet
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_template_date_rejet
+msgid "Date rejet"
+msgstr "Rejection date"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_date_to
+msgid "Date to"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "Date édition"
+msgstr "Edition date"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Delete"
+msgstr ""
+
+#. module: crm_alima
+#: selection:crm.alima.contacts,type_contact:0
+msgid "Demande information"
+msgstr "Information request"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Dernier don : code media"
+msgstr "Last donation: media code"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Dernier don : date"
+msgstr "Last donation: date"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Dernier don : montant"
+msgstr "Last donation: amount"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Dernier don hors PA : code media"
+msgstr "Last donation excluding AD: media code"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Dernier don hors PA : date"
+msgstr "Last donation excluding AD: date"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Dernier don hors PA : montant"
+msgstr "Last donation excluding AD: amount"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_don_credit_coop_description
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_donateur_credit_coop_description
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_engagement_description
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_rejet_prelevement_description
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_update_don_description
+msgid "Description"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_devis_origine
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_devis_origine
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_devis_origine
+msgid "Devis d'origine"
+msgstr "Original quote"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "Devise d'origine"
+msgstr "Original currency"
+
+#. module: crm_alima
+#: selection:crm.alima.contacts,type_contact:0
+msgid "Discussion"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_code_media_display_name
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_contacts_display_name
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_cinq_display_name
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_deux_display_name
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_quatre_annee_display_name
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_quatre_mois_display_name
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_trois_display_name
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_un_display_name
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_display_name
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_display_name
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_display_name
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_display_name
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_display_name
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_display_name
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_don_credit_coop_display_name
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_donateur_credit_coop_display_name
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_engagement_display_name
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_rejet_prelevement_display_name
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_recu_fiscal_regulier_template_display_name
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_display_name
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_template_display_name
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_score_lai_display_name
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_update_don_display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Documents"
+msgstr ""
+
+#. module: crm_alima
+#: selection:crm.alima.don,liberalite:0
+#: selection:crm.alima.don.template,liberalite:0
+#: selection:crm.alima.rejet.prelevement,liberalite:0
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_don_credit_coop_don_credit_coop_line
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_don
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_template_don
+msgid "Don"
+msgstr "Donation"
+
+#. module: crm_alima
+#: model:ir.model,name:crm_alima.model_crm_alima_don_template
+msgid "Don Template"
+msgstr ""
+
+#. module: crm_alima
+#: selection:crm.alima.don,forme_don:0
+#: selection:crm.alima.don.template,forme_don:0
+#: selection:crm.alima.rejet.prelevement,forme_don:0
+msgid "Don manuel"
+msgstr "Manual donation"
+
+#. module: crm_alima
+#: model:ir.actions.act_window,name:crm_alima.action_crm_alima_donateur
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_donateur_credit_coop_donateur_credit_coop_line
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_donateur
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_template_donateur
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+msgid "Donateur"
+msgstr "Donor"
+
+#. module: crm_alima
+#: model:ir.model,name:crm_alima.model_crm_alima_donateur
+msgid "Donateur ALIMA"
+msgstr "ALIMA donor"
+
+#. module: crm_alima
+#: model:ir.model,name:crm_alima.model_crm_alima_donateur_template
+msgid "Donateur ALIMA Template"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.menu,name:crm_alima.crm_alima_donateur
+msgid "Donateurs"
+msgstr "Donors"
+
+#. module: crm_alima
+#: selection:crm.alima.don,liberalite:0
+#: selection:crm.alima.don.template,liberalite:0
+#: selection:crm.alima.rejet.prelevement,liberalite:0
+msgid "Donation"
+msgstr ""
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,montant:0
+msgid "Donor"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.actions.act_window,name:crm_alima.action_crm_alima_don
+#: model:ir.model,name:crm_alima.model_crm_alima_don
+#: model:ir.ui.menu,name:crm_alima.crm_alima_don
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Dons"
+msgstr "Donations"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_un_moyen
+msgid "Dons moyens"
+msgstr "Donations averages"
+
+#. module: crm_alima
+#: model:ir.model.fields,help:crm_alima.field_crm_alima_dashboard_un_moyen
+msgid "Dons moyenss"
+msgstr "Donations averages"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,statut:0
+#: selection:crm.alima.donateur.template,statut:0
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_view_filter_donateur
+msgid "Doublon"
+msgstr "Duplicate"
+
+#. module: crm_alima
+#: selection:crm.alima.engagement.template,motif_fin_engagement:0
+#: selection:crm.alima.engagements,motif_fin_engagement:0
+msgid "Décision ALIMA"
+msgstr "ALIMA decision"
+
+#. module: crm_alima
+#: selection:crm.alima.don,forme_don:0
+#: selection:crm.alima.don.template,forme_don:0
+#: selection:crm.alima.rejet.prelevement,forme_don:0
+msgid "Déclaration de don manuel"
+msgstr "Manual donation statement"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,statut:0
+#: selection:crm.alima.donateur.template,statut:0
+msgid "Décédé"
+msgstr "Dead"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_engagement_id
+msgid "ENGAGEMENT"
+msgstr "COMMITMENT"
+
+#. module: crm_alima
+#: selection:crm.alima.don,devis_origine:0
+#: selection:crm.alima.don.template,devis_origine:0
+#: selection:crm.alima.rejet.prelevement,devis_origine:0
+msgid "EUR"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_echange_mail
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_echange_mail
+msgid "Echange adresse email"
+msgstr "Email address exchange"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_email3
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_email3
+msgid "Email"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_email
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_email
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Email 1"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_email2
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_email2
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Email 2"
+msgstr ""
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,statut_soll:0
+msgid "En cours"
+msgstr "Ongoing"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalponctuel_document
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalregulier_document
+msgid ""
+"En espérant pouvoir compter à nouveau sur votre soutien à l’avenir, je vous "
+"remercie chaleureusement."
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_engagement_engagement_line
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_engagement
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_template_engagement
+msgid "Engagement"
+msgstr "Commitment"
+
+#. module: crm_alima
+#: model:ir.model,name:crm_alima.model_crm_alima_engagement_template
+msgid "Engagement Template"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.actions.act_window,name:crm_alima.action_crm_alima_engagements
+#: model:ir.model,name:crm_alima.model_crm_alima_engagements
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_engagements
+#: model:ir.ui.menu,name:crm_alima.crm_alima_engagements
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Engagements"
+msgstr "Commitments"
+
+#. module: crm_alima
+#: selection:crm.alima.code.media,sens:0
+#: selection:crm.alima.contacts,sens_solliciteur:0
+msgid "Entrant"
+msgstr "Incoming"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+msgid "Envoyer le recu fiscal"
+msgstr "Send the tax receipt"
+
+#. module: crm_alima
+#: selection:crm.alima.engagements,motif_modification:0
+msgid "Erreur"
+msgstr "Error"
+
+#. module: crm_alima
+#: code:addons/crm_alima/models/crm_alima_import_don_credit_coop.py:164
+#: code:addons/crm_alima/models/crm_alima_import_donateur_credit_coop.py:319
+#: code:addons/crm_alima/models/crm_alima_import_engagement.py:73
+#: code:addons/crm_alima/models/crm_alima_import_rejet_prelevement.py:48
+#: code:addons/crm_alima/models/crm_alima_update_don.py:54
+#, python-format
+msgid "Erreur d'import, vérifier le séparateur et le fichier chargé"
+msgstr "Import error, check the separator and the loaded file"
+
+#. module: crm_alima
+#: code:addons/crm_alima/exceptions.py:11
+#, python-format
+msgid "Error(s) with partner %d's name."
+msgstr ""
+
+#. module: crm_alima
+#: selection:crm.alima.don,moyen_paiment:0
+#: selection:crm.alima.don.template,moyen_paiment:0
+#: selection:crm.alima.rejet.prelevement,moyen_paiment:0
+msgid "Espèces"
+msgstr "Cash"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_evenement
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_evenement
+msgid "Evénement"
+msgstr "Event"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_option_fax
+msgid "FAX"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_fax
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Fax"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.recu_fiscal_regulier_template
+msgid "Fermer"
+msgstr "Close"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_don_credit_coop_filename
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_donateur_credit_coop_filename
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_engagement_filename
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_rejet_prelevement_filename
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_update_don_filename
+msgid "File Name"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_firstname
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_firstname
+msgid "Firstname"
+msgstr "First name"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_donateur_credit_coop_form
+msgid "Fonction"
+msgstr "Function"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_forme_don
+msgid "Forme don"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_tree
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "Forme du don"
+msgstr "Form of donation"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_code_media_form
+msgid "Formulaire Code Media"
+msgstr "Media Code Form"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_donateur_credit_coop_form
+msgid "Formulaire Donateur"
+msgstr "Donor form"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_engagements_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_engagement_form
+msgid "Formulaire Engagements"
+msgstr "Commitments form"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_update_don_form
+msgid "Formulaire Modification Don"
+msgstr "Donation Modification Form"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "Formulaire Rejet de Prelevement"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_donateur_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_engagement_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_rejet_prelevement_form
+msgid "Formulaire d'import"
+msgstr "Import form"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_rejet_prelevement_form
+msgid "Formulaire rejet prelevement"
+msgstr "Debit rejection form"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_freq_communication
+msgid "Fréquence de communication"
+msgstr "Communication frequency"
+
+#. module: crm_alima
+#: selection:crm.alima.don,devis_origine:0
+msgid "GBP"
+msgstr ""
+
+#. module: crm_alima
+#: selection:crm.alima.don,devis_origine:0
+#: selection:crm.alima.don.template,devis_origine:0
+#: selection:crm.alima.rejet.prelevement,devis_origine:0
+msgid "GNF"
+msgstr ""
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,montant:0
+msgid "Global Leader"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_grand_donateur_potentiel
+msgid "Grand Donateur"
+msgstr "Major Donor"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_tree
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_view_filter_donateur
+msgid "Grand donateur potentiel"
+msgstr "Major potential donor"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,recence:0
+msgid "Grands inactifs"
+msgstr "Large inactive"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Hammeau Lieu-dit"
+msgstr "Hamlet Location"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Historique dons"
+msgstr "Donations history"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_code_media_id
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_contacts_id
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_cinq_id
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_deux_id
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_quatre_annee_id
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_quatre_mois_id
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_trois_id
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_un_id
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_id
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_id
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_id
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_id
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_id
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_id
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_don_credit_coop_id
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_donateur_credit_coop_id
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_engagement_id
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_rejet_prelevement_id
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_recu_fiscal_regulier_template_id
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_id
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_template_id
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_score_lai_id
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_update_don_id
+msgid "ID"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_id_data
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_engagements_form
+msgid "ID Data"
+msgstr "Data ID"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_id_intersa
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_id_intersa
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_id_intersa
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "ID Intersa"
+msgstr "Intersa ID"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_idcontact
+msgid "ID contact de la fiche active"
+msgstr "Contact ID of the active form"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_kanban
+msgid "ID:"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model,name:crm_alima.model_crm_alima_import_don_credit_coop
+msgid "IMPORT DON CREDIT COOP"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model,name:crm_alima.model_crm_alima_import_donateur_credit_coop
+msgid "IMPORT DONATEUR CREDIT COOP"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model,name:crm_alima.model_crm_alima_import_engagement
+msgid "IMPORT ENGAGEMENT"
+msgstr "Commitment import"
+
+#. module: crm_alima
+#: model:ir.model,name:crm_alima.model_crm_alima_import_rejet_prelevement
+msgid "IMPORT Rejet Prelevement"
+msgstr "Debit rejection import"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_id_donateur
+msgid "Id"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_id_bulletin
+msgid "Id Bulletin"
+msgstr "Newsletter Id"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_newsletter
+msgid "S’abonner à la newsletter"
+msgstr "Subscribe to the newsletter"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_remerciement
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_view_filter_donateur
+msgid "Remerciement Envoyé"
+msgstr "Thanks sent"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_view_filter_donateur
+msgid "Remerciement Non Envoyé"
+msgstr "Thanks not sent"
+
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_id_data
+msgid "Id Data"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_id_matricule
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_id_matricule
+msgid "Id Matricule"
+msgstr "Registration number Id"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_id_bulletin
+msgid "Id bulletin"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_donateur_credit_coop_form
+msgid "Id donateur existant"
+msgstr "Existing donor Id"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_template_id_intersa
+msgid "Id intersa"
+msgstr "Intersa ID"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_identifiant_cb
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_identifiant_cb
+msgid "Identifiant CB"
+msgstr "CB identifier"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_identifiant_donateur
+msgid "Identifiant Donateur"
+msgstr "Donor ID"
+
+#. module: crm_alima
+#: model:ir.ui.menu,name:crm_alima.crm_alima_util
+msgid "Import"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.actions.act_window,name:crm_alima.action_crm_alima_import
+#: model:ir.ui.menu,name:crm_alima.crm_alima_import
+msgid "Import Don"
+msgstr "Donation import"
+
+#. module: crm_alima
+#: model:ir.actions.act_window,name:crm_alima.action_crm_alima_import_donateur
+#: model:ir.ui.menu,name:crm_alima.crm_alima_import_donateur
+msgid "Import Donateur"
+msgstr "Donor Import"
+
+#. module: crm_alima
+#: model:ir.actions.act_window,name:crm_alima.action_crm_alima_import_engagement
+#: model:ir.ui.menu,name:crm_alima.crm_alima_import_engagement
+msgid "Import Engagement"
+msgstr "Commitment import"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_update_don_data
+msgid "Import File"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_don_credit_coop_data
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_donateur_credit_coop_data
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_engagement_data
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_rejet_prelevement_data
+msgid "Import PO"
+msgstr ""
+
+#. module: crm_alima
+#: selection:crm.alima.update.don,state:0
+msgid "Importation Annulé"
+msgstr "Canceled Import"
+
+#. module: crm_alima
+#: selection:crm.alima.update.don,state:0
+msgid "Importation Réussie"
+msgstr "Successful Import"
+
+#. module: crm_alima
+#: selection:crm.alima.import.don.credit.coop,state:0
+#: selection:crm.alima.import.donateur.credit.coop,state:0
+#: selection:crm.alima.import.engagement,state:0
+#: selection:crm.alima.import.rejet.prelevement,state:0
+msgid "Importé"
+msgstr "Imported"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+msgid "Imprimer le recu fiscal"
+msgstr "Print the tax receipt"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Imprimer recu fiscal regulier"
+msgstr "Print regular tax receipt"
+
+#. module: crm_alima
+#: selection:crm.alima.engagement.template,statut_engagement:0
+#: selection:crm.alima.engagements,statut_engagement:0
+msgid "Inactif"
+msgstr "Inactive"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,recence:0
+msgid "Inactifs"
+msgstr "Inactive"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,recence:0
+msgid "Inactifs récents"
+msgstr "Recent inactive"
+
+#. module: crm_alima
+#: selection:crm.alima.engagement.template,motif_fin_engagement:0
+#: selection:crm.alima.engagements,motif_fin_engagement:0
+msgid "Incidents de paiement"
+msgstr "Payment incidents"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Informations donateur"
+msgstr "Donor informations"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_donateur_credit_coop_form
+msgid "Informations générales"
+msgstr "General informations"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_score_lai_interest
+msgid "Interest"
+msgstr ""
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,montant:0
+msgid "Investisseur / Fondateur"
+msgstr "Investor / Founder"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalponctuel_document
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalregulier_document
+msgid ""
+"Je vous rappelle que vous pouvez joindre notre Service Donateurs à tout "
+"moment, par téléphone au<br/> <span style=\"color:#235C9C;border-bottom:1px "
+"solid #235C9C;\">01 80 89 99 39</span> ou par mail à l’adresse <span style="
+"\"color:#235C9C;border-bottom:1px solid #235C9C;\">collecte@alima-ngo.org</"
+"span>."
+msgstr ""
+
+#. module: crm_alima
+#: selection:crm.alima.contacts,statut_telemark:0
+msgid "Joint Non-Utile"
+msgstr "Joined Not Useful"
+
+#. module: crm_alima
+#: selection:crm.alima.contacts,statut_telemark:0
+msgid "Joint Utile"
+msgstr "Joined Useful"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalponctuel_document
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalregulier_document
+msgid ""
+"J’ai le plaisir de vous envoyer votre reçu fiscal récapitulant l’ensemble de "
+"vos dons versés à ALIMA en 2017. Il vous permettra, si vous êtes imposable, "
+"<span style=\"border-bottom:1px solid #000;\">de déduire jusqu’à 75% de vos "
+"dons en impôts</span>."
+msgstr ""
+
+#. module: crm_alima
+#: sql_constraint:crm.alima.score.lai:0
+msgid "La valeur de ability doivent etre inferieur à 5"
+msgstr ""
+
+#. module: crm_alima
+#: sql_constraint:crm.alima.score.lai:0
+msgid "La valeur de interest doit etre inferieur à 5"
+msgstr ""
+
+#. module: crm_alima
+#: sql_constraint:crm.alima.score.lai:0
+msgid "La valeur de linkage doit etre inferieur à 5"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_code_media___last_update
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_contacts___last_update
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_cinq___last_update
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_deux___last_update
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_quatre_annee___last_update
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_quatre_mois___last_update
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_trois___last_update
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_un___last_update
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don___last_update
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template___last_update
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur___last_update
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template___last_update
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template___last_update
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements___last_update
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_don_credit_coop___last_update
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_donateur_credit_coop___last_update
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_engagement___last_update
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_rejet_prelevement___last_update
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_recu_fiscal_regulier_template___last_update
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement___last_update
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_template___last_update
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_score_lai___last_update
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_update_don___last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_code_media_write_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_contacts_write_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_write_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_write_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_write_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_write_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_write_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_write_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_don_credit_coop_write_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_donateur_credit_coop_write_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_engagement_write_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_rejet_prelevement_write_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_recu_fiscal_regulier_template_write_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_template_write_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_write_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_score_lai_write_uid
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_update_don_write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_code_media_write_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_contacts_write_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_write_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_write_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_write_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_write_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_write_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_write_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_don_credit_coop_write_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_donateur_credit_coop_write_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_engagement_write_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_rejet_prelevement_write_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_recu_fiscal_regulier_template_write_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_template_write_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_write_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_score_lai_write_date
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_update_don_write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_lastname
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_lastname
+msgid "Lastname"
+msgstr "Last name"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_nombreDons
+msgid "Le nombre de don"
+msgstr "Number of donations"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_nombreDonsHPA
+msgid "Le nombre de don hors PA"
+msgstr "Number of donations excluding AD"
+
+#. module: crm_alima
+#: selection:crm.alima.don,liberalite:0
+#: selection:crm.alima.don.template,liberalite:0
+#: selection:crm.alima.rejet.prelevement,liberalite:0
+msgid "Legs"
+msgstr "Legacies"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Libellé de la voie"
+msgstr "wording of the track"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_liberalite
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_liberalite
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_liberalite
+msgid "Liberalite"
+msgstr "Liberality"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "Libéralité"
+msgstr "Liberality"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_score_lai_linkage
+msgid "Linkage"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_donateur_credit_coop_form
+msgid "Liste Donateurs"
+msgstr "Donors list"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+msgid "Liste Dons"
+msgstr "Donations List"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_engagement_form
+msgid "Liste Engagements"
+msgstr "Commitments list"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_rejet_prelevement_form
+msgid "Liste rejet prelevement"
+msgstr "Debit rejection list"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_dons
+msgid "Listes de dons"
+msgstr "Donation Lists"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,title:0
+#: selection:crm.alima.donateur.template,title:0
+msgid "M et M"
+msgstr "Mr and Mr"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,title:0
+#: selection:crm.alima.donateur.template,title:0
+msgid "M et Mme"
+msgstr "Mr. and Mrs."
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,title:0
+#: selection:crm.alima.donateur.template,title:0
+msgid "Madame"
+msgstr "Mrs"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,title:0
+#: selection:crm.alima.donateur.template,title:0
+msgid "Mademoiselle"
+msgstr "Miss"
+
+#. module: crm_alima
+#: selection:crm.alima.don,nature_don:0
+msgid "Mecenat de competences"
+msgstr "Mecenat of competences"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,montant:0
+msgid "Middle donor"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Mise à jour le"
+msgstr "Updated on"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Mise à jour par"
+msgstr "Updated by"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,title:0
+#: selection:crm.alima.donateur.template,title:0
+msgid "Mme et Mme"
+msgstr "Mrs and Mrs"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_deux_mode_versement
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_mode_versement
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_mode_versement
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_mode_versement
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_tree
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "Mode de versement"
+msgstr "Method of payment"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_deux_search
+msgid "Mode de versement NR"
+msgstr "Method of payment NR"
+
+#. module: crm_alima
+#: selection:crm.alima.engagements,motif_modification:0
+msgid "Modification"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_mois
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Mois"
+msgstr "Month"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Mois et annees"
+msgstr "Months and years"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_quatre_mois_moispremierdon
+msgid "Mois premier don"
+msgstr "First donation month"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,title:0
+#: selection:crm.alima.donateur.template,title:0
+msgid "Monsieur"
+msgstr "Mr"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_montant
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_montant
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_montant
+msgid "Montant"
+msgstr "Amount"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Montant Moyen"
+msgstr "Average amount"
+
+#. module: crm_alima
+#: model:ir.actions.act_window,name:crm_alima.action_crm_alima_donsanne_pivot
+msgid "Montant collecte par annee"
+msgstr "Amount collected per year"
+
+#. module: crm_alima
+#: model:ir.actions.act_window,name:crm_alima.action_crm_alima_donscanal_pivot
+#: model:ir.model,name:crm_alima.model_crm_alima_dashboard_trois
+#: model:ir.ui.menu,name:crm_alima.crm_alima_report_trois
+#: model:ir.ui.view,arch_db:crm_alima.report_trois_graph
+msgid "Montant collecte par canal"
+msgstr "Amount collected per channel"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "Montant dans la devise d'origine"
+msgstr "Amount in original currency"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_montantDernierDon
+msgid "Montant dernier don"
+msgstr "Last donation amount"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_montantDernierDonHPA
+msgid "Montant dernier don HPA"
+msgstr "Last HPA donation amount"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "Montant don en Euro"
+msgstr "Donation amount in Euro"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_deux_montant
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_trois_montant
+msgid "Montant dons Euro"
+msgstr "Donation amount in Euro"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_cinq_montant
+#: model:ir.model.fields,help:crm_alima.field_crm_alima_dashboard_cinq_montant
+msgid "Montant dons en euro"
+msgstr "Donation amount in Euro"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_montantEur
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_montantEur
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_montantEur_backup
+msgid "Montant du don en Euro"
+msgstr "Donation amount in Euro"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_montantEurSave
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_montantEurSave
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_montantEurSave
+msgid "Montant du don en Euro sauvegarder"
+msgstr "Amount of the donation in Euro saved"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_tree
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+msgid "Montant en Euro"
+msgstr "Amount in Euro"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_tree
+msgid "Montant en Lettre"
+msgstr "amount in letters"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_montantLettre
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_montantLettre
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "Montant en toutes lettres en euro"
+msgstr "Amount in Euro in words"
+
+#. module: crm_alima
+#: model:ir.model,name:crm_alima.model_crm_alima_dashboard_cinq
+msgid "Montant global collecte par segment et typologie"
+msgstr "Overall amount collected by segment and typology"
+
+#. module: crm_alima
+#: model:ir.model,name:crm_alima.model_crm_alima_dashboard_deux
+msgid "Montant global collecte par type de donateur"
+msgstr "Montant global collecte par type de donateur"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_deux_graph_un
+msgid "Montant global collecte par type de dons"
+msgstr "Global amount collected by type of donation"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_deux_graph
+msgid "Montant global collecte par type donateur"
+msgstr "Overall amount collected by type of donor"
+
+#. module: crm_alima
+#: model:ir.ui.menu,name:crm_alima.crm_alima_report_un
+msgid "Montant global collecté par année"
+msgstr "Total amount collected per year"
+
+#. module: crm_alima
+#: model:ir.actions.act_window,name:crm_alima.action_crm_alima_segment_pivot
+#: model:ir.ui.menu,name:crm_alima.crm_alima_report_cinq
+#: model:ir.ui.view,arch_db:crm_alima.report_cinq_graph
+msgid "Montant global collecté par segment"
+msgstr "Total amount collected by segment"
+
+#. module: crm_alima
+#: model:ir.actions.act_window,name:crm_alima.action_crm_alima_donstype_pivot_un
+#: model:ir.ui.menu,name:crm_alima.crm_alima_report_deux_un
+msgid "Montant global collecté par type de dons"
+msgstr "Total amount collected by type of donation"
+
+#. module: crm_alima
+#: model:ir.actions.act_window,name:crm_alima.action_crm_alima_donstype_pivot
+#: model:ir.ui.menu,name:crm_alima.crm_alima_report_deux
+msgid "Montant global collecté par type donateur"
+msgstr "Total amount collected by type of donor"
+
+#. module: crm_alima
+#: model:ir.actions.act_window,name:crm_alima.action_crm_alima_typologie_pivot
+#: model:ir.ui.menu,name:crm_alima.crm_alima_report_six
+#: model:ir.ui.view,arch_db:crm_alima.report_six_graph
+msgid "Montant global collecté par typologie"
+msgstr "Overall amount collected by typology"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Montant moyen hors PA"
+msgstr "Average amount excluding AD"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_montant_supplementaire_prochain_prelevement
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_montant_supplementaire_prochain_prelevement
+msgid "Montant supplémentaire exceptionnel du prochain prélèvement"
+msgstr "Extraordinary additional amount of the next withdrawal"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_montant_total_don
+msgid "Montant total don"
+msgstr "Donation total amount"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_montantEur
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_template_montantEur
+msgid "Montanteur"
+msgstr "Amount in euro"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_motif_fin_engagement
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_motif_fin_engagement
+msgid "Motif fin d'engagement"
+msgstr "Commitment end reason"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_motif_modification
+msgid "Motif modification"
+msgstr "Modification reason"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_motif_rejet
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_template_motif_rejet
+msgid "Motif rejet"
+msgstr "Rejection reason"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_moyen_paiment
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_moyen_paiment
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_moyen_paiment
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "Moyen de paiement"
+msgstr "Means of payment"
+
+#. module: crm_alima
+#: selection:crm.alima.don,adhesion:0
+#: selection:crm.alima.don.template,adhesion:0
+#: selection:crm.alima.rejet.prelevement,adhesion:0
+msgid "NON"
+msgstr "No"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,retour_courier:0
+msgid "NPAI (3 retours)"
+msgstr "NPAI (3 returns)"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_name
+msgid "Name"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_nature_don
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_nature_don
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_nature_don
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_tree
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "Nature du don"
+msgstr "Nature of donation"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,statut:0
+#: selection:crm.alima.donateur.template,statut:0
+msgid "Ne pas prospecter"
+msgstr "Do not prospect"
+
+#. module: crm_alima
+#: selection:crm.alima.don,plateforme_paiement:0
+#: selection:crm.alima.don.template,plateforme_paiement:0
+#: selection:crm.alima.rejet.prelevement,plateforme_paiement:0
+msgid "Netprélèvement"
+msgstr "net debit"
+
+#. module: crm_alima
+#: code:addons/crm_alima/exceptions.py:8
+#, python-format
+msgid "No name is set."
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_donateur_credit_coop_form
+msgid "Nom"
+msgstr "Name"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_lastname
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_engagements_search_view
+msgid "Nom Donateur"
+msgstr "Donor name"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_nom_banque
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_nom_banque
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_nom_banque
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_nom_banque
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "Nom banque"
+msgstr "Bank name"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_code_media_nomcampagne
+msgid "Nom campagne"
+msgstr "Campaign name"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_kanban
+msgid "Nom:"
+msgstr "Name"
+
+#. module: crm_alima
+#: model:ir.model,name:crm_alima.model_crm_alima_dashboard_quatre
+#: model:ir.model,name:crm_alima.model_crm_alima_dashboard_quatre_annee
+msgid "Nombre de donateur par an"
+msgstr "Number of donors per year"
+
+#. module: crm_alima
+#: model:ir.model,name:crm_alima.model_crm_alima_dashboard_quatre_mois
+msgid "Nombre de donateur par mois"
+msgstr "Number of donors per month"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_deux_nombredonateur
+#: model:ir.model.fields,help:crm_alima.field_crm_alima_dashboard_deux_nombredonateur
+msgid "Nombre de donateurs"
+msgstr "Number of donors"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_donateur_credit_coop_nombre_de_donateurs_importes
+msgid "Nombre de donateurs importes"
+msgstr "Number of imported donors"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_deux_nombredon
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_trois_nombre
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_un_nombre
+#: model:ir.model.fields,help:crm_alima.field_crm_alima_dashboard_deux_nombredon
+#: model:ir.model.fields,help:crm_alima.field_crm_alima_dashboard_trois_nombre
+#: model:ir.model.fields,help:crm_alima.field_crm_alima_dashboard_un_nombre
+msgid "Nombre de dons"
+msgstr "Number of donations"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_don_credit_coop_nombre_de_dons_importes
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_update_don_nombre_de_dons_importes
+msgid "Nombre de dons importes"
+msgstr "Number of imported donations"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_engagement_nombre_de_engagements_importes
+msgid "Nombre de engagements importes"
+msgstr "Number of imported commitments"
+
+#. module: crm_alima
+#: model:ir.model.fields,help:crm_alima.field_crm_alima_dashboard_quatre_annee_nombre
+#: model:ir.model.fields,help:crm_alima.field_crm_alima_dashboard_quatre_mois_nombre
+msgid "Nombre de nouveaux donateurs"
+msgstr "Number of new donors"
+
+#. module: crm_alima
+#: model:ir.actions.act_window,name:crm_alima.action_crm_alima_donsnbreannee_pivot
+msgid "Nombre de nouveaux donateurs par an"
+msgstr "Number of new donors per year"
+
+#. module: crm_alima
+#: model:ir.actions.act_window,name:crm_alima.action_crm_alima_donsnbremois_pivot
+msgid "Nombre de nouveaux donateurs par mois"
+msgstr "Number of new donors per month"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_rejet_prelevement_nombre_de_rejet_prelevement_importes
+msgid "Nombre de rejet prelevement importes"
+msgstr "Number of rejected debit imported"
+
+#. module: crm_alima
+#: model:ir.ui.menu,name:crm_alima.crm_alima_report_quatre
+#: model:ir.ui.view,arch_db:crm_alima.report_quatre_graph
+#: model:ir.ui.view,arch_db:crm_alima.report_quatre_graph_mois
+msgid "Nombre et cumul nouveaux donateurs par an"
+msgstr "Number and cumulative new donors per year"
+
+#. module: crm_alima
+#: model:ir.ui.menu,name:crm_alima.crm_alima_report_quatre_mois
+msgid "Nombre et cumul nouveaux donateurs par mois"
+msgstr "Number and cumulative new donors per month"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_quatre_annee_nombre
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_quatre_mois_nombre
+msgid "Nombre nouveaux donateurs"
+msgstr "Number of new donors"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Nombre total de dons"
+msgstr "Total number of donations"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Nombre total de dons hors PA"
+msgstr "Total number of donations excluding AD"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,adherant:0
+#: selection:crm.alima.donateur,grand_donateur_potentiel:0
+#: selection:crm.alima.donateur,prospect:0
+#: selection:crm.alima.donateur,prospect_qulifie:0
+#: selection:crm.alima.donateur,reseau_alima:0
+#: selection:crm.alima.donateur,rf:0 selection:crm.alima.donateur,statut_soll:0
+#: selection:crm.alima.donateur,tag_com_devel:0
+#: selection:crm.alima.donateur.template,rf:0
+msgid "Non"
+msgstr "No"
+
+#. module: crm_alima
+#: selection:crm.alima.contacts,statut_telemark:0
+msgid "Non appelé"
+msgstr "Not called"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_nom_banque
+msgid "Non banque"
+msgstr "Bank name"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,Type_arret_PA:0
+msgid "Non sollicitable"
+msgstr "not solicitable"
+
+#. module: crm_alima
+#: selection:crm.alima.contacts,statut_telemark:0
+msgid "Non-Joint"
+msgstr "Not Joined"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,freq_communication:0
+msgid "Nouveau"
+msgstr "New"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_deux_search
+#: model:ir.ui.view,arch_db:crm_alima.report_deux_search_un
+#: model:ir.ui.view,arch_db:crm_alima.report_trois_search
+msgid "Nouveaux donateurs"
+msgstr "New donors"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_attachment_number
+msgid "Number of Attachments"
+msgstr ""
+
+#. module: crm_alima
+#: selection:crm.alima.don,nature_don:0
+#: selection:crm.alima.don.template,nature_don:0
+#: selection:crm.alima.rejet.prelevement,nature_don:0
+msgid "Numeraire"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_numCheque
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_numCheque
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_numCheque
+msgid "Numero cheque"
+msgstr "Check number"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_tree
+msgid "Numero du don"
+msgstr "Donation number"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_numero_iban
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_numero_iban
+msgid "Numéro IBAN"
+msgstr "IBAN number"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "N° Reçu fiscal"
+msgstr "Tax receipt number"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "N° chèque"
+msgstr "Check number"
+
+#. module: crm_alima
+#: selection:crm.alima.contacts,qualif:0
+msgid "Négatif"
+msgstr "Negative"
+
+#. module: crm_alima
+#: selection:crm.alima.don,adhesion:0
+#: selection:crm.alima.don.template,adhesion:0
+#: selection:crm.alima.rejet.prelevement,adhesion:0
+msgid "OUI"
+msgstr "Yes"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_contacts_org_traitement
+msgid "Organisme dans le cas d'un échange de contact"
+msgstr "Organization in the case of a contact exchange"
+
+#. module: crm_alima
+#: selection:crm.alima.contacts,statut_trait:0
+#: selection:crm.alima.donateur,adherant:0
+#: selection:crm.alima.donateur,grand_donateur_potentiel:0
+#: selection:crm.alima.donateur,prospect:0
+#: selection:crm.alima.donateur,prospect_qulifie:0
+#: selection:crm.alima.donateur,reseau_alima:0
+#: selection:crm.alima.donateur,statut_soll:0
+#: selection:crm.alima.donateur,tag_com_devel:0
+msgid "Oui"
+msgstr "Yes"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "Paiement"
+msgstr "Payment"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "Paramètre RF"
+msgstr "TR parameter"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_partenaire
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_partenaire
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_donateur_credit_coop_form
+msgid "Partenaire"
+msgstr "Partner"
+
+#. module: crm_alima
+#: selection:crm.alima.don,plateforme_paiement:0
+#: selection:crm.alima.don.template,plateforme_paiement:0
+#: selection:crm.alima.rejet.prelevement,plateforme_paiement:0
+msgid "Partenariat"
+msgstr "Partnership"
+
+#. module: crm_alima
+#: selection:crm.alima.don,plateforme_paiement:0
+#: selection:crm.alima.don.template,plateforme_paiement:0
+#: selection:crm.alima.rejet.prelevement,plateforme_paiement:0
+msgid "PayPal"
+msgstr ""
+
+#. module: crm_alima
+#: selection:crm.alima.don,plateforme_paiement:0
+#: selection:crm.alima.don.template,plateforme_paiement:0
+#: selection:crm.alima.rejet.prelevement,plateforme_paiement:0
+msgid "Paybox"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_code_media_pays
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Pays"
+msgstr "Country"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_periodicite
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_periodicite
+msgid "Periodicité"
+msgstr "Periodicity"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,type_de_personne:0
+#: selection:crm.alima.donateur.template,type_de_personne:0
+#: model:ir.ui.view,arch_db:crm_alima.report_deux_search
+#: model:ir.ui.view,arch_db:crm_alima.report_deux_search_un
+msgid "Personne morale"
+msgstr "Legal person"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,type_de_personne:0
+#: selection:crm.alima.donateur.template,type_de_personne:0
+#: model:ir.ui.view,arch_db:crm_alima.report_deux_search
+#: model:ir.ui.view,arch_db:crm_alima.report_deux_search_un
+msgid "Personne physique"
+msgstr "natural person"
+
+#. module: crm_alima
+#: code:addons/crm_alima/models/crm_alima_import_don_credit_coop.py:318
+#: code:addons/crm_alima/models/crm_alima_import_donateur_credit_coop.py:502
+#: code:addons/crm_alima/models/crm_alima_import_engagement.py:217
+#: code:addons/crm_alima/models/crm_alima_import_rejet_prelevement.py:255
+#, python-format
+msgid "Peut pas supprimer un import en état %s."
+msgstr "Can not delete an import in %s state."
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,statut_soll:0
+#: selection:crm.alima.donateur,tag_com_devel:0
+msgid "Peut-être"
+msgstr "Maybe"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,type_de_personne:0
+#: selection:crm.alima.donateur.template,type_de_personne:0
+msgid "Piège"
+msgstr "Trap"
+
+#. module: crm_alima
+#: selection:crm.alima.contacts,type_contact:0
+msgid "Plainte"
+msgstr "Complaint"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "Plateforme de paiement"
+msgstr "Payment platform"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_mobile
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Portable 1"
+msgstr "Cellphone 1"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_mobile2
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Portable 2"
+msgstr "Cellphone 2"
+
+#. module: crm_alima
+#: selection:crm.alima.contacts,qualif:0
+msgid "Positif"
+msgstr "Positive"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_prelevement_en_cours
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_prelevement_en_cours
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_prelevement_en_cours
+msgid "Prelevement en cours"
+msgstr "debit in progress"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_code_media_programme
+msgid "Programme"
+msgstr ""
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,freq_communication:0
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_prospect
+msgid "Prospect"
+msgstr "Prospect"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_prospect_qulifie
+msgid "Prospect qualifié"
+msgstr "Qualified Prospect"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Préférences de communication"
+msgstr "Communication Preferences"
+
+#. module: crm_alima
+#: selection:crm.alima.don,moyen_paiment:0
+#: selection:crm.alima.don.template,moyen_paiment:0
+#: selection:crm.alima.rejet.prelevement,moyen_paiment:0
+msgid "Prélèvement salaire"
+msgstr "Salary deduction"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_donateur_credit_coop_form
+msgid "Prénom"
+msgstr "First name"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_firstname
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_engagements_search_view
+msgid "Prénom Donateur"
+msgstr "Donor's first name"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_kanban
+msgid "Prénom:"
+msgstr "First name"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_contacts_qualif
+msgid "Qualificatif"
+msgstr "Qualifier"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_quatre
+#: model:ir.ui.view,arch_db:crm_alima.report_quatre_mois
+msgid "Quatre"
+msgstr "Four"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_parametreRF
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_parametreRF
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_parametreRF
+msgid "RF"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "RFM"
+msgstr ""
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,traitement_adresse:0
+msgid "RNVP"
+msgstr ""
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,statut:0
+#: selection:crm.alima.donateur.template,statut:0
+msgid "Radie"
+msgstr "Removed"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_raison_sociale
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_raison_sociale
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_donateur_credit_coop_form
+msgid "Raison sociale"
+msgstr "Social reason"
+
+#. module: crm_alima
+#: model:ir.ui.menu,name:crm_alima.crm_alima_reports
+msgid "Rapports"
+msgstr "Reports"
+
+#. module: crm_alima
+#: model:mail.template,subject:crm_alima.email_template_edi_recu_fiscal_ponctuel
+msgid "Recu Fiscal"
+msgstr "Tax Receipt"
+
+#. module: crm_alima
+#: model:ir.model,name:crm_alima.model_crm_alima_recu_fiscal_regulier_template
+msgid "Recu Fiscal Don Regulier template"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.actions.report.xml,name:crm_alima.report_recu_fiscal_ponctuel
+msgid "Recu fiscal Ponctuel"
+msgstr "Punctual tax receipt"
+
+#. module: crm_alima
+#: model:ir.actions.report.xml,name:crm_alima.report_recu_fiscal_regulier
+msgid "Recu fiscal Regulier"
+msgstr "Regular tax receipt"
+
+#. module: crm_alima
+#: model:ir.actions.act_window,name:crm_alima.action_crm_alima_rejet_prelevement
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_rejet_prelevement_rejet_prelevement_line
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_template_rejet_prelevement_id
+msgid "Rejet Prelevement"
+msgstr "Debit rejection"
+
+#. module: crm_alima
+#: model:ir.model,name:crm_alima.model_crm_alima_rejet_prelevement_template
+msgid "Rejet Prelevement Template"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model,name:crm_alima.model_crm_alima_rejet_prelevement
+#: model:ir.ui.menu,name:crm_alima.crm_alima_rejet_prelevement
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_rejet_prelevement_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_tree
+msgid "Rejet de prelevement"
+msgstr "Rejection of debit"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_rejet_prelevement_ids
+msgid "Rejet prelevements"
+msgstr "Debits rejection"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Rejets"
+msgstr "Rejections"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Relationnel ALIMA"
+msgstr "ALIMA relational"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_remarques
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_remarques
+msgid "Remarques"
+msgstr "Remarks"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_donateur_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_engagement_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_rejet_prelevement_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_update_don_form
+msgid "Remettre à l'état brouillon"
+msgstr "Put back in the rough state"
+
+#. module: crm_alima
+#: selection:crm.alima.contacts,canal:0
+msgid "Rendez-vous"
+msgstr "Appointment"
+
+#. module: crm_alima
+#: model:ir.model,name:crm_alima.model_crm_alima_dashboard_un
+msgid "Repartition annuelle des dons"
+msgstr "Annual distribution of donations"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_contacts_resp_traitement
+msgid "Responsable traitement"
+msgstr "Processing Manager"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "Reçu fiscal"
+msgstr "Tax receipt"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_donateur_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_engagement_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_rejet_prelevement_form
+msgid "Roll Back"
+msgstr ""
+
+#. module: crm_alima
+#: code:addons/crm_alima/models/crm_alima_import_don_credit_coop.py:302
+#: code:addons/crm_alima/models/crm_alima_import_donateur_credit_coop.py:496
+#: code:addons/crm_alima/models/crm_alima_import_engagement.py:211
+#: code:addons/crm_alima/models/crm_alima_import_rejet_prelevement.py:249
+#, python-format
+msgid "Roll back échoué"
+msgstr "Roll back failed"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_recence
+msgid "Récence"
+msgstr "Recency"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,rf:0 selection:crm.alima.donateur.template,rf:0
+msgid "Récurrent "
+msgstr "Recurrent"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_reference_unique_mandat
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_reference_unique_mandat
+msgid "Référence unique de mandat"
+msgstr "Unique mandate reference"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,rf:0 selection:crm.alima.donateur.template,rf:0
+msgid "Régulier"
+msgstr "Regular"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_reseau_alima
+msgid "Réseau ALIMA"
+msgstr "ALIMA network"
+
+#. module: crm_alima
+#: model:ir.model,name:crm_alima.model_crm_alima_score_lai
+msgid "SCORE LAI"
+msgstr "LAI score"
+
+#. module: crm_alima
+#: selection:crm.alima.contacts,canal:0 selection:crm.alima.don,moyen_paiment:0
+#: selection:crm.alima.don.template,moyen_paiment:0
+#: selection:crm.alima.rejet.prelevement,moyen_paiment:0
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_sms
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_sms
+msgid "SMS"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_deux_search
+msgid "Sans prelevement"
+msgstr "Without debit"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_scorelai
+msgid "Score LAI"
+msgstr "LAI score"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_score_lai_score_LAI
+msgid "Score lai"
+msgstr "LAI score"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_donateur_credit_coop_form
+msgid "Secteur d'activité"
+msgstr "Activity area"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_contacts_sens_solliciteur
+msgid "Sens"
+msgstr "Direction"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_don_credit_coop_separator
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_donateur_credit_coop_separator
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_engagement_separator
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_rejet_prelevement_separator
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_update_don_separator
+msgid "Séparateur"
+msgstr "Separator"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_sexe
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_sexe
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_donateur_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_view_filter_donateur
+msgid "Sexe"
+msgstr "Sex"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,Type_arret_PA:0
+msgid "Sollicitable Don"
+msgstr "Solicitable Donation"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,Type_arret_PA:0
+msgid "Sollicitable PA"
+msgstr "Solicitable AD"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_sollicit_contat
+msgid "Solliciteur du contrat"
+msgstr "Contact solicitor"
+
+#. module: crm_alima
+#: selection:crm.alima.code.media,sens:0
+#: selection:crm.alima.contacts,sens_solliciteur:0
+msgid "Sortant"
+msgstr "Outgoing"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_don_credit_coop_state
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_donateur_credit_coop_state
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_engagement_state
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_rejet_prelevement_state
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_update_don_state
+msgid "State"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_statut
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_statut
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_view_filter_donateur
+msgid "Statut"
+msgstr "Status"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_view_filter_donateur
+msgid "Statut PA"
+msgstr "AD Status"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_statut_engagement
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_statut_engagement
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_statut_engagement
+msgid "Statut d'engagement"
+msgstr "Commitment status"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_statut_soll
+msgid "Statut sollicitation"
+msgstr "Solicitation status"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_contacts_statut_trait
+msgid "Statut traitement"
+msgstr "Treatment status"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_kanban
+msgid "Statut:"
+msgstr "Status:"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_statuts_Legs
+msgid "Statuts Legs"
+msgstr "Legacies status"
+
+#. module: crm_alima
+#: selection:crm.alima.engagement.template,statut_engagement:0
+#: selection:crm.alima.engagements,statut_engagement:0
+msgid "Suspendu Temporairement"
+msgstr "Temporarily Suspended"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_tag_com_devel
+msgid "Target Comité de developpement"
+msgstr "Development Committee Target"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "Taux de change à la date du don"
+msgstr "Exchange rate on the date of donation"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_deux
+#: model:ir.ui.view,arch_db:crm_alima.report_deux_un
+#: model:ir.ui.view,arch_db:crm_alima.report_trois
+#: model:ir.ui.view,arch_db:crm_alima.report_un
+msgid "Test"
+msgstr ""
+
+#. module: crm_alima
+#: code:addons/crm_alima/models/crm_alima_donateur.py:747
+#, python-format
+msgid "Test in"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_contacts_theme
+msgid "Thème"
+msgstr "Theme"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_don_credit_coop_name
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_donateur_credit_coop_name
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_engagement_name
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_rejet_prelevement_name
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_update_don_name
+msgid "Titre"
+msgstr "Title"
+
+#. module: crm_alima
+#: selection:crm.alima.don,nature_don:0
+#: selection:crm.alima.don.template,nature_don:0
+#: selection:crm.alima.rejet.prelevement,nature_don:0
+msgid "Titres de Sociétés Côtées"
+msgstr "Securities of Listed Companies"
+
+#. module: crm_alima
+#: model:ir.model.fields,help:crm_alima.field_crm_alima_dashboard_deux_montant
+#: model:ir.model.fields,help:crm_alima.field_crm_alima_dashboard_trois_montant
+msgid "Total dons euro"
+msgstr "Total donations euro"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_un_montant
+#: model:ir.model.fields,help:crm_alima.field_crm_alima_dashboard_un_montant
+msgid "Total dons prives"
+msgstr "Private donations total"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,courrier:0
+#: selection:crm.alima.donateur.template,courrier:0
+msgid "Tous"
+msgstr "All"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_traitement_adresse
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Traitement adresse"
+msgstr "Address processing"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_donateur_credit_coop_form
+msgid "Type d'organisation"
+msgstr "Type of organization"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_donateur_credit_coop_form
+msgid "Type de Personne"
+msgstr "Type of Person"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_contacts_type_contact
+msgid "Type de contact"
+msgstr "Type of contact"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_type_de_personne
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_type_de_personne
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_view_filter_donateur
+msgid "Type de personne"
+msgstr "Type of Person"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_deux_type
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_trois_type
+msgid "Type donateur"
+msgstr "Donor type"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_telemarketing
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_telemarketing
+msgid "Télémarketing"
+msgstr "Telemarketing"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_personal_fone
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_personal_fone
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Téléphone personnel 1"
+msgstr "Personal phone 1"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_personal_fone2
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_personal_fone2
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Téléphone personnel 2"
+msgstr "Personal phone 2"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Téléphone professionel"
+msgstr "Professional phone"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_phone
+msgid "Téléphone professionnel"
+msgstr "Professional phone"
+
+#. module: crm_alima
+#: selection:crm.alima.don,devis_origine:0
+#: selection:crm.alima.don.template,devis_origine:0
+#: selection:crm.alima.rejet.prelevement,devis_origine:0
+msgid "USD"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.actions.act_window,name:crm_alima.action_crm_alima_mise_jour_don
+#: model:ir.model,name:crm_alima.model_crm_alima_update_don
+#: model:ir.ui.menu,name:crm_alima.crm_alima_mise_jour_don
+msgid "Update Don"
+msgstr "Update donation"
+
+#. module: crm_alima
+#: selection:crm.alima.engagement.template,motif_fin_engagement:0
+#: selection:crm.alima.engagements,motif_fin_engagement:0
+msgid "Upgrade"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_engagements_form
+msgid "Url Data"
+msgstr "Data url"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_url_intersa
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_url_data
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_url_intersa_backup
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "Url Intersa"
+msgstr "Intersa Url"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_don_credit_coop_user_import
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_donateur_credit_coop_user_import
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_engagement_user_import
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_import_rejet_prelevement_user_import
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_update_don_user_import
+msgid "User"
+msgstr ""
+
+#. module: crm_alima
+#: model:res.groups,name:crm_alima.crm_alima_group_collecte
+msgid "Utilisateur"
+msgstr "User"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_valide
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_valide
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_valide
+msgid "Validation creation"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.recu_fiscal_regulier_template
+msgid "Valider"
+msgstr "Validate"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,grand_donateur_potentiel:0
+#: selection:crm.alima.donateur,prospect:0
+#: selection:crm.alima.donateur,prospect_qulifie:0
+#: selection:crm.alima.donateur,reseau_alima:0
+msgid "Vide"
+msgstr "Empty"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Ville"
+msgstr "City"
+
+#. module: crm_alima
+#: selection:crm.alima.don,moyen_paiment:0
+#: selection:crm.alima.don.template,moyen_paiment:0
+#: selection:crm.alima.rejet.prelevement,moyen_paiment:0
+msgid "Virement bancaire"
+msgstr "Bank transfer"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscalponctuel_document
+msgid ""
+"Vos dons sont extrêmement importants et utiles pour ALIMA. Ils sont gage "
+"<strong>d’indépendance</strong> de nos activités, et nous permettent de "
+"<strong>réagir plus rapidement</strong> en cas d’urgence."
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Voulez vous supprimer l'engagement?"
+msgstr "Do you want to delete the commitment?"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,sexe:0
+#: selection:crm.alima.donateur.template,sexe:0
+msgid "X indéterminé"
+msgstr "X undetermined"
+
+#. module: crm_alima
+#: selection:crm.alima.don,devis_origine:0
+#: selection:crm.alima.don.template,devis_origine:0
+#: selection:crm.alima.rejet.prelevement,devis_origine:0
+msgid "XAF"
+msgstr ""
+
+#. module: crm_alima
+#: selection:crm.alima.don,devis_origine:0
+#: selection:crm.alima.don.template,devis_origine:0
+#: selection:crm.alima.rejet.prelevement,devis_origine:0
+msgid "XOF"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_adherant
+msgid "adherant"
+msgstr "Member"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_ancien_statut
+msgid "ancien statut"
+msgstr "former status"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "annee"
+msgstr "Year"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_trois_search
+msgid "annee du don"
+msgstr "Year of donation"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "autres commentaire"
+msgstr "Other comments"
+
+#. module: crm_alima
+#: selection:crm.alima.don,mode_versement:0
+#: selection:crm.alima.don.template,mode_versement:0
+#: selection:crm.alima.rejet.prelevement,mode_versement:0
+msgid "avec prélèvement automatique"
+msgstr "With automatic debit"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_contacts_canal
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_trois_canal
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_canal_envoi
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_canal_envoi
+msgid "canal"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_tree
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_view_filter_donateur
+msgid "code"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_view_filter_don
+msgid "code Media"
+msgstr "Media code"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_view_filter_don
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_view_filter_rejet_prelevement
+msgid "code donateur"
+msgstr "Donor code"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_code_fiabilite_adresse
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "code fiabilité adresse"
+msgstr "Address  reliability code"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_contacts_code_media
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_codeMedia
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_codeMedia
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_code_media
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_code_media
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_codeMedia
+msgid "code media"
+msgstr "Media code"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_codemediaDernierDon
+msgid "code media dernier don"
+msgstr "Media code last donation"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_codemediaDernierDonHPA
+msgid "code media dernier don HPA"
+msgstr "Media code last HPA donation"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_code_media_engagement_modifie
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_code_media_engagement_modifie
+msgid "code media engagement modifié"
+msgstr "modified commitment media code"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_code_media_origine
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_code_media_origine
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_code_media_origine
+msgid "code media origine"
+msgstr "Original media code"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_codemediaPremierDon
+msgid "code media premier don"
+msgstr "First donation media code"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_codemediaPremierDonHPA
+msgid "code media premier don HPA"
+msgstr "First HPA donation media code"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_contacts_code_retour_telemark
+msgid "code média retour télémarketing"
+msgstr "Media code telemarketing return"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,canal_envoi:0
+#: selection:crm.alima.donateur.template,canal_envoi:0
+msgid "courrier"
+msgstr "Mail"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_cumulDonHPA
+msgid "cumul des dons hors PA"
+msgstr "Cumulative donations excluding AD"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_cumulDonTotal
+msgid "cumul des dons total"
+msgstr "Cumulative total donations"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "date d'encaisement du chèque"
+msgstr "Check cashing date"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "date de remise du chèque"
+msgstr "check delivery date"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "date de réception du chèque"
+msgstr "check receipt date"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "date de signature du chèque"
+msgstr "date of signature of the check"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_datedernieradh
+msgid "date dernier adhésion"
+msgstr "last membership date"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_view_filter_don
+#: model:ir.ui.view,arch_db:crm_alima.report_trois_search
+msgid "date du don"
+msgstr "Donation date"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_datefinadh
+msgid "date fin adhésion"
+msgstr "End date membership"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_datepremieradh
+msgid "date premier adhésion"
+msgstr "first membership date"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_contacts_date_retour_telemark
+msgid "date retour télémarketing"
+msgstr "telemarketing return date"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_dateEdition
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_dateEdition
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_dateEdition
+msgid "date édition RF"
+msgstr "TR edition date"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_contacts_donateur
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_cinq_donateur
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_deux_donateur
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_trois_donateur
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_donateur
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_donateur
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagement_template_donateur
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_engagements_donateur
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_donateur_backup
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_score_lai_donateur
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_tree
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_view_filter_don
+msgid "donateur"
+msgstr "Donor"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,statuts_Legs:0
+msgid "dossier legs en cour"
+msgstr "Legacy file in progress"
+
+#. module: crm_alima
+#: selection:crm.alima.engagement.template,motif_fin_engagement:0
+#: selection:crm.alima.engagements,motif_fin_engagement:0
+msgid "downgrade"
+msgstr ""
+
+#. module: crm_alima
+#: selection:crm.alima.contacts,canal:0
+#: selection:crm.alima.donateur,canal_envoi:0
+#: selection:crm.alima.donateur.template,canal_envoi:0
+msgid "email"
+msgstr "Email"
+
+#. module: crm_alima
+#: selection:crm.alima.contacts,statut_trait:0
+#: selection:crm.alima.donateur,adherant:0
+msgid "en cours"
+msgstr "Ongoing"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_espace_donateur
+msgid "espace donateur"
+msgstr "Donor space"
+
+#. module: crm_alima
+#: selection:crm.alima.contacts,canal:0
+msgid "face à face"
+msgstr "Face to Face"
+
+#. module: crm_alima
+#: selection:crm.alima.contacts,canal:0
+msgid "fax"
+msgstr "Fax"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_function
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_function
+msgid "fonction"
+msgstr "Function"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_forme_don
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_forme_don
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_view_filter_don
+msgid "forme du don"
+msgstr "Form of the donation"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_rf
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_rf
+msgid "frequence envoie RF"
+msgstr "RF sending frequency"
+
+#. module: crm_alima
+#: selection:crm.alima.don,plateforme_paiement:0
+#: selection:crm.alima.don.template,plateforme_paiement:0
+#: selection:crm.alima.rejet.prelevement,plateforme_paiement:0
+msgid "iRaiser"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_iddernierdon
+msgid "iddernierdon"
+msgstr "Last donation Id"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_iddernierdonsHPA
+msgid "iddernierdonsHPA"
+msgstr "Last HPA donation Id"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_idpremierdon
+msgid "idpremierdon"
+msgstr "First donation Id"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_idpremierdonHPA
+msgid "idpremierdonHPA"
+msgstr "First HPA donation Id"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,statuts_Legs:0
+msgid "interesse"
+msgstr "interested"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_contacts_libelle
+msgid "libellé"
+msgstr "Wording"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_view_filter_don
+msgid "liberalite du don"
+msgstr "Liberality of the donation"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_code_media_tree
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_tree
+msgid "liste des Donateurs"
+msgstr "List of Donors"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_engagements_tree
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_engagement_form
+msgid "liste des Engagements"
+msgstr "List of Commitments"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_tree
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_donateur_credit_coop_tree
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_engagement_tree
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_rejet_prelevement_tree
+msgid "liste des Imports"
+msgstr "Imports list"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_update_don_tree
+msgid "liste modifications des dons"
+msgstr "Donations modifications list"
+
+#. module: crm_alima
+#: selection:crm.alima.contacts,canal:0
+msgid "messagerie instantannée"
+msgstr "instant messaging"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_view_filter_don
+msgid "mode de versement du don"
+msgstr "Method of payment of the donation"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_don_moy
+msgid "montant Moyen"
+msgstr "Average amount"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_don_moyHPA
+msgid "montant Moyen hors PA"
+msgstr "Average amount excluding PA"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_montant_dans_devise
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_montant_dans_devise
+msgid "montant dans la devise d'origine"
+msgstr "Amount in original currency"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "montant de la remise globale"
+msgstr "global discount amount"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_montantPremierDon
+msgid "montant premier don"
+msgstr "First donation amount"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_montantPremierDonHPA
+msgid "montant premier don HPA"
+msgstr "HPA first donation amount"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_montant_remise_globale
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_montant_remise_globale
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_montant_remise_globale
+msgid "montant remise globale"
+msgstr "Global discount amount"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_view_filter_don
+msgid "moyen de paiment"
+msgstr "Payement method"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_view_filter_don
+msgid "nature du don"
+msgstr "Nature of donation"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_tree
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_view_filter_donateur
+msgid "nom"
+msgstr "Name"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_nombredonsstat
+msgid "nombre de dons en stat"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_nombre_rejet_prelevement
+msgid "nombre de rejet de prelevement"
+msgstr "Number of debit rejetion"
+
+#. module: crm_alima
+#: selection:crm.alima.contacts,statut_trait:0
+msgid "non"
+msgstr "No"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "nouveau don"
+msgstr "New donation"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_NumRecuFiscal
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_NumRecuFiscal
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_NumRecuFiscal
+msgid "numero reçu fiscal"
+msgstr "Tax receipt number"
+
+#. module: crm_alima
+#: selection:crm.crm.alima.import.don.credit.coop,separator:0
+#: selection:crm.alima.import.donateur.credit.coop,separator:0
+#: selection:crm.alima.import.engagement,separator:0
+#: selection:crm.alima.import.rejet.prelevement,separator:0
+#: selection:crm.alima.update.don,separator:0
+msgid "pipe"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_plateforme_paiement
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_plateforme_paiement
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_plateforme_paiement
+msgid "plateforme de paiement"
+msgstr "Payment platform"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_view_filter_don
+msgid "plateforme paiement de versement du don"
+msgstr ""
+
+#. module: crm_alima
+#: selection:crm.alima.import.don.credit.coop,separator:0
+#: selection:crm.alima.import.donateur.credit.coop,separator:0
+#: selection:crm.alima.import.engagement,separator:0
+#: selection:crm.alima.import.rejet.prelevement,separator:0
+#: selection:crm.alima.update.don,separator:0
+msgid "point virgule"
+msgstr "Semicolon"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_view_filter_donateur
+msgid "prenom"
+msgstr "First name"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_tree
+msgid "prénom"
+msgstr "First name"
+
+#. module: crm_alima
+#: model:mail.template,report_name:crm_alima.email_template_edi_recu_fiscal_ponctuel
+msgid "recu_fiscal"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_remise_globale
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_template_remise_globale
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_remise_globale
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_import_don_credit_coop_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_rejet_prelevement_form
+msgid "remise globale"
+msgstr "Global discount"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_retour_courier
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "retour courier"
+msgstr "return mail"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_contacts_statut_telemark
+msgid "retour tele"
+msgstr "return tele"
+
+#. module: crm_alima
+#: selection:crm.alima.contacts,canal:0
+msgid "réseaux sociaux"
+msgstr "Social networks"
+
+#. module: crm_alima
+#: selection:crm.alima.don,mode_versement:0
+#: selection:crm.alima.don.template,mode_versement:0
+#: selection:crm.alima.rejet.prelevement,mode_versement:0
+msgid "sans prélèvement automatique"
+msgstr "Without automatic debit"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_sec_activite
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_sec_activite
+msgid "secteur d'activité"
+msgstr "Activity area"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_cinq_segment
+msgid "segment"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_code_media_sens
+msgid "sens"
+msgstr "Direction"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_statut_PA
+msgid "statut PA"
+msgstr "AD Status"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_taux_change
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_rejet_prelevement_taux_change
+msgid "taux de change à la date du don"
+msgstr "Exchange rate on the date of donation"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,statuts_Legs:0
+msgid "testataire"
+msgstr "Testator"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_Type_arret_PA
+msgid "type d'arret"
+msgstr "Stop type"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_template_type_organisation
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_type_organisation
+msgid "type d'organisation"
+msgstr "Type of organization"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_deux_type_de_personne
+msgid "type de personne"
+msgstr "Type of Person"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.report_deux_search
+#: model:ir.ui.view,arch_db:crm_alima.report_deux_search_un
+msgid "type personne NR"
+msgstr ""
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_dashboard_cinq_typologie
+msgid "typologie don"
+msgstr "Donation typology"
+
+#. module: crm_alima
+#: selection:crm.alima.contacts,canal:0
+msgid "téléphone"
+msgstr "Phone"
+
+#. module: crm_alima
+#: selection:crm.alima.import.don.credit.coop,separator:0
+#: selection:crm.alima.import.donateur.credit.coop,separator:0
+#: selection:crm.alima.import.engagement,separator:0
+#: selection:crm.alima.import.rejet.prelevement,separator:0
+#: selection:crm.alima.update.don,separator:0
+msgid "virgule"
+msgstr "Comma"
+
+#. module: crm_alima
+#: selection:crm.alima.contacts,canal:0
+msgid "événement (physique)"
+msgstr "Event (physical)"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+msgid "Campagne engagement modifié"
+msgstr "Commitment compaign modified"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_engagements_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_engagements_tree
+msgid "Campagne d'origine"
+msgstr "Campaign of origin"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_est_donateur
+msgid "Est un donateur"
+msgstr "Is a donor"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_est_journaliste
+msgid "Est un journaliste"
+msgstr "Is a journalist"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_est_prospect
+msgid "Est un prospect"
+msgstr "Is a prospect"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_est_salarie
+msgid "Est un salarié"
+msgstr "Is an employee"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_commite_soutien
+msgid "Commité de soutien"
+msgstr "Support Committee"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_conseil_administration
+msgid "Conseil d'administration"
+msgstr "Board of Directors"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_groupe_scientifique
+msgid "Groupe scientifique"
+msgstr "Scientific group"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_view_filter_donateur
+msgid "ancien solthis"
+msgstr "Former of solthis"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_ancien_solthis
+msgid "Ancien solthis"
+msgstr "Former of solthis"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_donateur_categorie_partenaire
+msgid "categorie Partenaire"
+msgstr "Partner category"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+msgid "Types de Dons"
+msgstr "Types of Donations"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_types_dons
+msgid "Types Dons"
+msgstr "Donations types"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+msgid "Type de don"
+msgstr "Type of Donation"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_entitee_receptrice
+msgid "Entitée Réceptrice"
+msgstr "Receiving Entity"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_send_rf
+msgid "RF à envoyer"
+msgstr "RF to send"
+
+#. module: crm_alima
+#: selection:crm.alima.don,nature_don:0
+#: selection:crm.alima.don.template,nature_don:0
+msgid "Numeraire"
+msgstr "Cash"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_numeraire_mode_versement
+msgid "Numeraire Mode Versement"
+msgstr "Cash payment Mode"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_update_don_template_id_don
+msgid "Id Don"
+msgstr "Donation Id"
+
+#. module: crm_alima
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_view_filter_donateur
+msgid "Donateurs"
+msgstr "Donors"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_code_media_identifiant
+msgid "Identifiant"
+msgstr "ID"
+
+#. module: crm_alima
+#: model:ir.actions.act_window,name:crm_alima.action_crm_alima_code_media
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_don_codeMedia
+#: model:ir.ui.menu,name:crm_alima.crm_alima_code_media
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_don_tree
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_donateur_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_engagements_form
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_engagements_tree
+#: model:ir.ui.view,arch_db:crm_alima.crm_alima_view_filter_don
+msgid "Campagne"
+msgstr "Campaign
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,title:0
+#: selection:crm.alima.donateur.template,title:0
+msgid "DECEDE"
+msgstr "Dead"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,title:0
+msgid "Professeur"
+msgstr "Professor"
+
+#. module: crm_alima
+#: selection:crm.alima.donateur,title:0
+msgid "Docteur"
+msgstr "Doctor"
+
+#. module: crm_alima
+#: selection:crm.alima.don,types_dons:0
+msgid "Campagne Marketing"
+msgstr "Marketing campaign"
+
+#. module: crm_alima
+#: selection:crm.alima.don,types_dons:0
+msgid "Don libre"
+msgstr "Free donation"
+
+#. module: crm_alima
+#: selection:crm.alima.don,numeraire_mode_versement:0
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscal_document
+msgid "Remise d’espèces"
+msgstr "Cash Discount"
+
+#. module: crm_alima
+#: selection:crm.alima.don,numeraire_mode_versement:0
+#: model:ir.ui.view,arch_db:crm_alima.report_recufiscal_document
+msgid "Virement, prélèvement, carte bancaire"
+msgstr "Transfer, Debit, Bank card"
+
+#. module: crm_alima
+#: selection:crm.alima.engagement.template,motif_fin_engagement:0
+#: selection:crm.alima.engagements,motif_fin_engagement:0
+msgid "Décision Solthis"
+msgstr "Solthis decision"
+
+#. module: crm_alima
+#: model:ir.model.fields,field_description:crm_alima.field_crm_alima_update_don_datetime
+msgid "Date dernière modification"
+msgstr "Date of last modification"

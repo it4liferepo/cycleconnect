@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!--Email template -->
+        <record id="email_template_edi_recu_fiscal" model="mail.template">
+            <field name="name">Recu Fiscal - Send by Email</field>
+            <field name="email_from">awele@it4life.org</field>
+            <field name="email_to">devit2@alima.ngo</field>
+            <field name="subject">Reçu Fiscal</field>
+            <field name="model_id" ref="crm_alima.model_crm_alima_don"/>
+            <field name="auto_delete" eval="True"/>
+            <field name="report_template" ref="report_recu_fiscal"/>
+            <field name="report_name">recu_fiscal</field>
+            <field name="body_html"><![CDATA[
+% set title = 'Cher Monsieur' if object.donateur.title in ['M.','M et M',''] else 'Chère Madame' if object.differerence_day in ['Mme','Mlle','Mme et Mme'] else 'Cher Monsieur / Chère Madame'
+% set firstname = object.donateur.firstname if object.donateur.firstname else '' 
+% set lastname = object.donateur.lastname if object.donateur.lastname else '' 
+<p>${title} ${firstname} ${lastname}</p><br/><br/>
+<p>
+Au nom de toutes les équipes de  Solthis nous tenons à vous remercier pour votre don qui va nous permettre de poursuivre notre action pour améliorer l’accès à des soins de qualité pour toutes les populations, lutter contre les maladies infectieuses, améliorer la santé des mères et des enfants, mais aussi élargir nos actions de prévention et sensibilisation particulièrement auprès des jeunes, et de leur entourage.<br/><br/>
+
+Veuillez trouver en pièce jointe (ou ci-dessous selon la configuration) votre reçu fiscal.<br/><br/>
+
+Nous restons bien entendu à votre disposition pour tout renseignement complémentaire (peuvent-ils faire un répondre à qui arrive chez moi ou bien faut-il remettre mon adresse mail ici ?)<br/><br/>
+
+Si vous souhaitez vous abonner à notre newsletter, n’hésitez pas à le faire en <a href="https://www.solthis.org/fr/inscription-a-newsletter/">cliquant ici</a> pour suivre nos actions terrain, ou à consulter <a href="http://www.solthis.org/">notre site internet.</a><br/><br/>
+
+Avec tous nos remerciements renouvelés<br/>
+
+Les équipes de Solthis
+</p>
+
+]]></field>
+        </record>
+
+        <!--Email template -->
+        <record id="email_template_edi_helloasso" model="mail.template">
+            <field name="name">Notification HelloAssocie - Send by Email</field>
+            <field name="email_from">awele@it4life.org</field>
+            <field name="email_to">devit2@alima.ngo</field>
+            <field name="subject">Notification Don Hello Associe</field>
+            <field name="model_id" ref="crm_alima.model_crm_requests"/>
+            <field name="auto_delete" eval="True"/>
+            <field name="body_html"><![CDATA[
+
+
+<table border="1" style="width:100%;"> 
+  <tr style="font-weight:bold;background:#7d1650;color:#ffffff;">
+    <td>Nombre de donateurs ajoutes</td>
+    <td>Nombre de dons ajoutes</td>  
+    <td>Date</td>  
+  </tr>
+  <tr>
+    <td>${object.nbre_donateurs}</td>
+    <td>${object.nbre_dons}</td>    
+    <td>${object.date}</td>    
+  </tr>
+  
+</table> 
+    
+]]></field>
+        </record>
+
+        <!--Email template -->
+        <record id="email_template_edi_helloasso_none" model="mail.template">
+            <field name="name">Notification HelloAssocie None - Send by Email</field>
+            <field name="email_from">awele@it4life.org</field>
+            <field name="email_to">devit2@alima.ngo</field>
+            <field name="subject">Notification Don Hello Associe</field>
+            <field name="model_id" ref="crm_alima.model_crm_requests"/>
+            <field name="auto_delete" eval="True"/>
+            <field name="body_html"><![CDATA[
+
+
+<p>Il n'y a pas de nouveau don</p>
+    
+]]></field>
+        </record>
+
+
+    </data>
+
+    <data noupdate="1">
+
+        <record id="seq_rf" model="ir.sequence">
+            <field name="name">seq_rf</field>
+            <field name="code">seq.rf</field>
+            <field name="prefix">SOL</field>
+            <field name="padding">6</field>
+        </record>
+
+    </data>
+
+</odoo>

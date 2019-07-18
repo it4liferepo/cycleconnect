@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="crm_alima_donateur_tree" model="ir.ui.view">
+        <field name="name">crm.alima.donateur.tree</field>
+        <field name="model">crm.alima.donateur</field>
+        <field name="arch" type="xml">
+            <tree string="liste des Donateurs" limit="500">
+                    <field name="id" />
+                    <field name="name" string="code"/>
+                    <field name="title" />
+                    <field name="firstname" string ="prénom"/>
+                    <field name="lastname" string="nom"/>
+                    <field name="grand_donateur_potentiel" string="Grand donateur potentiel"/>
+                    <field name="dateNaissance" />
+                    <field name="nombreDons" />
+                    <field name="nombreDonsHPA" />
+                    <field name="cumulDonTotal" />
+                    <field name="cumulDonHPA" />
+            </tree>
+        </field>
+    </record>
+    
+    <record id="crm_alima_donateur_form" model="ir.ui.view">
+        <field name="name">crm.alima.donateur.form</field>
+        <field name="model">crm.alima.donateur</field>
+        <field name="arch" type="xml">
+            <form string="Formulaire Donateur">
+                <header>
+                    <button 
+                        name="action_recu_fiscal_regulier_form_views" 
+                        type="object"
+                        class="oe_highlight"
+                        string="Imprimer recu fiscal regulier"
+                        attrs="{'invisible':[('statut_PA','=',False)]}"
+                    />
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_get_attachment_tree_view" class="oe_stat_button" icon="fa-book" type="object">
+                            <field name="attachment_number" widget="statinfo" string="Documents"/>
+                        </button>
+                        <button type="object" class="oe_stat_button"
+                                    name="action_get_dons_tree_views" icon="fa-heart-o"
+                                    context="{'search_default_donateur': active_id, 'default_donateur': active_id}">
+                            <field name="nombredonsstat" widget="statinfo" string="Dons"/>
+                        </button>
+                        <button type="object" class="oe_stat_button"
+                                    name="action_get_dons_form_views" icon="fa-plus" string="nouveau don"
+                                    context="{'search_default_donateur': active_id, 'default_donateur': active_id}">
+                        </button>
+
+                    </div>
+                    <div class="oe_title" name="title">
+                         <h1>
+                            <field name="identifiant_donateur" readonly="1"/><br/>
+                            <field name="firstname" attrs="{'required': [('type_de_personne', '=', 'Personne physique')], 'invisible': [('type_de_personne', '=', 'Personne morale')]}" placeholder="Prénom"/><br/>
+                            <field name="lastname" placeholder="Nom" attrs="{'required': True}"/><br/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group string="Informations générales">
+                            <!-- <field name="identifian_donateur" readonly="1"/><br/> -->
+                            <field name="title" options='{"no_open": True}' string="Civilité" attrs="{'invisible': [('type_de_personne', '=', 'Personne morale')]}"/>
+                            <field name="dateNaissance" string ="Date de naissance" attrs="{'invisible': ['|', ('type_de_personne', '=', 'Personne morale'), ('mois_annees', '=', True)]}" />
+                            <field name="mois_annees" string ="Mois et annees" class="o_address_city" attrs="{'invisible': [('type_de_personne', '=', 'Personne morale')]}" />
+                            <field name="mois" string ="Mois" class="o_address_city" attrs="{'invisible': ['|', ('type_de_personne', '=', 'Personne morale'), ('mois_annees', '=', False)]}" />
+                            <field name="annee" string ="annee" class="o_address_city" attrs="{'invisible': ['|', ('type_de_personne', '=', 'Personne morale'), ('mois_annees', '=', False)]}" />
+                            <field name="sexe" string ="Sexe" attrs="{'invisible': [('type_de_personne', '=', 'Personne morale')]}"/>
+                            <field name="type_de_personne" string ="Type de Personne"/>
+                            <field name="partenaire" string ="Partenaire"/>
+                            <field name="raison_sociale" string ="Raison sociale"/>
+                            <field name="type_organisation" string ="Type d'organisation" />
+                            <field name="function" string ="Fonction" />
+                            <field name="sec_activite" string="Secteur d'activité" />
+                        </group>
+                        <group string="Informations donateur">
+                                <field name="statut"/>
+                                <field name="idcontact"  attrs="{'invisible': [('statut', '!=', 'Doublon')]}" options="{'no_create': True}"/>
+                                <field name="statut_PA"/>
+                                <field name="Type_arret_PA"  />
+                                <field name="id_bulletin"  />
+                                <field name="date_from"  invisible="1"/>
+                                <field name="date_to"  invisible="1"/>
+                                <field name="newsletter"/>
+                                <field name="remerciement"/>
+                        </group>
+                    </group>
+                    <group name="main_data">
+                      <group name="left" />
+                      <group name="right" />
+                    </group>
+                    <notebook>
+                        <page name="page_general_info" string="Adresse et Coordonnées">
+                            <group name="group_contact_info" >
+                                <group name="group_contact_left" string=" Adresse 1">
+                                    <label for="complementnom" string="Adresse 1" />
+                                    <div class="o_address_format">
+                                        <field name="complementnom" placeholder="Libellé de la voie" class="o_address_street"/>
+                                        <field name="complementadresse" placeholder="Complément adresse" class="o_address_street"/>
+                                        <field name="codebis" placeholder="Code bis" class="o_address_street"/>
+                                        <field name="hammeau" placeholder="Hammeau Lieu-dit" class="o_address_street"/>
+                                        <field name="codepostale" placeholder="Code postal" class="o_address_street"/>
+                                        <field name="ville" placeholder="Ville" class="o_address_street"/>
+                                        <field name="country_id" placeholder="Pays" class="o_address_country" options='{"no_open": True, "no_create": True}'/>
+                                    </div>
+                                </group>
+                                <group name="group_contact_right" string="Coordonnées">
+                                    <field name="email" widget="email"  string="Email 1" />
+                                    <field name="email2" widget="email"  string="Email 2" />
+                                    <field name="personal_fone" string ="Téléphone personnel 1"/>
+                                    <field name="personal_fone2" string ="Téléphone personnel 2"/>
+                                    <field name="mobile" widget="phone" string="Portable 1"/>
+                                    <field name="mobile2" widget="phone" string="Portable 2"/>
+                                    <field name="phone" widget="phone" string="Téléphone professionel"/>
+                                    <field name="fax" string="Fax"/>
+                                </group>
+                                <group name="group_contact_left" string=" Adresse 2">
+                                    <label for="complementnom2" string="Adresse 2" />
+                                    <div class="o_address_format">
+                                        <field name="complementnom2" placeholder="Libellé de la voie" class="o_address_street"/>
+                                        <field name="complementadresse2" placeholder="Complément adresse" class="o_address_street"/>
+                                        <field name="codebis2" placeholder="Code bis" class="o_address_street"/>
+                                        <field name="hammeau2" placeholder="Hammeau Lieu-dit" class="o_address_street"/>
+                                        <field name="codepostale2" placeholder="Code postal" class="o_address_street"/>
+                                        <field name="ville2" placeholder="Ville" class="o_address_street"/>
+                                        <field name="country_id2" placeholder="Pays" class="o_address_country" options='{"no_open": True, "no_create": True}'/>
+                                    </div>
+                                </group>
+                            </group>
+                        </page>
+                    <page string="Adresse postale">
+                        <group>
+                            <field name="retour_courier" string="retour courier"/>
+                            <field name="traitement_adresse" string="Traitement adresse"/>
+                            <field name="Date_traitement_adresse" string="Date de traitement adresse"/>
+                            <field name="code_fiabilite_adresse" string="code fiabilité adresse"/>
+                        </group>
+                    </page>
+                    <page string="RFM">
+                        <group>
+                            <field name="recence" readonly="1"/>
+                            <field name="freq_communication" readonly="1"/>
+                            <field name="montant" readonly="1"/>
+                        </group>
+                    </page>
+                    <page string="Catégories particulières">
+                        <group>
+                            <field name="code_media_origine" string="Campagne d'origine"/>
+                            <field name="statuts_Legs" />
+                            <field name="grand_donateur_potentiel" string="Grand donateur potentiel" />
+                            <field name="reseau_alima" />
+                            <field name="prospect" />
+                        </group>
+                    </page>
+                    <page string="Relationnel Solthis">
+                        <group>
+                            <field name="connexion" />
+                            <field name="sollicit_contat" />
+                            <field name="com_sollicit" />
+                            <field name="tag_com_devel" />
+                            <field name="statut_soll" />
+                        </group>
+                        <field name="scorelai" string="">
+                            <form>
+                                <group>
+                                    <field name="linkage"/>
+                                    <field name="ability"/>
+                                    <field name="interest" />
+                                    <field name="score_LAI"/>
+                                    <field name="date_debut"/>
+                                    <field name="commentaires_LAI"/>
+                                </group>
+                            </form>
+                            <tree >
+                                <field name="linkage"/>
+                                <field name="ability"/>
+                                <field name="interest" />
+                                <field name="score_LAI"/>
+                                <field name="date_debut"/>
+                                <field name="commentaires_LAI"/>
+                            </tree>
+                        </field>
+                    </page>
+                    <page string="Préférences de communication">
+                        <group>
+                            <field name="rf" />
+                            <field name="canal_envoi" />
+                            <field name="telemarketing" />
+                            <field name="email3" />
+                            <field name="courrier" />
+                            <field name="sms" />
+                            <field name="evenement" />
+                            <field name="option_fax" />
+                            <field name="option_CNIL" />
+                            <field name="echange_mail" />
+                            <field name="comm_preference_contrat" />
+                        </group>
+                    </page>
+                    <page string="Contacts">
+                          <field name="contacts" string="">
+                            <form>
+                                <group>
+                                    <field name="code_media" string='Campagne'/>
+                                    <field name="libelle"/>
+                                    <field name="date" />
+                                    <field name="sens_solliciteur"/>
+                                    <field name="canal"/>
+                                    <field name="type_contact"/>
+                                    <field name="contenu"/>
+                                    <field name="qualif"/>
+                                    <field name="theme"/>
+                                    <field name="statut_trait"/>
+                                    <field name="date_traitement"/>
+                                    <field name="resp_traitement"/>
+                                    <field name="org_traitement"/>
+                                    <field name="date_retour_telemark"/>
+                                    <field name="statut_telemark"/>
+                                </group>
+                            </form>
+                            <tree >
+                                <field name="code_media" string='Campagne'/>
+                                <field name="libelle"/>
+                                <field name="date" />
+                                <field name="sens_solliciteur"/>
+                                <field name="canal"/>
+                                <field name="type_contact"/>
+                                <field name="statut_trait"/>
+                                <field name="date_traitement"/>
+                            </tree>
+                        </field>
+                    </page>
+                    <page string="Engagements">
+                          <field name="engagements" string="" >
+        
+                            <form>
+                                <group>
+                                    <field name="code_media" string='Campagne'/>
+                                    <field name="code_media_origine" readonly="1" string="Campagne d'origine" />
+                                    <field name="date_accord_mandat"/>
+                                    <field name="date_engagement_mandat"/>
+                                    <field name="date_fin_mandat" />
+                                    <field name="date_fin_engagement"/>
+                                    <field name="motif_fin_engagement"/>
+                                    <field name="code_media_engagement_modifie" readonly="1" string='Campagne engagement modifié'/>
+                                    <field name="montant" widget='monetary'/>
+                                    <field name="periodicite"/>
+                                    <field name="statut_engagement"/>
+                                    <field name="date_premier_prelevement"/>
+                                    <field name="date_dernier_prelevement"/>
+                                    <field name="montant_supplementaire_prochain_prelevement"/>
+                                    <field name="date_prochain_prelevement"/>
+                                    <field name="nom_banque"/>
+                                    <field name="numero_iban"/>
+                                    <field name="code_bic"/>
+                                    <field name="code_identifiant_debiteur"/>
+                                    <field name="reference_unique_mandat"/>
+                                    <field name="identifiant_cb"/>
+                                    <field name="date_expiration_cb"/>
+                                    <field name="remarques"/>
+                                    <field name="id_matricule" />
+                                    <field name="motif_modification"/>
+                                </group>
+                            </form>
+                            <tree 
+                                delete="false"
+                                background-black="periodicite==False"
+                                background-orange="statut_engagement=='inactif'"
+                                colors="white:statut_engagement=='inactif'"
+                            >
+                                <field name="code_media" string='Campagne'/>
+                                <field name="code_media_origine" string="Campagne d'origine"/>
+                                <field name="code_media_engagement_modifie" string='Campagne engagement modifié'/>
+                                <field name="periodicite"/>
+                                <field name="statut_engagement"/>
+
+                                <button name="unlink" string="Delete" type="object" icon="fa-trash-o" confirm="Voulez vous supprimer l'engagement?" class="js_delete_menu o_form_editable oe_edit_only"/>
+                            </tree>
+                        </field>
+                    </page>
+                    <page string="Administration">
+                        <group>
+                            <field name="create_uid" string="Crée par" readonly="1" />
+                            <field name="create_date" string="Crée le" readonly="1" />
+                            <field name="write_uid" string="Mise à jour par" readonly="1" />
+                            <field name="write_date" string="Mise à jour le" readonly="1" />
+                        </group>
+                    </page>
+                    <page string="Historique dons">
+                        <group>
+                            <field name="datePremierDon" string="1er don : date" readonly="1" />
+                            <field name="montantPremierDon" string="1er don : montant" readonly="1" />
+                            <field name="codemediaPremierDon" string="1er don : Campagne" readonly="1" />
+                            <field name="dateDernierDon" string="Dernier don : date" readonly="1" />
+                            <field name="montantDernierDon" string="Dernier don : montant" readonly="1" />
+                            <field name="codemediaDernierDon" string="Dernier don : Campagne" readonly="1" />
+                            <field name="datePremierDonHPA" string="1er don hors PA : date" readonly="1" />
+                            <field name="montantPremierDonHPA" string="1er don hors PA : montant" readonly="1" />
+                            <field name="codemediaPremierDonHPA" string="1er don hors PA : Campagne" readonly="1" />
+                            <field name="dateDernierDonHPA" string="Dernier don hors PA : date" readonly="1" />
+                            <field name="montantDernierDonHPA" string="Dernier don hors PA : montant" readonly="1" />
+                            <field name="codemediaDernierDonHPA" string="Dernier don hors PA : Campagne" readonly="1" />
+                            <field name="nombreDons" string="Nombre total de dons" readonly="1" />
+                            <field name="nombreDonsHPA" string="Nombre total de dons hors PA" readonly="1" />
+                            <field name="don_moy" string="Montant Moyen" readonly="1" />
+                            <field name="don_moyHPA" string="Montant moyen hors PA" readonly="1" />
+                        </group>
+                    </page>
+                    <page string="Contacts">
+                        <group>
+                            <field name="est_donateur" />
+                            <field name="est_journaliste" />
+                            <field name="est_salarie" />
+                            <field name="est_prospect" />
+                            <field name="commite_soutien" />
+                            <field name="conseil_administration" />
+                            <field name="groupe_scientifique" />
+                            <field name="ancien_solthis" />
+                            <field name="categorie_partenaire" />
+                        </group>
+                    </page>
+                    </notebook>
+                </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"
+                        widget="mail_followers" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+            </form>
+        </field>
+    </record>
+    <record id="crm_alima_view_filter_donateur"
+    model="ir.ui.view">
+    <field name="model">crm.alima.donateur</field>
+        <field name="arch" type="xml">
+            <search>
+                <!-- <field string="Year" name="date" filter_domain="[('dons.date', '&gt;=', str(self.year) + '-01-01'), ('dons.date', '&lt;=', str(self.year) + '-12-31')]" /> -->
+                <filter name="donateur" string="Donateurs"
+                    domain="[('est_donateur','=',True)]"/>
+                <filter name="journaliste" string="Journalistes"
+                    domain="[('est_journaliste','=',True)]"/>
+                <filter name="salarie" string="Salariés"
+                    domain="[('est_salarie','=',True)]"/>
+                <filter name="prospect" string="Prospect"
+                    domain="[('est_prospect','=',True)]"/>
+                <filter name="commite_soutien" string="Commite de soutien"
+                    domain="[('commite_soutien','=',True)]"/>
+                <filter name="conseil_administration" string="conseil d'administration"
+                    domain="[('conseil_administration','=',True)]"/>
+                <filter name="groupe_scientifique" string="groupe scientifique"
+                    domain="[('groupe_scientifique','=',True)]"/>
+                <filter name="ancien_solthis" string="ancien solthis"
+                    domain="[('ancien_solthis','=',True)]"/>
+                <filter name="categorie_partenaire" string="Categorie partenaire"
+                    domain="[('categorie_partenaire','=',True)]"/>
+
+                <field name="id"/>
+                <field name="name" string="code"/>
+                <field name="lastname" string="nom"/>
+                <field name="firstname" string="prenom"/>
+                <!-- <field name="date" string="Date du don"/> -->
+                <filter name="filter_doublon" string="Doublon"
+                    domain="[('statut','=','Doublon')]"/>
+                <filter name="filter_actif" string="Actif"
+                    domain="[('statut','=','Actif')]"/>
+                <filter name="filter_statut_pa" string="Statut PA"
+                    domain="[('statut_PA','=',True)]"/>
+                <filter name="filter_newsletter" string="Abonnés à la newsletter"
+                    domain="[('newsletter','=',True)]"/>
+                <filter name="filter_remerciement" string="Remerciement Envoyé"
+                    domain="[('remerciement','=',True)]"/>
+                <filter name="filter_remerciement_non" string="Remerciement Non Envoyé"
+                    domain="[('remerciement','=',False)]"/>
+                <separator/>
+                <filter name="group_user" string="Créateur"
+                    context="{'group_by': 'create_uid'}"/>
+                <filter name="group_user" string="Statut"
+                    context="{'group_by': 'statut'}"/>
+                <filter name="group_title" string="Civilité"
+                    context="{'group_by': 'title'}"/>
+                <filter name="group_sexe" string="Sexe"
+                    context="{'group_by': 'sexe'}"/>
+                <filter name="group_donateur_potentiel" string="Grand donateur potentiel" domain="[]"
+                    context="{'group_by':'grand_donateur_potentiel'}" />
+                <filter name="group_type_de_personne" string="Type de personne"
+                    context="{'group_by': 'type_de_personne'}"/>
+                <filter name="group_type_statut_pa" string="Statut PA"
+                    context="{'group_by': 'statut_PA'}"/>
+
+            </search>
+    </field>
+</record>
+    <record id="crm_alima_donateur_graph" model="ir.ui.view">
+        <field name="model">crm.alima.donateur</field>
+        <field name="arch" type="xml">
+        <graph type="bar">
+        <field name="statut" />
+        <field name="cumulDonTotal" type="measure" />
+        </graph>
+        </field>
+    </record>
+    <record id="crm_alima_donateur_kanban" model="ir.ui.view">
+        <field name="model">crm.alima.donateur</field>
+        <field name="arch" type="xml">
+        <!--kanban default_group_by="statut" class="o_kanban_small_column" -->
+        <kanban>
+
+            <templates>
+                <t t-name="kanban-box">
+                    <div>
+                        <strong>
+                            ID: <a type="open"><field name="id" /></a>
+                        <ul>
+                            <li>Code: <field name="name" /></li>
+                            <li>Prénom: <field name="firstname" /></li>
+                            <li>Nom: <field name="lastname" /></li>
+                            <li>Statut: <field name="statut" /></li>
+                        </ul>
+                        </strong>
+                    </div>
+                </t>
+            </templates>
+        </kanban>
+        </field>
+    </record>
+
+    <!-- Resume and Letters -->
+    <record id="ir_attachment_view_search_inherit_crm_alima" model="ir.ui.view">
+        <field name="name">ir.attachment.search.inherit.crm.alima</field>
+        <field name="model">ir.attachment</field>
+        <field name="mode">primary</field>
+        <field name="inherit_id" ref="base.view_attachment_search"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='create_date']" position="after">
+                <field name="index_content" string="Content"/>
+            </xpath>
+            <xpath expr="//filter[@name='my_documents_filter']" position="attributes">
+                <attribute name='invisible'>1</attribute>
+            </xpath>
+            <xpath expr="//filter[@name='url_filter']" position="attributes">
+                <attribute name='invisible'>1</attribute>
+            </xpath>
+            <xpath expr="//filter[@name='binary_filter']" position="attributes">
+                <attribute name='invisible'>1</attribute>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_recufiscal_document">
+        <t t-call="web.internal_layout">
+            <div class="page" style="padding-bottom:100px !important;">
+                <div class="row">
+                    <div class="col-xs-2" style="padding:0px;">
+                        <img class="col-xs-6" src='/crm_solthis/static/description/cerfa.png'/><br/>
+                        <span class="col-xs-12" style="padding:0px;">N° 11580*03</span><br/>
+                        <span class="col-xs-12" style="padding:0px;">DGFIP</span><br/>
+                    </div>
+                    <div class="col-xs-8" style="text-align: center;">
+                        <h3 style="margin:0px;">Reçu au titre des dons</h3>
+                        <h3 style="margin:0px;">à certains organismes d’intérêt général</h3>
+                        <span>Articles 200, 238 bis et 885-0 V bis A du code général des impôts (CGI)</span><br/>
+                    </div>
+                    <div class="col-xs-2" style="padding:0px;text-align:right;">
+                        <span>Numéro d'ordre du reçu</span><br/>
+                        <span t-field='o.NumRecuFiscal'/><br/>
+                    </div>
+                </div>
+
+                <div class="row" style='border: 1px solid #000;'>
+                    <div class='col-xs-12' style="padding:0px;text-align:center;border-bottom:1px solid #000;background: #ccc;">
+                        <h3 style="margin:0px;">Bénéficiaire des versements</h3>
+                    </div>
+                    <div class='col-xs-12' style="padding:0px;">
+                        <div class='col-xs-12' style='padding:5px;'>
+                            <span style="font-weight: bold;">Nom ou dénomination :</span><br/>
+                            <span >SOLTHIS- Solidarité Thérapeutique et Initiatives pour la Santé</span>
+                        </div>
+                        <div class='col-xs-12' style='padding:5px;'>
+                            <span style="font-weight: bold;">Adresse:</span><br/>
+                            <span >N° 6</span>
+                            <span >Rue:</span>
+                            <span >Sadi Carnot</span><br/>
+                            <span >Code Postal:</span>
+                            <span >93170</span>
+                            <span >Commune:</span>
+                            <span >Bagnolet</span>
+                        </div>
+                        <div class='col-xs-12' style='padding:5px;padding-bottom: 40px;border-bottom: 1px solid;'>
+                            <span style="font-weight: bold;">Objet: </span><br/>
+                            <span >Contribuer au renforcement des systèmes de santé pour améliorer l’accès à des soins de qualité dans les pays à ressources limités et  auprès des populations vulnérables.</span>
+                        </div>
+                        <div class='col-xs-12' style="padding-left:5px;">
+                            <h4 style="margin:0px;">Cochez la case concernée (1) :</h4>
+                        </div>
+                        <div class='col-xs-12' style="padding-left:5px;">
+                            <input type="checkbox" id="association" name="association" checked="checked"  style="float: left;width: 1%;"/>
+                            <label for="association" style="width: 99%;font-weight: normal;"> Association ou fondation reconnue d'utilité publique par décret en date du ........./ ..... /........... publié au Journalofficiel du ......./ ....../ .......... . ou association située dans le département de la Moselle, du Bas-Rhin ou
+                            du Haut-Rhin dont la mission a été reconnue d'utilité publique par arrêté préfectoral en date du …./.…/……..</label>
+                        </div>
+                        <div class='col-xs-12' style="padding-left:5px;">
+                            <input type="checkbox" id="fondation" name="fondation"  style="float: left;width: 1%;"/>
+                            <label for="fondation" style="width: 99%;font-weight: normal;">  Fondation universitaire ou fondation partenariale mentionnées respectivement aux articles L. 719-12 et L. 719-13 du code de l'éducation
+                            </label>
+                        </div>
+                        <div class='col-xs-12' style="padding-left:5px;">
+                            <input type="checkbox" id="fondation_enter" name="fondation_enter"  style="float: left;width: 1%;"/>
+                            <label for="fondation_enter" style="width: 99%;font-weight: normal;">  Fondation d'entreprise</label>
+                        </div>
+                        <div class='col-xs-12' style="padding-left:5px;">
+                            <input type="checkbox" id="oeuvre" name="oeuvre"  style="float: left;width: 1%;"/>
+                            <label for="oeuvre" style="width: 99%;font-weight: normal;"> Oeuvre ou organisme d'intérêt général</label>
+                        </div>
+                        <div class='col-xs-12' style="padding-left:5px;">
+                            <input type="checkbox" id="musee" name="musee"  style="float: left;width: 1%;"/>
+                            <label for="musee" style="width: 99%;font-weight: normal;"> Musée de France </label>
+                        </div>
+                        <div class='col-xs-12' style="padding-left:5px;">
+                            <input type="checkbox" id="etablissement" name="etablissement"  style="float: left;width: 1%;"/>
+                            <label for="etablissement" style="width: 99%;font-weight: normal;"> Établissement d'enseignement supérieur ou d’enseignement artistique public ou privé, d’intérêt général, à but non lucratif</label>
+                        </div>
+                        <div class='col-xs-12' style="padding-left:5px;">
+                            <input type="checkbox" id="organisme_ayant" name="organisme_ayant"  style="float: left;width: 1%;"/>
+                            <label for="organisme_ayant" style="width: 99%;font-weight: normal;">  Organisme ayant pour objet exclusif de participer financièrement à la création d'entreprises</label>
+                        </div>
+                        <div class='col-xs-12' style="padding-left:5px;">
+                            <input type="checkbox" id="association_cultuelle" name="association_cultuelle"  style="float: left;width: 1%;"/>
+                            <label for="association_cultuelle" style="width: 99%;font-weight: normal;"> Association cultuelle ou de bienfaisance et établissement public des cultes reconnus d'Alsace-Moselle</label>
+                        </div>
+                        <div class='col-xs-12' style="padding-left:5px;">
+                            <input type="checkbox" id="organisation_festivals" name="organisation_festivals"  style="float: left;width: 1%;"/>
+                            <label for="organisation_festivals" style="width: 99%;font-weight: normal;">  Organisme ayant pour activité principale l'organisation de festivals</label>
+                        </div>
+                        <div class='col-xs-12' style="padding-left:5px;">
+                            <input type="checkbox" id="association_fournissant" name="association_fournissant"  style="float: left;width: 1%;"/>
+                            <label for="association_fournissant" style="width: 99%;font-weight: normal;"> Association fournissant gratuitement une aide alimentaire ou des soins médicaux à des personnes en difficulté ou favorisant leur logement</label>
+                        </div>
+                        <div class='col-xs-12' style="padding-left:5px;">
+                            <input type="checkbox" id="fondation_patrimoine" name="fondation_patrimoine"  style="float: left;width: 1%;"/>
+                            <label for="fondation_patrimoine" style="width: 99%;font-weight: normal;"> Fondation du patrimoine ou fondation ou association qui affecte irrévocablement les dons à la Fondation du patrimoine, en vue de subventionner les travaux prévus par les conventions conclues entre la Fondation du patrimoine et les propriétaires des immeubles (article L. 143-2-1 du code du patrimoine)</label>
+                        </div>
+                        <div class='col-xs-12' style="padding-left:5px;">
+                            <input type="checkbox" id="etablissement_recherche" name="etablissement_recherche"  style="float: left;width: 1%;"/>
+                            <label for="etablissement_recherche" style="width: 99%;font-weight: normal;"> Établissement de recherche public ou privé, d’intérêt général, à but non lucratif</label>
+                        </div>
+                        <div class='col-xs-12' style="padding-left:5px;">
+                            <input type="checkbox" id="entreprise_insertion" name="entreprise_insertion"  style="float: left;width: 1%;"/>
+                            <label for="entreprise_insertion" style="width: 99%;font-weight: normal;">  Entreprise d’insertion ou entreprise de travail temporaire d’insertion (articles L. 5132-5 et L. 5132-6 du code du travail).</label>
+                        </div>
+                        <div class='col-xs-12' style="padding-left:5px;">
+                            <input type="checkbox" id="associations_intermédiaires" name="associations_intermédiaires"  style="float: left;width: 1%;"/>
+                            <label for="associations_intermédiaires" style="width: 99%;font-weight: normal;">  Associations intermédiaires (article L. 5132-7 du code du travail)</label>
+                        </div>
+                        <div class='col-xs-12' style="padding-left:5px;">
+                            <input type="checkbox" id="ateliers_chantiers" name="ateliers_chantiers"  style="float: left;width: 1%;"/>
+                            <label for="ateliers_chantiers" style="width: 99%;font-weight: normal;"> Ateliers et chantiers d’insertion (article L. 5132-15 du code du travail)</label>
+                        </div>
+                        <div class='col-xs-12' style="padding-left:5px;">
+                            <input type="checkbox" id="entreprises_adaptees" name="entreprises_adaptees"  style="float: left;width: 1%;"/>
+                            <label for="entreprises_adaptees" style="width: 99%;font-weight: normal;">  Entreprises adaptées (article L. 5213-13 du code du travail)</label>
+                        </div>
+                        <div class='col-xs-12' style="padding-left:5px;">
+                            <input type="checkbox" id="agence_nationale" name="agence_nationale"  style="float: left;width: 1%;"/>
+                            <label for="agence_nationale" style="width: 99%;font-weight: normal;">  Agence nationale de la recherche (ANR)</label>
+                        </div>
+                        <div class='col-xs-12' style="padding-left:5px;">
+                            <input type="checkbox" id="societe_organisme" name="societe_organisme"  style="float: left;width: 1%;"/>
+                            <label for="societe_organisme" style="width: 99%;font-weight: normal;">  Société ou organisme agréé de recherche scientifique ou technique (2)</label>
+                        </div>
+                        <div class='col-xs-12' style="padding-left:5px;">
+                            <input type="checkbox" id="autre_organisme" name="autre_organisme"  style="float: left;width: 1%;"/>
+                            <label for="autre_organisme" style="width: 99%;font-weight: normal;">  Autre organisme : ………………………………………………………………………………………………</label>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <ol style="padding-left: 5px;font-size: x-small;">
+                        <li style="list-style-type: none;">(1) ou n'indiquez que les renseignements concernant l'organisme</li>
+                        <li style="list-style-type: none;">(2) dons effectués par les entreprises</li>
+                    </ol>
+                </div>
+            </div> 
+        <!-- </t>
+        <t> -->
+            <div class="page">
+                <div class="row" style='border: 1px solid #000; margin-bottom: 40px;'>
+                    <div class='col-xs-12' style="padding:0px;text-align:center;border-bottom:1px solid #000;background: #ccc;">
+                        <h3 style="margin:0px;">Donateur</h3>
+                    </div>
+                    <div class='col-xs-12' style="padding:0px;">
+                        <div class='col-xs-6' style='padding:5px;'>
+                            <span style="font-weight: bold;">Nom: </span><br/>
+                            <span t-field='o.donateur.lastname'/>
+                        </div>
+                        <div class='col-xs-6' style='padding:5px;'>
+                            <span style="font-weight: bold;">Prénom: </span><br/>
+                            <span t-field='o.donateur.firstname'/>
+                        </div>
+                        <div class='col-xs-12' style='padding:5px;'>
+                            <span style="font-weight: bold;">Adresse:</span><br/>
+                            <span t-field='o.donateur.complementnom'/>
+                            <span t-field='o.donateur.complementadresse'/>
+                            <span t-field='o.donateur.country_id'/>
+                        </div>
+                        <div class='col-xs-12' style='padding:5px;'>
+                            <div class='col-xs-3' style='padding:5px;'>
+                                <span >Code Postal:</span><br/>
+                                <span t-field='o.donateur.codepostale'/>
+                            </div>
+                            <div class='col-xs-9' style='padding:5px;'>
+                                <span >Commune:</span><br/>
+                                <span t-field='o.donateur.ville'/>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="row" style='border: 1px solid #000;'>
+                    
+                    <div class='col-xs-12' style="padding:0px;">
+                        <div class='col-xs-12' style='padding:5px;'>
+                            <span>Le bénéficiaire reconnaît avoir reçu au titre des dons et versements ouvrant droit à réduction d'impôt, la somme de :</span><br/>
+                            <span t-field='o.montantEur'/>
+                            <strong><span >euro</span></strong>
+                        </div>
+                        <div class='col-xs-12' style='padding:5px;'>
+                            <span t-field='o.montantLettre'/>
+                        </div>
+                        <div class='col-xs-12' style='padding:5px;'>
+                            <span><strong>Date du versement ou du don :</strong> <span t-field='o.date'/></span>
+                        </div>
+                        <div class='col-xs-12' style='padding:5px;border-bottom: 1px solid;'>
+                            <span class='col-xs-12'>
+                            Le bénéficiaire certifie sur l’honneur que les dons et versements qu’il reçoit ouvrent droit à la réduction d'impôt
+                            </span>
+                            <span class='col-xs-3'>prévue à l’article (3) :</span>
+
+                            <span class='col-xs-3' t-if="o.article=='200'">
+                                <input type="checkbox" id="200" name="200" checked="checked"/>
+                                <label for="200"></label>200 du CGI 
+                            </span>
+
+                            <span class='col-xs-3' t-else="">
+                                <input type="checkbox" id="200" name="200" />
+                                <label for="200"></label>200 du CGI 
+                            </span>
+                            
+                            <span class='col-xs-3' t-if="o.article=='238'">
+                                <input type="checkbox" id="238" name="238" checked="checked"/>
+                                <label for="238"></label>238 bis du CGI
+                            </span>
+
+                            <span class='col-xs-3' t-else="">
+                                <input type="checkbox" id="238" name="238"/>
+                                <label for="238"></label>238 bis du CGI
+                            </span>
+                            
+                            <span class='col-xs-3' t-if="o.article=='885'">
+                                <input type="checkbox" id="885" name="885" checked="checked"/>
+                                <label for="885"></label> 885-0 V bis A du CGI
+                            </span>
+                            <span class='col-xs-3' t-else="">
+                                <input type="checkbox" id="885" name="885" />
+                                <label for="885"></label> 885-0 V bis A du CGI
+                            </span>
+                        </div>
+
+                        <div class='col-xs-12' style='padding:5px;border-bottom: 1px solid;' >
+                            <strong><span class='col-xs-12'>Forme du don :</span></strong>
+
+                            <span class='col-xs-3' t-if="o.forme_don=='Acte authentique'">
+                                <input type="checkbox" id="authentique" name="authentique" checked="checked"/>
+                                <label for="200"></label> Acte authentique
+                            </span>
+
+                            <span class='col-xs-3' t-else="">
+                                <input type="checkbox" id="authentique" name="authentique" />
+                                <label for="200"></label> Acte authentique
+                            </span>
+                            
+                            <span class='col-xs-3' t-if="o.forme_don=='acte sous seing prive'">
+                                <input type="checkbox" id="seing" name="seing" checked="checked"/>
+                                <label for="seing"></label> Acte sous seing privé
+                            </span>
+
+                            <span class='col-xs-3' t-else="">
+                                <input type="checkbox" id="seing" name="seing" />
+                                <label for="seing"></label> Acte sous seing privé
+                            </span>
+                            
+                            <span class='col-xs-3' t-if="o.forme_don=='declaration de don manuel'">
+                                <input type="checkbox" id="don_manuel" name="don_manuel" checked="checked"/>
+                                <label for="don_manuel"></label>  Déclaration de don manuel
+                            </span>
+
+                            <span class='col-xs-3' t-else="">
+                                <input type="checkbox" id="don_manuel" name="don_manuel" />
+                                <label for="don_manuel"></label>  Déclaration de don manuel
+                            </span>
+                            
+                            <span class='col-xs-3' t-if="o.forme_don=='Autres'">
+                                <input type="checkbox" id="autres" name="autres" checked="checked"/>
+                                <label for="autres"></label>  Autres
+                            </span>
+
+                            <span class='col-xs-3' t-else="">
+                                <input type="checkbox" id="autres" name="autres"/>
+                                <label for="autres"></label>  Autres
+                            </span>
+                        </div>
+
+                        <div class='col-xs-12' style='padding:5px;border-bottom: 1px solid;' >
+                            <strong><span class='col-xs-12'>Nature du don :</span></strong>
+                            <span class='col-xs-3' t-if="o.nature_don=='Numeraire'">
+                                <input type="checkbox" id="numeraire" name="numeraire" checked="checked"/>
+                                <label for="numeraire"></label>  Numéraire
+                            </span>
+                            <span class='col-xs-3' t-else="">
+                                <input type="checkbox" id="numeraire" name="numeraire"/>
+                                <label for="numeraire"></label>  Numéraire
+                            </span>
+
+                            <span class='col-xs-3' t-if="o.nature_don=='Titres de Societes Cotees'">
+                                <input type="checkbox" id="titres" name="titres" checked="checked"/>
+                                <label for="titres"></label>  Titres de sociétés cotés
+                            </span>
+                            <span class='col-xs-3' t-else="">
+                                <input type="checkbox" id="titres" name="titres"/>
+                                <label for="titres"></label>  Titres de sociétés cotés
+                            </span>
+                            
+                            <span class='col-xs-3' t-if="o.nature_don=='Autres'">
+                                <input type="checkbox" id="autre" name="autre" checked="checked"/>
+                                <label for="autre"></label>  Autres
+                            </span>
+                            <span class='col-xs-3' t-else="">
+                                <input type="checkbox" id="autre" name="autre"/>
+                                <label for="autre"></label>  Autres
+                            </span>
+                        </div>
+
+                        <div class='col-xs-12' >
+                            <strong><span class='col-xs-12'>En cas de don en numéraire, mode de versement du don :</span></strong>
+                            
+                            <span class='col-xs-3' t-if="o.numeraire_mode_versement=='remise_espece'">
+                                <input type="checkbox" id="remise" name="remise" checked="checked"/>
+                                <label for="numeraire"></label>   Remise d’espèces
+                            </span>
+                            <span class='col-xs-3' t-else="">
+                                <input type="checkbox" id="remise" name="remise" />
+                                <label for="numeraire"></label>   Remise d’espèces
+                            </span>
+
+                            <span class='col-xs-3' t-if="o.numeraire_mode_versement=='cheque'">
+                                <input type="checkbox" id="cheque" name="cheque" checked="checked"/>
+                                <label for="titres"></label>  Chèque
+                            </span>
+                            <span class='col-xs-3' t-else="">
+                                <input type="checkbox" id="cheque" name="cheque"/>
+                                <label for="titres"></label>  Chèque
+                            </span>
+                            
+                            <span class='col-xs-3' t-if="o.numeraire_mode_versement=='virement_prelevement_bancaire'">
+                                <input type="checkbox" id="carte_bancaire" name="carte_bancaire" checked="checked"/>
+                                <label for="carte_bancaire"></label> Virement, prélèvement, carte bancaire
+                            </span>
+                            <span class='col-xs-3' t-else="">
+                                <input type="checkbox" id="carte_bancaire" name="carte_bancaire"/>
+                                <label for="carte_bancaire"></label> Virement, prélèvement, carte bancaire
+                            </span>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="row">
+                    <ol style="padding-left: 5px;font-size: x-small;">
+                        <li style="list-style-type: none;">(3) L’organisme bénéficiaire peut cocher une ou plusieurs cases.<br/>L’organisme bénéficiaire peut, en application de l’article L. 80 C du livre des procédures fiscales, demander à l’administration s’il relève<br/> de l’une des catégories d’organismes mentionnées aux articles 200 et 238 bis du code général des impôts.<br/> Il est rappelé que la délivrance irrégulière de reçus fiscaux par l’organisme bénéficiaire est susceptible de donner lieu, en application des dispositions de l'article 1740 A du code général des impôts, à une amende fiscale égale à 25 % des sommes indûment mentionnées sur ces documents.</li>
+                        <li style="list-style-type: none;">(4) notamment : abandon de revenus ou de produits ; frais engagés par les bénévoles, dont ils renoncent expressément au remboursement</li>
+                    </ol>
+                </div>
+            </div> 
+        </t>
+    </template>
+
+    <template id="report_recufiscal">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="crm_solthis.report_recufiscal_document"/>
+            </t>
+        </t>
+    </template>
+</odoo>
+    

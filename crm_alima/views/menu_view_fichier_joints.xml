@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+     <!-- Action to open To-do Task list -->
+    <act_window id="action_crm_alima_donateur"
+    name="Donateur"
+    res_model="crm.alima.donateur"
+    view_mode="tree,form,graph" />
+    <act_window id="action_crm_alima_don"
+    name="Dons"
+    res_model="crm.alima.don"
+    view_mode="tree,form" />
+    <act_window id="action_crm_alima_code_media"
+    name="Code media"
+    res_model="crm.alima.code.media"
+    view_mode="tree,form" />
+    <record model="ir.actions.act_window" id="hr_alima_docs">
+        <field name="name">Resumes and Letters</field>
+        <field name="res_model">ir.attachment</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">kanban,tree,form</field>
+        <field name="view_id" ref="mail.view_document_file_kanban"/>
+        <field name="search_view_id" ref="ir_attachment_view_search_inherit_crm_alima"/>
+        <field name="domain">[('res_model','=','crm.alima.donateur')]</field>
+        <field name="context">{'create': False}</field>
+        <field name="help" type="html">
+            <p>
+                No document yet.
+            </p><p>
+                This menu helps you search documents. Odoo automatically indexes .PDF, .DOC, DOCX, .TXT
+                files so that you can search keywords from the content of these
+                files.
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="crm_alima_menu" name="CRM ALIMA"/>
+    <menuitem id="crm_alima_donateur" name="Donateurs" parent="crm_alima_menu" action="action_crm_alima_donateur"/>
+    <menuitem id="crm_alima_don" name="Dons" parent="crm_alima_menu" action="action_crm_alima_don"/>
+    <menuitem id="crm_alima_code_media" name="Code media" parent="crm_alima_menu" action="action_crm_alima_code_media"/>
+    <menuitem name="Documents joints" parent="crm_alima_menu" id="crm_alima_docs" action="hr_alima_docs" sequence="3"/>
+    <!-- Menu item to open To-do Task list -->
+</odoo>

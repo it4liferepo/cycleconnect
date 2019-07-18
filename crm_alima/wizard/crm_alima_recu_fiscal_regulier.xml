@@ -1,0 +1,21 @@
+<odoo>
+	<record id="recu_fiscal_regulier_template" model="ir.ui.view">
+        <field name="name">Recu Fiscal Regulier Template</field>
+        <field name="model">crm.alima.recu.fiscal.regulier.template</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form name="Create Data Template">
+                <group>
+                    <field name="date_from"/>
+                    <field name="date_to"/>
+                </group>
+                <footer>
+	                <button name="action_create" string="Valider" type="object" class="oe_highlight">
+	                    <i class="fa fa-check" aria-hidden="true"/>
+	                </button>
+	                <button special="cancel" string="Fermer" class="oe_highlight"/>
+            	</footer>
+            </form>
+        </field>
+    </record>
+</odoo>

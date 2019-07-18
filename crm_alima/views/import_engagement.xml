@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="crm_alima_import_engagement_tree" model="ir.ui.view">
+        <field name="name">crm.alima.import.engagement.tree</field>
+        <field name="model">crm.alima.import.engagement</field>
+        <field name="arch" type="xml">
+            <tree string="liste des Imports">
+                <field name="name"/>
+                <field name="description"/>
+                <field name="datetime"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="crm_alima_import_engagement_form" model="ir.ui.view">
+        <field name="name">crm.alima.import.engagement.form</field>
+        <field name="model">crm.alima.import.engagement</field>
+        <field name="arch" type="xml">
+            <form string="Formulaire d'import">
+                <header>
+                    <button
+                            name="action_confirmer"
+                            type="object"
+                            attrs="{'invisible': [('state', 'not in', ['draft'])]}"
+                            string="Confirmer"
+                            class="oe_highlight oe_right"
+                    />
+                    <button
+                            name="action_annuler"
+                            type="object"
+                            attrs="{'invisible': [('state', 'not in', ['draft'])]}"
+                            string="Annuler"
+                            class="oe_highlight oe_right"
+                    />
+
+                    <button
+                            name="action_roll_back"
+                            type="object"
+                            attrs="{'invisible': [('state', 'not in', ['confirmer'])]}"
+                            string="Roll Back"
+                            class="oe_highlight oe_right"
+                    />
+                    <button
+                            name="action_reset_to_draft"
+                            type="object"
+                            attrs="{'invisible': [('state', 'not in', ['annuler'])]}"
+                            string="Remettre à l'état brouillon"
+                            class="oe_highlight oe_right"
+                    />
+
+                    <field name="state" widget="statusbar" readonly="1"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" attrs="{'readonly': [('state', 'not in', ['draft'])]}"/>
+                            <field name="description" attrs="{'readonly': [('state', 'not in', ['draft'])]}"/>
+                        </group>
+                        <group>
+                            <field name="datetime" attrs="{'invisible': [('state', 'in', ['draft'])]}"/>
+                            <field name="user_import" attrs="{'invisible': [('state', 'in', ['draft'])]}"/>
+                            <field name="nombre_de_engagements_importes"
+                                   attrs="{'invisible': [('state', 'in', ['draft'])]}"/>
+                            <field name="separator" attrs="{'readonly': [('state', 'not in', ['draft'])]}"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Liste Engagements" attrs="{'readonly': [('state', 'not in', ['draft'])]}">
+                            <group>
+                                <field name="filename" invisible="1"/>
+                                <!-- <field name="data" filename="filename" attrs="{'invisible': [('state', 'not in', ['draft'])]}"/> -->
+                                <field name="data" filename="filename"/>
+                            </group>
+                            <button
+                                    name="clear_line"
+                                    type="object"
+                                    string="Clear Line"
+                                    class="oe_highlight oe_right"
+                                    attrs="{'invisible': [('state', 'not in', ['draft'])]}"
+                            />
+                            <field name="engagement_line">
+                                <form string="Formulaire Engagements">
+                                    <sheet>
+                                        <group>
+                                            <field name="donateur"/>
+                                            <field name="code_media"/>
+                                            <field name="code_media_origine"/>
+                                            <field name="periodicite"/>
+                                            <field name="statut_engagement"/>
+                                            <field name="date_accord_mandat"/>
+                                            <field name="date_engagement_mandat"/>
+                                            <field name="date_fin_mandat"/>
+                                            <field name="date_fin_engagement"/>
+                                            <field name="motif_fin_engagement"/>
+                                            <field name="code_media_engagement_modifie"/>
+                                            <field name="montant"/>
+                                            <field name="date_premier_prelevement"/>
+                                            <field name="date_dernier_prelevement"/>
+                                            <field name="montant_supplementaire_prochain_prelevement"/>
+                                            <field name="date_prochain_prelevement"/>
+                                            <field name="nom_banque"/>
+                                            <field name="numero_iban"/>
+                                            <field name="code_bic"/>
+                                            <field name="code_identifiant_debiteur"/>
+                                            <field name="reference_unique_mandat"/>
+                                            <field name="identifiant_cb"/>
+                                            <field name="date_expiration_cb"/>
+                                            <field name="remarques"/>
+                                            <field name="id_matricule"/>
+                                        </group>
+                                    </sheet>
+                                </form>
+                                <tree string="liste des Engagements" colors="red:statut_engagement=='inactif';">
+                                    <field name="donateur"/>
+                                    <field name="code_media"/>
+                                    <field name="code_media_origine"/>
+                                    <field name="periodicite"/>
+                                    <field name="statut_engagement"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+</odoo>

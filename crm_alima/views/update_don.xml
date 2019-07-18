@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="crm_alima_update_don_tree" model="ir.ui.view">
+        <field name="name">crm.alima.update.don.tree</field>
+        <field name="model">crm.alima.update.don</field>
+        <field name="arch" type="xml">
+            <tree string="liste modifications des dons">
+                <field name="name"/>
+                <field name="description"/>
+                <field name="datetime"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="crm_alima_update_don_form" model="ir.ui.view">
+        <field name="name">crm.alima.update.don.form</field>
+        <field name="model">crm.alima.update.don</field>
+        <field name="arch" type="xml">
+            <form string="Formulaire Modification Don">
+                <header>
+
+                    <button
+                            name="action_confirmer"
+                            type="object"
+                            attrs="{'invisible': [('state', 'not in', ['draft'])]}"
+                            string="Confirmer"
+                            class="oe_highlight oe_right"
+                    />
+
+                    <button
+                            name="action_annuler"
+                            type="object"
+                            attrs="{'invisible': [('state', 'not in', ['draft'])]}"
+                            string="Annuler"
+                            class="oe_highlight oe_right"
+                    />
+
+                    <button
+                            name="action_reset_to_draft"
+                            type="object"
+                            attrs="{'invisible': [('state', 'not in', ['annuler'])]}"
+                            string="Remettre à l'état brouillon"
+                            class="oe_highlight oe_right"
+                    />
+
+                    <field name="state" widget="statusbar" readonly="1"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" attrs="{'readonly': [('state', 'not in', ['draft'])]}"/>
+                            <field name="description" attrs="{'readonly': [('state', 'not in', ['draft'])]}"/>
+                        </group>
+                        <group>
+                            <field name="datetime" attrs="{'invisible': [('state', 'in', ['draft'])]}"/>
+                            <field name="user_import" attrs="{'invisible': [('state', 'in', ['draft'])]}"/>
+                            <field name="nombre_de_dons_importes" attrs="{'invisible': [('state', 'in', ['draft'])]}"/>
+                            <field name="separator" attrs="{'readonly': [('state', 'not in', ['draft'])]}"/>
+                        </group>
+                        <!-- <group>
+                            <field name="filename" invisible="1"/>
+                            <field name="data" filename="filename" attrs="{'invisible': [('state', 'not in', ['draft'])]}"/>
+                        </group> -->
+                    </group>
+                    <notebook>
+                        <page string="Liste Updates" attrs="{'readonly': [('state', 'not in', ['draft'])]}">
+                            <group>
+                                <field name="filename" invisible="1"/>
+                                <!-- <field name="data" filename="filename" attrs="{'invisible': [('state', 'not in', ['draft'])]}"/> -->
+                                <field name="data" filename="filename"/>
+                            </group>
+                            <button
+                                    name="clear_line"
+                                    type="object"
+                                    string="Clear Line"
+                                    class="oe_highlight oe_right"
+                                    attrs="{'invisible': [('state', 'not in', ['draft'])]}"
+                            />
+                            <field name="update_don_line">
+                                <form string="Formulaire Update">
+                                    <sheet>
+                                        <group>
+                                            <field name="id_don"/>
+                                            <field name="NumRecuFiscal"/>
+                                            <field name="dateEdition"/>
+                                            <field name="dateEnvoi"/>
+                                            <!-- <field name="id_intersa" /> -->
+                                        </group>
+                                    </sheet>
+                                </form>
+                                <tree string="Update">
+                                    <field name="id_don"/>
+                                    <field name="NumRecuFiscal"/>
+                                    <field name="dateEdition"/>
+                                    <field name="dateEnvoi"/>
+                                    <!-- <field name="id_intersa" /> -->
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

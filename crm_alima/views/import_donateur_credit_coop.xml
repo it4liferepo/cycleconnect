@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="crm_alima_import_donateur_credit_coop_tree" model="ir.ui.view">
+        <field name="name">crm.alima.import.donateur.credit.coop.tree</field>
+        <field name="model">crm.alima.import.donateur.credit.coop</field>
+        <field name="arch" type="xml">
+            <tree string="liste des Imports">
+                <field name="name"/>
+                <field name="description"/>
+                <field name="datetime"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="crm_alima_import_donateur_credit_coop_form" model="ir.ui.view">
+        <field name="name">crm.alima.import.donateur.credit.coop.form</field>
+        <field name="model">crm.alima.import.donateur.credit.coop</field>
+        <field name="arch" type="xml">
+            <form string="Formulaire d'import">
+                <header>
+                    <button
+                            name="action_confirmer"
+                            type="object"
+                            attrs="{'invisible': [('state', 'not in', ['draft'])]}"
+                            string="Confirmer"
+                            class="oe_highlight oe_right"
+                    />
+                    <button
+                            name="action_annuler"
+                            type="object"
+                            attrs="{'invisible': [('state', 'not in', ['draft'])]}"
+                            string="Annuler"
+                            class="oe_highlight oe_right"
+                    />
+
+                    <button
+                            name="action_roll_back"
+                            type="object"
+                            attrs="{'invisible': [('state', 'not in', ['confirmer'])]}"
+                            string="Roll Back"
+                            class="oe_highlight oe_right"
+                    />
+                    <button
+                            name="action_reset_to_draft"
+                            type="object"
+                            attrs="{'invisible': [('state', 'not in', ['annuler'])]}"
+                            string="Remettre à l'état brouillon"
+                            class="oe_highlight oe_right"
+                    />
+
+                    <field name="state" widget="statusbar" readonly="1"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" attrs="{'readonly': [('state', 'not in', ['draft'])]}"/>
+                            <field name="description" attrs="{'readonly': [('state', 'not in', ['draft'])]}"/>
+                        </group>
+                        <group>
+                            <field name="datetime" attrs="{'invisible': [('state', 'in', ['draft'])]}"/>
+                            <field name="user_import" attrs="{'invisible': [('state', 'in', ['draft'])]}"/>
+                            <field name="nombre_de_donateurs_importes"
+                                   attrs="{'invisible': [('state', 'in', ['draft'])]}"/>
+                            <field name="separator" attrs="{'readonly': [('state', 'not in', ['draft'])]}"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Liste Donateurs" attrs="{'readonly': [('state', 'not in', ['draft'])]}">
+                            <group>
+                                <field name="filename" invisible="1"/>
+                                <!-- <field name="data" filename="filename" attrs="{'invisible': [('state', 'not in', ['draft'])]}"/> -->
+                                <field name="data" filename="filename"/>
+                            </group>
+                            <button
+                                    name="clear_line"
+                                    type="object"
+                                    string="Clear Line"
+                                    class="oe_highlight oe_right"
+                                    attrs="{'invisible': [('state', 'not in', ['draft'])]}"
+                            />
+                            <field name="donateur_credit_coop_line">
+                                <form string="Formulaire Donateur">
+                                    <sheet>
+                                        <div class="oe_title" name="title">
+                                            <h1>
+                                                <field name="firstname"
+                                                       attrs="{'required': [('type_de_personne', '=', 'Personne physique')], 'invisible': [('type_de_personne', '=', 'Personne morale')]}"
+                                                       placeholder="Prénom"/>
+                                                <br/>
+                                                <field name="lastname" placeholder="Nom" attrs="{'required': True}"/>
+                                                <br/>
+                                            </h1>
+                                        </div>
+                                        <group>
+                                            <group string="Informations générales">
+                                                <field name="title" options='{"no_open": True}' string="Civilité"
+                                                       attrs="{'invisible': [('type_de_personne', '=', 'Personne morale')]}"/>
+                                                <field name="dateNaissance" string="Date de naissance"/>
+                                                <field name="sexe" string="Sexe"
+                                                       attrs="{'invisible': [('type_de_personne', '=', 'Personne morale')]}"/>
+                                                <field name="type_de_personne" string="Type de Personne"/>
+                                                <field name="partenaire" string="Partenaire"/>
+                                                <field name="raison_sociale" string="Raison sociale"/>
+                                                <field name="type_organisation" string="Type d'organisation"/>
+                                                <field name="function" string="Fonction"/>
+                                                <field name="sec_activite" string="Secteur d'activité"/>
+                                                <field name="complementnom"/>
+                                                <field name="complementadresse"/>
+                                                <field name="codebis"/>
+                                                <field name="hammeau"/>
+                                                <field name="codepostale"/>
+                                                <field name="ville"/>
+                                                <field name="country_id"/>
+                                                <field name="email"/>
+                                                <field name="email2"/>
+                                                <field name="personal_fone"/>
+                                                <field name="personal_fone2"/>
+                                                <field name="statut"/>
+                                                <field name="rf"/>
+                                                <field name="canal_envoi"/>
+                                                <field name="telemarketing"/>
+                                                <field name="email3"/>
+                                                <field name="courrier"/>
+                                                <field name="sms"/>
+                                                <field name="evenement"/>
+                                                <field name="option_CNIL"/>
+                                                <field name="echange_mail"/>
+                                                <field name="comm_preference_contrat"/>
+                                                <field name="id_bulletin"/>
+                                            </group>
+                                        </group>
+                                    </sheet>
+                                </form>
+                                <tree delete="false" create="false" limit="10">
+                                    <field name="title"/>
+                                    <field name="lastname"/>
+                                    <field name="firstname"/>
+                                    <field name="dateNaissance"/>
+                                    <field name="sexe"/>
+                                    <field name="type_de_personne"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+</odoo>

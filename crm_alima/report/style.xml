@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="minimal_layout_inherit" inherit_id="web.report_assets_common">
+	      <xpath expr="." position="inside">
+	            <link rel='stylesheet' href="/crm_solthis/static/src/css/bootstrap.css"/>
+	      </xpath>
+	</template>
+</odoo>

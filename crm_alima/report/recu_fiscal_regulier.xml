@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="crm_solthis.report_recufiscalregulier_document">
+        <t>
+            <div class="page" style="position:relative !important;">
+                <style>
+                  p, span:not(.titre){font-size:18px !important;}
+                  .row {
+                      margin-right: 0px !important;
+                      margin-left: 0px !important;
+                    }
+                </style>
+                <div class="oe_structure"/>
+                <div class="row mt32 mb32" style="margin-bottom: 0 px !important;">
+                    <img class="col-xs-3" src='/crm_solthis/static/description/logo.png'/>
+                    <span class="col-xs-7 titre" style="margin-top:50px;font-weight:bold;text-align:center;font-size:25px;color:#235C9C;">VOTRE RECU FISCAL</span>
+                </div>
+
+                <div class="row mt32 mb32" style="margin-top: 50 px !important;" >
+                    <div class="row mt32 mb32" style="margin-top:0px !important;margin-bottom:0px !important;">
+                        <div class="pull-right" style="font-size:20px !important;" >
+                            <span t-field='o.firstname' />
+                            <span t-field='o.lastname' />
+                        </div>
+                    </div>
+                    <div class="row mt32 mb32" style="margin-top:0px !important;margin-bottom:0px !important;">
+                        <div class="pull-right" style="font-size:20px !important;" >
+                            <span t-field='o.complementnom' />
+                        </div>
+                    </div>
+                    <div class="row mt32 mb32" style="margin-top:0px !important;margin-bottom:0px !important;">
+                        <div class="pull-right" style="font-size:20px !important;" >
+                            <span t-field="o.codepostale" />
+                            <span t-field='o.ville' />
+                        </div>
+                    </div>
+
+                    <div class="row mt32 mb32" style="margin-top:0px !important;margin-bottom:0px !important;">
+                        <div class="pull-right" style="margin-top: 30 px !important;font-size:20px !important;" >
+                            <span>Montreuil, le</span>
+                            <span t-esc="o.current_day()" />
+                            <span t-esc="o.current_month()" />
+                            <span t-esc='o.current_year()' />
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row mt32 mb32" style="margin-top: 50 px !important;margin-bottom:0px !important;" >
+                    <div class="pull-left">
+                        <span t-esc="o.get_title(o.title)" />
+                        <span t-field="o.title" />
+                        <span t-field="o.firstname" />
+                        <span t-field='o.lastname' />,
+                    </div>
+                </div>
+                <div class="row mt32 mb32" style="margin-top:1px !important;margin-bottom:0px !important;" >
+                    <p>
+                        J’ai le plaisir de vous envoyer votre reçu fiscal récapitulant l’ensemble de vos dons versés à ALIMA en 2017. Il vous permettra, si vous êtes imposable, <span style="border-bottom:1px solid #000;">de déduire jusqu’à 75% de vos dons en impôts</span>. 
+                    </p>
+                </div>
+                
+                <div class="row mt32 mb32" style="margin-top:2px !important;margin-bottom:0px !important; margin-left:15px;" >
+                    <img class="col-xs-1" src='/crm_solthis/static/description/gif.png' height="102" style="padding-right: 0px !important;" />
+                    <p class="col-xs-11" style="padding-left: 0px !important;">
+                        C’est grâce à votre soutien que nous avons pu apporter une aide médicale en urgence sur plusieurs grandes crises humanitaires au cours de l’année 2016, notamment au Nord Nigéria où ALIMA a pris en charge 8 000 enfants malnutris, effectué plus de 35 000 consultations et vacciné 27 000 enfants contre la rougeole. Malheureusement, l’urgence perdure et nous restons mobilisés afin de venir en aide aux populations les plus à risque de mortalité.
+                    </p>
+                </div>
+
+                <div class="row mt32 mb32" style="margin-top:1px !important;margin-bottom:30px !important;" >
+                    <p style="margin-bottom:0px !important;">
+                         <strong>Votre soutien dans la durée est le moyen le plus efficace de nous accompagner.</strong> Le soutien régulier permet des actions qui exigent du temps pour améliorer durablement la vie des populations vulnérables. C’est l’assurance d’intervenir dès le déclenchement d’une crise sans attendre les premiers dons. Ce sont aussi de significatives économies réalisées sur les frais de collecte et de gestion au profit de nos programmes humanitaires. 
+                    </p><br/>
+                    <p style="margin-bottom:0px !important;">
+                        <strong>En 2017, aidez-nous encore plus en demandant à un de vos proches de soutenir l’action d’ALIMA !</strong> Nous lançons cette initiative simple : nos soutiens nous aident à recruter de nouveaux soutiens. Si chaque donateur ALIMA recrute deux nouveaux donateurs, alors nous allons rapidement progresser et à moindre frais. Avec 8€ par mois par exemple, vous accompagnez une femme enceinte et son enfant jusqu’à l’âge de 2 ans pour lui permettre de se développer vacciné et en bonne santé.  
+                    </p><br/>
+                    <p style="margin-bottom:0px !important;">
+                        Je vous rappelle que vous pouvez joindre notre Service Donateurs à tout moment, par téléphone au<br/> <span style="color:#235C9C;border-bottom:1px solid #235C9C;">01 80 89 99 39</span> ou par mail à l’adresse <span style="color:#235C9C;border-bottom:1px solid #235C9C;">collecte@alima-ngo.org</span>. 
+                    </p><br/>
+                    <p>
+                        En espérant pouvoir compter à nouveau sur votre soutien à l’avenir, je vous remercie chaleureusement. 
+                    </p>
+                </div>
+
+                <div class="row mt32 mb32 pull-right" style="text-align:right;margin-bottom:5px !important;">
+                    <div class="image" style="right:0 !important;">
+                        <img  class="credentiel" src='/crm_solthis/static/description/credentiel.png' />
+                    </div>
+                </div>
+
+                <div class="row col-xs-12" style="text-align:center;bottom:0 !important;">
+                    <span style="color:#ccc;">Association ALIMA</span><br/>
+                    <span style="color:#ccc;">47 avenue Pasteur 93100 Montreuil</span><br/>
+                    <span style="color:#ccc;">01 80 89 99 39 – </span>
+                    <span style="color:#235C9C;border-bottom:1px solid;">www.alimaong.org</span>
+                </div>
+
+            </div> 
+        </t>
+        <t>
+            <div class="page" style="position:relative !important;border:1px solid;">
+                <style>
+                  p, span:not(.titre){font-size:18px !important;}
+                  .row {
+                      margin-right: 0px !important;
+                      margin-left: 0px !important;
+                    }
+                </style>
+                <div class="oe_structure"/>
+                <div class="row mt32 mb32" style="padding: 25px 0px !important;margin: 0 px !important; border-bottom:1px solid;text-align:center;">
+                   <span style="margin:0px !important; font-weight:bold;text-align:center;font-size:25px;color:#235C9C;">Reçu FISCAL</span>
+                </div>
+                <div class="row mt32 mb32" style="padding: 15px 0px !important;margin: 0 px !important; border-bottom:1px solid;">
+                   <span style="margin:0px !important;">N° d’ordre : ALICOYYXXXXX</span>
+                </div>
+
+                <div class="row mt32 mb32" style="padding: 0px 0px !important;margin: 0 px !important; border-bottom:1px solid;">
+                   <div class="col-xs-9" style="margin:0px !important; padding:0px !important;">
+                        <span style="margin:0px !important;"><strong>Bénéficiaire des versements</strong></span>
+                        <div style="padding-left:30px;padding-top:25px;">
+                            <div style="padding:0;margin:0;text-align:center;">
+                                <span style="margin:0px !important;font-weight:bold;text-align:center !important;font-size:25px;color:#235C9C;">
+                                    ALIMA
+                                </span>
+                            </div>
+                            <span>
+                                <strong>Adresse :</strong> 47 avenue Pasteur 93100 MONTREUIL
+                            </span><br/>
+                            <span>
+                                <strong>Objet :</strong> Aide alimentaire ou soins médicaux à des personnes en difficulté
+                            </span><br/>
+                            <span>
+                                <strong>Statut :</strong> Association humanitaire de loi 1901 à but non lucratif (1ère publication au J.O. du 13 juin 2009)
+                            </span><br/>
+                        </div>
+                   </div>
+                   <img class="col-xs-3" src='/crm_solthis/static/description/alima.png'/>
+                </div>
+
+                <div class="row mt32 mb32" style="padding: 15px 0px !important;margin: 0 px !important; border-bottom:1px solid;text-align:center;">
+                   <span style="margin:0px !important;">ALIMA certifie sur l’honneur que les dons et versements qu’elle reçoit ouvrent droit à la réduction d’impôts prévue aux articles 200 et 238 bis du CGI.</span>
+                </div>
+
+                <div class="row mt32 mb32" style="padding: 20px 0px !important;margin: 0 px !important; border-bottom:1px solid;">
+                   <div style="padding-bottom:15px; text-align:center;">
+                       <span style="margin:0px !important;">
+                           ALIMA reconnaît avoir reçu au titre des dons et versements ouvrant droit à la réduction d’impôts :
+                       </span>
+                   </div>
+                   <div style="padding-left:30px;">
+                       <span style="margin:0px !important;">
+                            <strong>La somme de :</strong> <span t-esc="o.compute_montant_entre_2_date()['amount']" /> €
+                        </span><br/>
+                        <span style="margin:0px !important;">
+                            <strong>Somme en toutes lettres : </strong> <span t-esc="o.compute_montant_entre_2_date()['amount_lettre']" />
+                        </span><br/>
+                        <span style="margin:0px !important;">
+                            <strong>Date de paiement : </strong> <span t-esc="o.compute_montant_entre_2_date()['date']" />
+                        </span><br/>
+                        <!-- <span style="margin:0px !important;">
+                            <strong>Forme du don : </strong> <span t-field="o.compute_montant_entre_2_date()['don'].forme_don" />
+                        </span><br/>
+                        <span style="margin:0px !important;">
+                            <strong>Nature du don :</strong> <span t-field="o.compute_montant_entre_2_date()['don'].nature_don" />
+                        </span><br/>
+                        <span style="margin:0px !important;">
+                            <strong>Moyen de paiement :</strong> <span t-field="o.compute_montant_entre_2_date()['don'].moyen_paiment" />
+                        </span><br/> -->
+                   </div>
+                </div>
+
+                <div class="row mt32 mb32" style="padding: 0px 0px !important;margin: 0 px !important; border-bottom:1px solid;">
+                    <span style="margin:0px !important;"><strong>Donateur</strong></span>
+                    <div style="padding-top:25px; text-align:center;padding-bottom:50px;">
+                        <strong>
+                            <span t-field='o.firstname' />
+                            <span t-field='o.lastname' />
+                        </strong><br/>
+                        <strong>
+                            <span t-field='o.complementnom' />
+                        </strong><br/>
+                        <strong>
+                            <span t-field="o.codepostale" />
+                            <span t-field='o.ville' />
+                        </strong><br/>
+                    </div>
+                </div>
+
+                <div class="row mt32 mb32" style="padding: 0px 0px !important;margin: 0 px !important;">
+                    <strong style="margin:0px !important;">
+                        <span>Date et signature</span>
+                    </strong><br/>
+                    <div style="padding-left:15px;padding-top:40px;">
+                        <strong>
+                            <span>le</span>
+                            <span t-esc="o.current_day()" />
+                            <span t-esc="o.current_month()" />
+                            <span t-esc='o.current_year()' />
+                        </strong>
+                    </div>
+                    <div style="padding-top:120px; text-align:center;padding-bottom:25px;">
+                        <img src='/crm_solthis/static/description/sig.png'/><br/>
+                        <span>Dr Richard Kojan</span><br/>
+                        <span>Président</span>
+                    </div>
+                </div>
+                
+            </div> 
+        </t>
+    </template>
+
+    <template id="report_recufiscalregulier">
+        <t t-call="report.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="crm_solthis.report_recufiscalregulier_document"/>
+            </t>
+        </t>
+    </template>
+</odoo>
+    

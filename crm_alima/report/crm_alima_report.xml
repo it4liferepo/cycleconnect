@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <report 
+		    id="report_recu_fiscal" 
+		    string="Recu fiscal" 
+		    model="crm.alima.don" 
+		    report_type="qweb-pdf"
+		    file="crm_solthis.report_recufiscal"
+		    name="crm_solthis.report_recufiscal" 
+		    menu="True"
+		/>
+
+		<report 
+            id="report_sale_order_test"
+            string="Test"
+            model="crm.alima.don" 
+            report_type="qweb-pdf"
+            file="crm_solthis.report_saleorder_test" 
+            name="crm_solthis.report_saleorder_test"
+            menu="True"
+        />
+
+    </data>
+</odoo>

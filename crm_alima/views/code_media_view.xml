@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="crm_alima_code_media_tree" model="ir.ui.view">
+        <field name="name">crm.alima.code.media.tree</field>
+        <field name="model">crm.alima.code.media</field>
+        <field name="arch" type="xml">
+            <tree string="liste des Campagnes">
+                    <field name="identifiant" />
+                    <field name="name" />
+                    <field name="nomcampagne" />
+                    <field name="canal" />
+                    <field name="sens" />
+                    <field name="annees" />
+                    <field name="programme" />
+                    <field name="pays" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="crm_alima_code_media_form" model="ir.ui.view">
+        <field name="name">crm.alima.donateur.form</field>
+        <field name="model">crm.alima.code.media</field>
+        <field name="arch" type="xml">
+            <form string="Formulaire Campagne">
+                <sheet>
+                    <group>
+                        <field name="identifiant" />
+                        <field name="name" />
+                        <field name="nomcampagne" />
+                        <field name="url" widget="url"/>
+                        <field name="canal" />
+                        <field name="sens" />
+                        <field name="annees" />
+                        <field name="programme" />
+                        <field name="pays" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+
+</odoo>

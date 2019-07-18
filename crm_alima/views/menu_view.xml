@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+     <!-- Action to open To-do Task list -->
+    <act_window 
+        id="action_crm_alima_donateur"
+        name="Contacts"
+        res_model="crm.alima.donateur"
+        view_mode="kanban,tree,form,graph"
+        context="{'search_default_donateur': 1,'default_journalistes': 0,'default_prospect': 0, 'default_salarie': 0}"
+    />
+
+    <act_window id="action_crm_alima_don"
+    name="Dons"
+    res_model="crm.alima.don"
+    view_mode="tree,form,graph" />
+
+    <act_window id="action_crm_alima_code_media"
+    name="Campagne"
+    res_model="crm.alima.code.media"
+    view_mode="tree,form" />
+
+    <act_window id="action_crm_alima_engagements"
+    name="Engagements"
+    res_model="crm.alima.engagements"
+    view_mode="tree,form" />
+
+    <act_window id="action_crm_alima_import"
+    name="Import Don"
+    res_model="crm.alima.import.don.credit.coop"
+    view_mode="tree,form" />
+
+    <act_window id="action_crm_alima_import_donateur"
+    name="Import Contacts"
+    res_model="crm.alima.import.donateur.credit.coop"
+    view_mode="tree,form" />
+
+    <act_window id="action_crm_alima_import_engagement"
+    name="Import Engagement"
+    res_model="crm.alima.import.engagement"
+    view_mode="tree,form" />
+
+    <act_window id="action_crm_alima_mise_jour_don"
+    name="Update Don"
+    res_model="crm.alima.update.don"
+    view_mode="tree,form" />
+
+    <menuitem id="crm_alima_menu" name="CRM ALIMA DONATEUR"/>
+    <menuitem id="crm_alima_donateur" name="Contacts" parent="crm_alima_menu" action="action_crm_alima_donateur"/>
+    <menuitem id="crm_alima_don" name="Dons" parent="crm_alima_menu" action="action_crm_alima_don"/>
+    <menuitem id="crm_alima_code_media" name="Campagne" parent="crm_alima_menu" action="action_crm_alima_code_media"/>
+    <menuitem id="crm_alima_engagements" name="Engagements" parent="crm_alima_menu" action="action_crm_alima_engagements"/>
+    <!-- Menu item to open To-do Task list -->
+    <menuitem id="crm_alima_util" name="Import" parent="crm_alima_menu"/>
+
+    <menuitem id="crm_alima_import_donateur" name="Import Contacts" parent="crm_alima_util" action="action_crm_alima_import_donateur" sequence="1"/>
+    <menuitem id="crm_alima_import" name="Import Don" parent="crm_alima_util" action="action_crm_alima_import" sequence="2"/>
+    <menuitem id="crm_alima_import_engagement" name="Import Engagement" parent="crm_alima_util" action="action_crm_alima_import_engagement" sequence="3"/>
+    <menuitem id="crm_alima_mise_jour_don" name="Update Don" parent="crm_alima_util" action="action_crm_alima_mise_jour_don" sequence="4"/>
+
+</odoo>
